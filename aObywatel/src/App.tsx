@@ -6,7 +6,7 @@ import PetitionButton from "./components/PetitionButton";
 function App() {
   return (
     <ThemeProvider theme={customTheme}>
-      <PetitionButton>
+      <PetitionButton to="petition/2137">
         <p>Test</p>
       </PetitionButton>
     </ThemeProvider>
