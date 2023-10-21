@@ -22,12 +22,12 @@ function HomePage() {
     const [offices, _] = useState<Office[]>(officesJSON)
 
     const activeFilterClassNames = "px-3 py-1 border border-primary-200 text-primary-200 bg-white rounded-full font-medium"
-    
+
     const [filtersInDrawer, setFiltersInDrawer] = useState({
         petitionStatus: [],
         searchOfficeTerm: null
     })
-    
+
     useEffect(() => {
         applyFilters();
     }, [searchTerm, filtersInDrawer])
@@ -81,7 +81,7 @@ function HomePage() {
                 <HomeHeader title={"Petycje"} />
                 <div className="flex gap-x-4 pe-[20px] mb-10 items-center">
                     <FilterButton onFilterChange={(filters) => updateFiltersInDrawer(filters)} offices={offices} />
-                    <BaseInput placeholder="Ustawa nr ..." value={searchTerm} className="w-full bg-white" onInput={(e) => setSearchTerm(e.target.value)} />
+                    <BaseInput placeholder="Tytuł poszukiwanej petycji" value={searchTerm} className="w-full bg-white" onInput={(e) => setSearchTerm(e.target.value)} />
                 </div>
             </div>
             <div>
@@ -92,14 +92,14 @@ function HomePage() {
                 <ul className="flex flex-wrap gap-2">
                     {filtersInDrawer['petitionStatus'].map(filter => {
                         return <li className={activeFilterClassNames}>{`Status: ${filter.text}`}</li>
-                    })}                    
+                    })}
                     {filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd" && <li className={activeFilterClassNames}>{`Urząd: ${filtersInDrawer['searchOfficeTerm']}`}</li>}
                 </ul>
             </div> : null}
             <ul className="h-[calc(100vh-152px-100px)] pt-5 pb-[98px] overflow-y-auto">
                 {filteredPetitions.map(petition => {
                     return <li key={petition.id}>
-                        <PetitionButton className="mb-4" to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
+                        <PetitionButton to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
                     </li>
                 })}
             </ul>

@@ -9,6 +9,8 @@ import IconDescription from "../../components/Icons/IconDescription";
 import ContentBox from "../../components/ContentBox";
 import If from "../../components/If";
 import ProgressBar from "../../components/ProgressBar";
+import { useEffect, useState } from "react";
+import { Petition } from "./Petition.types";
 
 const ICON_SIZE = "30";
 
@@ -19,63 +21,40 @@ const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.neutral[10]};
   padding-inline: 20px;
   min-height: 100vh;
-  gap: 30px;
+  gap: 20px;
 `;
 
+
 function PetitionPage() {
+  const [petition, setPetition] = useState<Petition>({
+    title: "Bezpieczne skrzyżowania",
+    description: 'niesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE.',
+    location: "Gdynia, Pomorskie",
+    signedBy: ["Jan Kowalski, Stanisław Jarocki"],
+  } as Petition);
+  const { petitionId } =  useParams();
+
+  useEffect(() => {
+    (async () => {
+        const response = await fetch(`http://localhost:9125/api/petitions/${petitionId}`);
+        const data = await response.json();
+        setPetition(data);
+    })();
+  }, [petitionId]);
+
   const {
     title,
     location,
     description,
     parliament,
-    // signedBy,
-    // targetSignatures,
-  } = useParams();
-
-  //temp mock
-  const targetSignatures = 25_000;
-  const signedBy = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "7",
-    "8",
-    "9",
-    "10",
-    "3",
-    "4",
-    "5",
-    "7",
-    "8",
-    "9",
-    "10",
-    "3",
-    "4",
-    "5",
-    "7",
-    "8",
-    "9",
-    "10",
-    "3",
-    "4",
-    "5",
-    "7",
-    "8",
-    "9",
-    "10",
-    "3",
-    "4",
-    "5",
-    "7",
-    "8",
-    "9",
-    "10",
-  ];
-
+    signedBy,
+    targetSignatures,
+  } = petition;
   const isBeingConsidered = Boolean(parliament);
-
+  const formattedTargetSignatures = targetSignatures ? targetSignatures
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    : null
   return (
     <ThemeProvider theme={customTheme}>
       <Wrapper>
@@ -85,11 +64,6 @@ function PetitionPage() {
           icon={<IconLocation width={ICON_SIZE} />}
         />
         <ContentBox
-          title="Petycja"
-          icon={<IconPen width={ICON_SIZE} />}
-          description="Zgłoś"
-        />
-        <ContentBox
           title="Cel"
           icon={<IconDescription width={ICON_SIZE} />}
           description={
@@ -97,14 +71,20 @@ function PetitionPage() {
             "Zniesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE."
           }
         />
-        <If condition={Boolean(signedBy && signedBy.length)}>
+        <If
+          condition={Boolean(signedBy && signedBy.length && formattedTargetSignatures)}
+        >
           <ContentBox
-            title={`Zebrane podpisy ${signedBy.length}/${targetSignatures
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}`}
-            icon={<IconReader width={ICON_SIZE} />}
+            title={`${signedBy.length} z ${formattedTargetSignatures} podpisów`}
+            icon={<IconPen width={ICON_SIZE} />}
           >
-            <ProgressBar progress={78} />
+            <ProgressBar
+              progress={Number(
+                Math.floor(
+                  (Number(signedBy.length) / Number(targetSignatures)) * 100
+                )
+              )}
+            />
           </ContentBox>
         </If>
         <If condition={isBeingConsidered}>

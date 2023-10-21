@@ -6,14 +6,14 @@ interface ProgressBarProps {
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ progress }) => {
   return (
-    <div style={{ width: "100%", height: "20px", backgroundColor: "#f2f2f2" }}>
-      <div
-        style={{
-          width: `${progress}%`,
-          height: "100%",
-          backgroundColor: "#4CAF50",
-        }}
-      ></div>
+    <div className="px-1 py-2 flex flex-col justify-center items-center w-full gap-1">
+      <p className="text-sm w-full text-center">{progress}%</p>
+      <div className="w-full h-1 bg-neutral-30 rounded-md">
+        <div
+          className="bg-primary-200 h-1 rounded-md"
+          style={{ width: progress + "%" }}
+        />
+      </div>
     </div>
   );
 };

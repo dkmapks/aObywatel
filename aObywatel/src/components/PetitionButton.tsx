@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import IconChevron from "../components/Icons/IconChevron";
 import { ReactNode } from "react";
-
 const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   && {
+    mb-4
     height: 70px;
     border-radius: 10px;
     display: flex;
@@ -20,7 +20,7 @@ const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   }
 `;
 
-function PetitionButton(props: { children: ReactNode; to: any }) {
+function PetitionButton(props: { children: ReactNode; to: string }) {
   return (
     <StyledPetitionButton to={props.to} {...props}>
       <span className='line-clamp-1 text-ellipsis'>{props.children}</span>
