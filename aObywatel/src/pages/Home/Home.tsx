@@ -6,6 +6,7 @@ import PetitionButton from "../../components/PetitionButton";
 import { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
 import CreatePetitionButton from "../../components/CreatePetitionButton";
+import SignButton from "../../components/SignButton";
 
 
 function HomePage() {
@@ -26,14 +27,18 @@ function HomePage() {
                 </div>
             </div>
             <div className="h-[152px]"></div>
-            <ul>
+            <ul className="h-[calc(100vh-250px)] overflow-y-auto">
                 {/* TODO: Paste values from json */}
                 {[1,2,3,4,5, 6, 7, 8, 9, 10].map(i => {
-                    return <PetitionButton className="mb-4" key={i} to={`/petition/123`}>{i}</PetitionButton>
+                    return <li key={i}>
+                        <PetitionButton className="mb-4" to={`/petition/123`}>{i}</PetitionButton>
+                    </li>
                 })}
             </ul>
+            <div className="h-[98px] flex items-center">
+                <CreatePetitionButton />
+            </div>
         </div>
-        <CreatePetitionButton />
     </ThemeProvider>;
 }
 
