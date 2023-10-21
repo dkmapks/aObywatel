@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import IconChevron from '../components/IconChevron';
+import { ReactNode } from 'react';
 
 const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   && {
@@ -19,10 +20,10 @@ const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
 `;
 
 
-function PetitionButton(props: Link) {
+function PetitionButton(props: Link & {children: ReactNode}) {
   return (
     <StyledPetitionButton to={props.to} {...props}>
-      Tekst Tekst Tekst Teks
+      {props.children}
       <IconChevron to={props.to} {...props} width="8" />
     </StyledPetitionButton>
   );

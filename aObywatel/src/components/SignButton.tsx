@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ReactNode } from 'react';
 
 const buttonStyles = css`
-  border: 5px solid ${props => props.theme.colors.primary[200]};
+  border: 2px solid ${props => props.theme.colors.primary[200]};
   border-radius: 75px;
   display: flex;
   justify-content: center;
