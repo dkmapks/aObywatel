@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
+import IconArrow from "../../components/IconArrow";
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,8 +21,6 @@ const ContentBox = styled.div`
   shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 `;
 
-const GoBackButton = styled.button``;
-
 const Title = styled.div`
   font-size: 2em;
   font-weight: bold;
@@ -35,7 +34,7 @@ function PetitionPage() {
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <ContentBox>
-          <GoBackButton>Go Back</GoBackButton>
+          <IconArrow />
           <Title>Test</Title>
         </ContentBox>
         <p>Petition id: {petitionId}</p>

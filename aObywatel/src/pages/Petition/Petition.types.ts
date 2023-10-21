@@ -12,16 +12,21 @@ enum PetitionStatus {
 }
 
 export interface Petition {
+    id: string,
     title: string,
     description: string,
     signedBy: string[],
-    targetSignatures: number,
-    symbol: PetitionSymbol.PETITION
-    | PetitionSymbol.PETITION_MULTIPLE,
-    id: string,
-    location?: string,
-    creationDate: Date,
-    endDate: Date,
-    tags: string[],
+    creationDate: number,
     status: PetitionStatus,
+    author: string,
+    authorId: string,
+    tags?: string[],
+    parliament?: {
+        id: string,
+        symbol: PetitionSymbol.PETITION | PetitionSymbol.PETITION_MULTIPLE,
+    }
+    targetSignatures?: number,
+    location?: string,
+    endDate?: number,
+    considerationResponse?: string,
 }
