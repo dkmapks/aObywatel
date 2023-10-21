@@ -6,16 +6,31 @@ import PetitionButton from "../../components/PetitionButton";
 import { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
 import CreatePetitionButton from "../../components/CreatePetitionButton";
-import SignButton from "../../components/SignButton";
+import { Petition } from "../Petition/Petition.types";
 
 
 function HomePage() {
     const [searchTerm, setSearchTerm] = useState("");
+    const [petitions, setPetitions] = useState<Petition[]>([]);
+    const [filteredPetitions, setFilteredPetitions] = useState<Petition[]>([]);
 
     useEffect(() => {
-        console.log(searchTerm);
-        // TODO: Filtrujemy potem array z jsona    
+        setFilteredPetitions(petitions.filter(petition => {
+            return petition.title.toLowerCase().includes(searchTerm.toLowerCase());
+        }))
     }, [searchTerm])
+
+    useEffect(() => {
+        (async () => {
+            const response = await fetch(`http://localhost:9125/api/petitions/`);
+            const data = await response.json();
+            setPetitions(data);
+        })();
+    }, [])
+
+    useEffect(() => {
+        setFilteredPetitions(petitions);
+    }, [petitions])
 
     return <ThemeProvider theme={customTheme}>
         <div className="bg-neutral-10 px-[20px] h-[100vh]">
@@ -29,13 +44,13 @@ function HomePage() {
             <div className="h-[152px]"></div>
             <ul className="h-[calc(100vh-250px)] overflow-y-auto">
                 {/* TODO: Paste values from json */}
-                {[1,2,3,4,5, 6, 7, 8, 9, 10].map(i => {
-                    return <li key={i}>
-                        <PetitionButton className="mb-4" to={`/petition/123`}>{i}</PetitionButton>
+                {filteredPetitions.map(petition => {
+                    return <li key={petition.id}>
+                        <PetitionButton className="mb-4" to={`/petition/123`}>{petition.title}</PetitionButton>
                     </li>
                 })}
             </ul>
-            <div className="h-[98px] flex items-center">
+            <div className="h-[98px] flex items-center w-[80%] mx-auto">
                 <CreatePetitionButton />
             </div>
         </div>
