@@ -99,7 +99,7 @@ function HomePage() {
             <ul className="h-[calc(100vh-152px-100px)] pt-5 pb-[98px] overflow-y-auto">
                 {filteredPetitions.map(petition => {
                     return <li key={petition.id}>
-                        <PetitionButton to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
+                        <PetitionButton className="mb-4" to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
                     </li>
                 })}
             </ul>

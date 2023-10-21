@@ -101,25 +101,27 @@ function FilterButton(props: FilterButtonProps) {
             <IconFilter />
         </StyledFilterButton>
         <Drawer anchor='bottom' open={isOpen} onClose={toggleDrawer(false)} >
-            <div className="h-[80vh] p-4">
-                <h4 className="text-xl text-center font-medium mb-5">Filtry</h4>
+            <div className="h-[80vh] p-4 flex flex-col justify-between pb-5">
+                <div>
+                    <h4 className="text-xl text-center font-medium mb-5">Filtry</h4>
 
-                <div className="mb-3">
-                    <h5 className="text-lg mb-2">Status petycji</h5>
-                    <ul className="flex overflow-x-scroll pb-3 gap-x-2">
-                        {statusFilters.map(filter => {
-                            return <li key={filter.value}>
-                                <button className={getFilterClassName(filter)} onClick={() => toggleSelectedStatusFilter(filter, !getSelectedFilterStatus(filter))}>{filter.text}</button>
-                            </li>
-                        })}
-                    </ul>
-                </div>
-                <div className="mb-10">
-                    <h5 className="text-lg mb-2">Urząd</h5>
-                    <Autocomplete getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...props.offices, {
-                        name: "Wybierz urząd",
-                        url: "https://example.com"
-                    }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="Urząd" />} />
+                    <div className="mb-3">
+                        <h5 className="text-lg mb-2">Status petycji</h5>
+                        <ul className="flex overflow-x-scroll pb-3 gap-x-2">
+                            {statusFilters.map(filter => {
+                                return <li key={filter.value}>
+                                    <button className={getFilterClassName(filter)} onClick={() => toggleSelectedStatusFilter(filter, !getSelectedFilterStatus(filter))}>{filter.text}</button>
+                                </li>
+                            })}
+                        </ul>
+                    </div>
+                    <div className="mb-10">
+                        <h5 className="text-lg mb-2">Urząd</h5>
+                        <Autocomplete getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...props.offices, {
+                            name: "Wybierz urząd",
+                            url: "https://example.com"
+                        }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="Urząd" />} />
+                    </div>
                 </div>
                 
                 <div className="w-full flex justify-center">

@@ -4,7 +4,6 @@ import IconChevron from "../components/Icons/IconChevron";
 import { ReactNode } from "react";
 const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   && {
-    mb-4
     height: 70px;
     border-radius: 10px;
     display: flex;

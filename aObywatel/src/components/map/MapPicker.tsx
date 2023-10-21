@@ -46,9 +46,10 @@ const MyMapContainer = styled(MapContainer)`
 
 `
 
-export const MapPicker = (props: {
+const MapPicker = (props: {
     center: Location,
     onLatLng: (changed: Location) => void,
+    height?: string
 }) => {
     const { center } = props
     const [map, setMap] = useState<any>()
@@ -81,7 +82,7 @@ export const MapPicker = (props: {
                     center: { lat: center.location_lat, lng: center.location_lng },
                     zoom: 12,
                 }}
-                style={{ height: "100vh", zIndex: 1 }}
+                style={{ height: props.height ? props.height : "100vh", zIndex: 1 }}
             >
                 <TileLayer
                     {...{
@@ -94,4 +95,4 @@ export const MapPicker = (props: {
         </OuterContainer>
     );
 };
-export default Map;
+export default MapPicker;
