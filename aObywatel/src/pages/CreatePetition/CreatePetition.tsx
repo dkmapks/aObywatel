@@ -11,9 +11,10 @@ import {useNavigate} from "react-router-dom"
 import { Office } from "../Home/Home"; 
 import { offices as officeJSON } from "../../data/data";
 import { Autocomplete, TextField } from "@mui/material";
+import HomeHeader from "../../components/HomeHeader";
 
 
-function CreatePetitionPage(props: CreatePetitionPageProps) {
+function CreatePetitionPage() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [authors, setAuthors] = useState("");
@@ -72,8 +73,8 @@ function CreatePetitionPage(props: CreatePetitionPageProps) {
 
     return <ThemeProvider theme={customTheme}>
         <div className="bg-neutral-10 min-h-[100vh] px-[20px]">
-            <CreatePetitionHeader />
-        <form className="ps-[20px]">
+            <HomeHeader title={"Utwórz petycję"} />
+        <form>
             <div className="mb-5">
                 <label htmlFor="create-petition-title" className="block font-medium text-lg text-neutral-200 mb-1">Tytuł</label>
                 <BaseInput id="create-petition-title" className="w-full" value={title} onInput={(e) => setTitle(e.target.value)} />
