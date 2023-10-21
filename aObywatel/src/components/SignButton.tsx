@@ -18,17 +18,21 @@ const buttonStyles = css`
   padding: 15px 0;
 `;
 
-const StyledSignButton = styled(Link)<{ isBlueBackground?: boolean }>`
+const StyledSignButton = styled(Link)<{ customBgColor: string, customTextColor: string}>`
   && {
     ${buttonStyles}
-    background-color: ${props => (props.isBlueBackground ? props.theme.colors.primary[200] : 'white')};
-    color: ${props => (props.isBlueBackground ? 'white' : props.theme.colors.primary[200])};
+    background-color: ${props => props.customBgColor};
+    color: ${props => props.customTextColor};
   }
 `;
 
-function SignButton(props: { to: string; isBlueBackground?: boolean; children?: ReactNode }) {
+function SignButton(props: { to: string; customBgColor: string, customTextColor: string; children?: ReactNode }) {
   return (
-    <StyledSignButton to={props.to} isBlueBackground={props.isBlueBackground}>
+    <StyledSignButton 
+      to={props.to}
+      customTextColor={props.customTextColor}
+      customBgColor={props.customBgColor}
+    >
       {props.children}
     </StyledSignButton>
   );
