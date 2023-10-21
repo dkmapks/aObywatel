@@ -7,7 +7,7 @@ import { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
 import CreatePetitionButton from "../../components/CreatePetitionButton";
 import SignButton from "../../components/SignButton";
-
+import LargeTextModal from "../../components/Education";
 
 function HomePage() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -36,7 +36,7 @@ function HomePage() {
                 })}
             </ul>
             <div className="h-[98px] flex items-center">
-                <CreatePetitionButton />
+                <LargeTextModal />
             </div>
         </div>
     </ThemeProvider>;

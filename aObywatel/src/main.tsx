@@ -17,9 +17,13 @@ const router = createBrowserRouter([
     element: <PetitionPage />,
   },
   {
+    path: "/education",
+    element: <CreatePetitionPage />
+  },
+  {
     path: "/create",
     element: <CreatePetitionPage />
-  }
+  }``
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
