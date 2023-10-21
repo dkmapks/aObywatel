@@ -1,6 +1,8 @@
+import PetitionButton from "../components/PetitionButton";
+
 function HomePage() {
     return <div>
-        This is home page
+        <PetitionButton>Qutas</PetitionButton>
     </div>;
 }
 
