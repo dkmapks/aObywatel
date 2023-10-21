@@ -55,8 +55,8 @@ function HomePage() {
         let filteredPetitionsByFiltersInDrawer = filteredPetitionsBySearchTerm;
 
         if(filtersInDrawer['petitionStatus'].length !== 0) {
-            filteredPetitionsByFiltersInDrawer.filter(petition => {
-                filtersInDrawer['petitionStatus'].find(filter => {
+            filteredPetitionsByFiltersInDrawer = filteredPetitionsByFiltersInDrawer.filter(petition => {
+                 filtersInDrawer['petitionStatus'].find(filter => {
                     return filter.value === petition.status;
                 })
             })
@@ -85,16 +85,26 @@ function HomePage() {
             <div>
             </div>
             <div className="h-[152px] mb-3"></div>
-            <ul className="h-[calc(100vh-152px-150px)] pt-5 overflow-y-auto">
-                {/* TODO: Paste values from json */}
+            {filtersInDrawer['petitionStatus'].length > 0 || filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd" ? <div className="mb-5">
+                <h4 className="font-medium text-lg mb-1">Zastosowane filtry</h4>
+                <ul className="flex flex-wrap gap-2">
+                    {filtersInDrawer['petitionStatus'].map(filter => {
+                        return <li className="px-2 py-1 border border-neutral-200 bg-white rounded-full font-medium">{`Status: ${filter.text}`}</li>
+                    })}                    
+                    {filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd" && <li className="px-2 py-1 border border-neutral-200 bg-white rounded-full font-medium">{`Urząd: ${filtersInDrawer['searchOfficeTerm']}`}</li>}
+                </ul>
+            </div> : null}
+            <ul className="h-[calc(100vh-152px-100px)] pt-5 pb-[98px] overflow-y-auto">
                 {filteredPetitions.map(petition => {
                     return <li key={petition.id}>
                         <PetitionButton className="mb-4" to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
                     </li>
                 })}
             </ul>
-            <div className="h-[98px] flex items-center w-[80%] mx-auto">
-                <CreatePetitionButton />
+            <div className="h-[98px] flex items-center justify-center mx-auto fixed bottom-[0] left-[50%] -translate-x-[50%] bg-neutral-10 w-full">
+                <div className="w-[80%]">
+                    <CreatePetitionButton />
+                </div>
             </div>
         </div>
     </ThemeProvider>;
