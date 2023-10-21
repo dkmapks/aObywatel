@@ -1,0 +1,4897 @@
+[
+    {
+        "miasto": "Bardo",
+        "powiat": "Z\u0105bkowicki",
+        "ludnosc": "2356"
+    },
+    {
+        "miasto": "Bielawa",
+        "powiat": "Dzier\u017coniowski",
+        "ludnosc": "28344"
+    },
+    {
+        "miasto": "Bierut\u00f3w",
+        "powiat": "Ole\u015bnicki",
+        "ludnosc": "4510"
+    },
+    {
+        "miasto": "Bogatynia",
+        "powiat": "Zgorzelecki",
+        "ludnosc": "16245"
+    },
+    {
+        "miasto": "Bogusz\u00f3w-Gorce",
+        "powiat": "Wa\u0142brzyski",
+        "ludnosc": "14349"
+    },
+    {
+        "miasto": "Boles\u0142awiec",
+        "powiat": "Boles\u0142awiecki",
+        "ludnosc": "37293"
+    },
+    {
+        "miasto": "Bolk\u00f3w",
+        "powiat": "Jaworski",
+        "ludnosc": "4652"
+    },
+    {
+        "miasto": "Brzeg Dolny",
+        "powiat": "Wo\u0142owski",
+        "ludnosc": "12607"
+    },
+    {
+        "miasto": "Bystrzyca K\u0142odzka",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "9122"
+    },
+    {
+        "miasto": "Chocian\u00f3w",
+        "powiat": "Polkowicki",
+        "ludnosc": "7455"
+    },
+    {
+        "miasto": "Chojn\u00f3w",
+        "powiat": "Legnicki",
+        "ludnosc": "12443"
+    },
+    {
+        "miasto": "Duszniki-Zdr\u00f3j",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "4090"
+    },
+    {
+        "miasto": "Dzier\u017coni\u00f3w",
+        "powiat": "Dzier\u017coniowski",
+        "ludnosc": "31061"
+    },
+    {
+        "miasto": "G\u0142og\u00f3w",
+        "powiat": "G\u0142ogowski",
+        "ludnosc": "62886"
+    },
+    {
+        "miasto": "G\u0142uszyca",
+        "powiat": "Wa\u0142brzyski",
+        "ludnosc": "5968"
+    },
+    {
+        "miasto": "G\u00f3ra",
+        "powiat": "G\u00f3rowski",
+        "ludnosc": "10877"
+    },
+    {
+        "miasto": "Gryf\u00f3w \u015al\u0105ski",
+        "powiat": "Lw\u00f3wecki",
+        "ludnosc": "6201"
+    },
+    {
+        "miasto": "Jawor",
+        "powiat": "Jaworski",
+        "ludnosc": "20853"
+    },
+    {
+        "miasto": "Jaworzyna \u015al\u0105ska",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "5046"
+    },
+    {
+        "miasto": "Jedlina-Zdr\u00f3j",
+        "powiat": "Wa\u0142brzyski",
+        "ludnosc": "4682"
+    },
+    {
+        "miasto": "Jelcz-Laskowice",
+        "powiat": "O\u0142awski",
+        "ludnosc": "15109"
+    },
+    {
+        "miasto": "Jelenia G\u00f3ra",
+        "powiat": "Jelenia G\u00f3ra",
+        "ludnosc": "75794"
+    },
+    {
+        "miasto": "Kamieniec Z\u0105bkowicki",
+        "powiat": "Z\u0105bkowicki",
+        "ludnosc": "4343"
+    },
+    {
+        "miasto": "Kamienna G\u00f3ra",
+        "powiat": "Kamiennog\u00f3rski",
+        "ludnosc": "17376"
+    },
+    {
+        "miasto": "Karpacz",
+        "powiat": "Karkonoski",
+        "ludnosc": "4321"
+    },
+    {
+        "miasto": "K\u0105ty Wroc\u0142awskie",
+        "powiat": "Wroc\u0142awski",
+        "ludnosc": "7184"
+    },
+    {
+        "miasto": "K\u0142odzko",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "25113"
+    },
+    {
+        "miasto": "Kowary",
+        "powiat": "Karkonoski",
+        "ludnosc": "9913"
+    },
+    {
+        "miasto": "Kudowa-Zdr\u00f3j",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "9392"
+    },
+    {
+        "miasto": "L\u0105dek-Zdr\u00f3j",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "5043"
+    },
+    {
+        "miasto": "Legnica",
+        "powiat": "Legnica",
+        "ludnosc": "93040"
+    },
+    {
+        "miasto": "Le\u015bna",
+        "powiat": "Luba\u0144ski",
+        "ludnosc": "4047"
+    },
+    {
+        "miasto": "Luba\u0144",
+        "powiat": "Luba\u0144ski",
+        "ludnosc": "19756"
+    },
+    {
+        "miasto": "Lubawka",
+        "powiat": "Kamiennog\u00f3rski",
+        "ludnosc": "5617"
+    },
+    {
+        "miasto": "Lubin",
+        "powiat": "Lubi\u0144ski",
+        "ludnosc": "68407"
+    },
+    {
+        "miasto": "Lubomierz",
+        "powiat": "Lw\u00f3wecki",
+        "ludnosc": "1759"
+    },
+    {
+        "miasto": "Lw\u00f3wek \u015al\u0105ski",
+        "powiat": "Lw\u00f3wecki",
+        "ludnosc": "8233"
+    },
+    {
+        "miasto": "Mierosz\u00f3w",
+        "powiat": "Wa\u0142brzyski",
+        "ludnosc": "3790"
+    },
+    {
+        "miasto": "Mi\u0119dzyb\u00f3rz",
+        "powiat": "Ole\u015bnicki",
+        "ludnosc": "2324"
+    },
+    {
+        "miasto": "Mi\u0119dzylesie",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "2410"
+    },
+    {
+        "miasto": "Mi\u0119kinia",
+        "powiat": "\u015aredzki",
+        "ludnosc": "2054"
+    },
+    {
+        "miasto": "Milicz",
+        "powiat": "Milicki",
+        "ludnosc": "10859"
+    },
+    {
+        "miasto": "Mirsk",
+        "powiat": "Lw\u00f3wecki",
+        "ludnosc": "3679"
+    },
+    {
+        "miasto": "Niemcza",
+        "powiat": "Dzier\u017coniowski",
+        "ludnosc": "2723"
+    },
+    {
+        "miasto": "Nowa Ruda",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "20674"
+    },
+    {
+        "miasto": "Nowogrodziec",
+        "powiat": "Boles\u0142awiecki",
+        "ludnosc": "4122"
+    },
+    {
+        "miasto": "Oborniki \u015al\u0105skie",
+        "powiat": "Trzebnicki",
+        "ludnosc": "9027"
+    },
+    {
+        "miasto": "Ole\u015bnica",
+        "powiat": "Ole\u015bnicki",
+        "ludnosc": "35346"
+    },
+    {
+        "miasto": "Olszyna",
+        "powiat": "Luba\u0144ski",
+        "ludnosc": "4322"
+    },
+    {
+        "miasto": "O\u0142awa",
+        "powiat": "O\u0142awski",
+        "ludnosc": "33153"
+    },
+    {
+        "miasto": "Piechowice",
+        "powiat": "Karkonoski",
+        "ludnosc": "5798"
+    },
+    {
+        "miasto": "Pie\u0144sk",
+        "powiat": "Zgorzelecki",
+        "ludnosc": "5487"
+    },
+    {
+        "miasto": "Pieszyce",
+        "powiat": "Dzier\u017coniowski",
+        "ludnosc": "6827"
+    },
+    {
+        "miasto": "Pi\u0142awa G\u00f3rna",
+        "powiat": "Dzier\u017coniowski",
+        "ludnosc": "5969"
+    },
+    {
+        "miasto": "Polanica-Zdr\u00f3j",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "6038"
+    },
+    {
+        "miasto": "Polkowice",
+        "powiat": "Polkowicki",
+        "ludnosc": "21505"
+    },
+    {
+        "miasto": "Prochowice",
+        "powiat": "Legnicki",
+        "ludnosc": "3533"
+    },
+    {
+        "miasto": "Prusice",
+        "powiat": "Trzebnicki",
+        "ludnosc": "2164"
+    },
+    {
+        "miasto": "Przemk\u00f3w",
+        "powiat": "Polkowicki",
+        "ludnosc": "5608"
+    },
+    {
+        "miasto": "Radk\u00f3w",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "2282"
+    },
+    {
+        "miasto": "Siechnice",
+        "powiat": "Wroc\u0142awski",
+        "ludnosc": "10684"
+    },
+    {
+        "miasto": "Sob\u00f3tka",
+        "powiat": "Wroc\u0142awski",
+        "ludnosc": "6998"
+    },
+    {
+        "miasto": "Stronie \u015al\u0105skie",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "5028"
+    },
+    {
+        "miasto": "Strzegom",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "15086"
+    },
+    {
+        "miasto": "Strzelin",
+        "powiat": "Strzeli\u0144ski",
+        "ludnosc": "11984"
+    },
+    {
+        "miasto": "Syc\u00f3w",
+        "powiat": "Ole\u015bnicki",
+        "ludnosc": "9946"
+    },
+    {
+        "miasto": "Szczawno-Zdr\u00f3j",
+        "powiat": "Wa\u0142brzyski",
+        "ludnosc": "5243"
+    },
+    {
+        "miasto": "Szczytna",
+        "powiat": "K\u0142odzki",
+        "ludnosc": "4850"
+    },
+    {
+        "miasto": "Szklarska Por\u0119ba",
+        "powiat": "Karkonoski",
+        "ludnosc": "5872"
+    },
+    {
+        "miasto": "\u015acinawa",
+        "powiat": "Lubi\u0144ski",
+        "ludnosc": "5304"
+    },
+    {
+        "miasto": "\u015aroda \u015al\u0105ska",
+        "powiat": "\u015aredzki",
+        "ludnosc": "9552"
+    },
+    {
+        "miasto": "\u015awidnica",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "53423"
+    },
+    {
+        "miasto": "\u015awiebodzice",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "21942"
+    },
+    {
+        "miasto": "\u015awierad\u00f3w-Zdr\u00f3j",
+        "powiat": "Luba\u0144ski",
+        "ludnosc": "3985"
+    },
+    {
+        "miasto": "\u015awierzawa",
+        "powiat": "Z\u0142otoryjski",
+        "ludnosc": "2032"
+    },
+    {
+        "miasto": "Trzebnica",
+        "powiat": "Trzebnicki",
+        "ludnosc": "13674"
+    },
+    {
+        "miasto": "Twardog\u00f3ra",
+        "powiat": "Ole\u015bnicki",
+        "ludnosc": "6231"
+    },
+    {
+        "miasto": "Wa\u0142brzych",
+        "powiat": "Wa\u0142brzych",
+        "ludnosc": "101857"
+    },
+    {
+        "miasto": "W\u0105sosz",
+        "powiat": "G\u00f3rowski",
+        "ludnosc": "2574"
+    },
+    {
+        "miasto": "W\u0119gliniec",
+        "powiat": "Zgorzelecki",
+        "ludnosc": "2657"
+    },
+    {
+        "miasto": "Wi\u0105z\u00f3w",
+        "powiat": "Strzeli\u0144ski",
+        "ludnosc": "2280"
+    },
+    {
+        "miasto": "Wle\u0144",
+        "powiat": "Lw\u00f3wecki",
+        "ludnosc": "1592"
+    },
+    {
+        "miasto": "Wojciesz\u00f3w",
+        "powiat": "Z\u0142otoryjski",
+        "ludnosc": "3470"
+    },
+    {
+        "miasto": "Wo\u0142\u00f3w",
+        "powiat": "Wo\u0142owski",
+        "ludnosc": "12054"
+    },
+    {
+        "miasto": "Wroc\u0142aw",
+        "powiat": "Wroc\u0142aw",
+        "ludnosc": "674079"
+    },
+    {
+        "miasto": "Zawid\u00f3w",
+        "powiat": "Zgorzelecki",
+        "ludnosc": "3807"
+    },
+    {
+        "miasto": "Z\u0105bkowice \u015al\u0105skie",
+        "powiat": "Z\u0105bkowicki",
+        "ludnosc": "14356"
+    },
+    {
+        "miasto": "Zgorzelec",
+        "powiat": "Zgorzelecki",
+        "ludnosc": "29313"
+    },
+    {
+        "miasto": "Zi\u0119bice",
+        "powiat": "Z\u0105bkowicki",
+        "ludnosc": "7995"
+    },
+    {
+        "miasto": "Z\u0142otoryja",
+        "powiat": "Z\u0142otoryjski",
+        "ludnosc": "14337"
+    },
+    {
+        "miasto": "Z\u0142oty Stok",
+        "powiat": "Z\u0105bkowicki",
+        "ludnosc": "2481"
+    },
+    {
+        "miasto": "\u017bar\u00f3w",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "6507"
+    },
+    {
+        "miasto": "\u017bmigr\u00f3d",
+        "powiat": "Trzebnicki",
+        "ludnosc": "6222"
+    },
+    {
+        "miasto": "Aleksandr\u00f3w Kujawski",
+        "powiat": "Aleksandrowski",
+        "ludnosc": "11536"
+    },
+    {
+        "miasto": "Barcin",
+        "powiat": "\u017bni\u0144ski",
+        "ludnosc": "7045"
+    },
+    {
+        "miasto": "Brodnica",
+        "powiat": "Brodnicki",
+        "ludnosc": "28429"
+    },
+    {
+        "miasto": "Brze\u015b\u0107 Kujawski",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "4550"
+    },
+    {
+        "miasto": "Bydgoszcz",
+        "powiat": "Bydgoszcz",
+        "ludnosc": "330038"
+    },
+    {
+        "miasto": "Che\u0142mno",
+        "powiat": "Che\u0142mi\u0144ski",
+        "ludnosc": "18326"
+    },
+    {
+        "miasto": "Che\u0142m\u017ca",
+        "powiat": "Toru\u0144ski",
+        "ludnosc": "13827"
+    },
+    {
+        "miasto": "Chodecz",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "1739"
+    },
+    {
+        "miasto": "Ciechocinek",
+        "powiat": "Aleksandrowski",
+        "ludnosc": "10266"
+    },
+    {
+        "miasto": "Dobrzy\u0144 nad Wis\u0142\u0105",
+        "powiat": "Lipnowski",
+        "ludnosc": "1984"
+    },
+    {
+        "miasto": "Gniewkowo",
+        "powiat": "Inowroc\u0142awski",
+        "ludnosc": "6722"
+    },
+    {
+        "miasto": "Golub-Dobrzy\u0144",
+        "powiat": "Golubsko-dobrzy\u0144ski",
+        "ludnosc": "11443"
+    },
+    {
+        "miasto": "G\u00f3rzno",
+        "powiat": "Brodnicki",
+        "ludnosc": "1399"
+    },
+    {
+        "miasto": "Grudzi\u0105dz",
+        "powiat": "Grudzi\u0105dz",
+        "ludnosc": "89450"
+    },
+    {
+        "miasto": "Inowroc\u0142aw",
+        "powiat": "Inowroc\u0142awski",
+        "ludnosc": "68101"
+    },
+    {
+        "miasto": "Izbica Kujawska",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "2461"
+    },
+    {
+        "miasto": "Jab\u0142onowo Pomorskie",
+        "powiat": "Brodnicki",
+        "ludnosc": "3657"
+    },
+    {
+        "miasto": "Janikowo",
+        "powiat": "Inowroc\u0142awski",
+        "ludnosc": "8244"
+    },
+    {
+        "miasto": "Janowiec Wielkopolski",
+        "powiat": "\u017bni\u0144ski",
+        "ludnosc": "3725"
+    },
+    {
+        "miasto": "Kamie\u0144 Kraje\u0144ski",
+        "powiat": "S\u0119pole\u0144ski",
+        "ludnosc": "2351"
+    },
+    {
+        "miasto": "Kcynia",
+        "powiat": "Nakielski",
+        "ludnosc": "4252"
+    },
+    {
+        "miasto": "Koronowo",
+        "powiat": "Bydgoski",
+        "ludnosc": "10774"
+    },
+    {
+        "miasto": "Kowal",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "3298"
+    },
+    {
+        "miasto": "Kowalewo Pomorskie",
+        "powiat": "Golubsko-dobrzy\u0144ski",
+        "ludnosc": "4072"
+    },
+    {
+        "miasto": "Kruszwica",
+        "powiat": "Inowroc\u0142awski",
+        "ludnosc": "9161"
+    },
+    {
+        "miasto": "Lipno",
+        "powiat": "Lipnowski",
+        "ludnosc": "13479"
+    },
+    {
+        "miasto": "Lubie\u0144 Kujawski",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "1341"
+    },
+    {
+        "miasto": "Lubraniec",
+        "powiat": "W\u0142oc\u0142awski",
+        "ludnosc": "2741"
+    },
+    {
+        "miasto": "\u0141abiszyn",
+        "powiat": "\u017bni\u0144ski",
+        "ludnosc": "4419"
+    },
+    {
+        "miasto": "\u0141asin",
+        "powiat": "Grudzi\u0105dzki",
+        "ludnosc": "3080"
+    },
+    {
+        "miasto": "Mogilno",
+        "powiat": "Mogile\u0144ski",
+        "ludnosc": "11128"
+    },
+    {
+        "miasto": "Mrocza",
+        "powiat": "Nakielski",
+        "ludnosc": "4163"
+    },
+    {
+        "miasto": "Nak\u0142o nad Noteci\u0105",
+        "powiat": "Nakielski",
+        "ludnosc": "17189"
+    },
+    {
+        "miasto": "Nieszawa",
+        "powiat": "Aleksandrowski",
+        "ludnosc": "1753"
+    },
+    {
+        "miasto": "Nowe",
+        "powiat": "\u015awiecki",
+        "ludnosc": "5477"
+    },
+    {
+        "miasto": "Pako\u015b\u0107",
+        "powiat": "Inowroc\u0142awski",
+        "ludnosc": "5174"
+    },
+    {
+        "miasto": "Piotrk\u00f3w Kujawski",
+        "powiat": "Radziejowski",
+        "ludnosc": "4236"
+    },
+    {
+        "miasto": "Pruszcz",
+        "powiat": "\u015awiecki",
+        "ludnosc": "2711"
+    },
+    {
+        "miasto": "Radziej\u00f3w",
+        "powiat": "Radziejowski",
+        "ludnosc": "5127"
+    },
+    {
+        "miasto": "Radzy\u0144 Che\u0142mi\u0144ski",
+        "powiat": "Grudzi\u0105dzki",
+        "ludnosc": "1789"
+    },
+    {
+        "miasto": "Rypin",
+        "powiat": "Rypi\u0144ski",
+        "ludnosc": "15514"
+    },
+    {
+        "miasto": "S\u0119p\u00f3lno Kraje\u0144skie",
+        "powiat": "S\u0119pole\u0144ski",
+        "ludnosc": "8824"
+    },
+    {
+        "miasto": "Sk\u0119pe",
+        "powiat": "Lipnowski",
+        "ludnosc": "3445"
+    },
+    {
+        "miasto": "Solec Kujawski",
+        "powiat": "Bydgoski",
+        "ludnosc": "15343"
+    },
+    {
+        "miasto": "Strzelno",
+        "powiat": "Mogile\u0144ski",
+        "ludnosc": "5267"
+    },
+    {
+        "miasto": "Szubin",
+        "powiat": "Nakielski",
+        "ludnosc": "9424"
+    },
+    {
+        "miasto": "\u015awiecie",
+        "powiat": "\u015awiecki",
+        "ludnosc": "24987"
+    },
+    {
+        "miasto": "Toru\u0144",
+        "powiat": "Toru\u0144",
+        "ludnosc": "195690"
+    },
+    {
+        "miasto": "Tuchola",
+        "powiat": "Tucholski",
+        "ludnosc": "13134"
+    },
+    {
+        "miasto": "W\u0105brze\u017ano",
+        "powiat": "W\u0105brzeski",
+        "ludnosc": "13049"
+    },
+    {
+        "miasto": "Wi\u0119cbork",
+        "powiat": "S\u0119pole\u0144ski",
+        "ludnosc": "5723"
+    },
+    {
+        "miasto": "W\u0142oc\u0142awek",
+        "powiat": "W\u0142oc\u0142awek",
+        "ludnosc": "102102"
+    },
+    {
+        "miasto": "\u017bnin",
+        "powiat": "\u017bni\u0144ski",
+        "ludnosc": "13187"
+    },
+    {
+        "miasto": "Annopol",
+        "powiat": "Kra\u015bnicki",
+        "ludnosc": "2325"
+    },
+    {
+        "miasto": "Be\u0142\u017cyce",
+        "powiat": "Lubelski",
+        "ludnosc": "6020"
+    },
+    {
+        "miasto": "Bia\u0142a Podlaska",
+        "powiat": "Bia\u0142a Podlaska",
+        "ludnosc": "54768"
+    },
+    {
+        "miasto": "Bi\u0142goraj",
+        "powiat": "Bi\u0142gorajski",
+        "ludnosc": "25039"
+    },
+    {
+        "miasto": "Bychawa",
+        "powiat": "Lubelski",
+        "ludnosc": "4540"
+    },
+    {
+        "miasto": "Che\u0142m",
+        "powiat": "Che\u0142m",
+        "ludnosc": "57940"
+    },
+    {
+        "miasto": "D\u0119blin",
+        "powiat": "Rycki",
+        "ludnosc": "14330"
+    },
+    {
+        "miasto": "Frampol",
+        "powiat": "Bi\u0142gorajski",
+        "ludnosc": "1343"
+    },
+    {
+        "miasto": "Goraj",
+        "powiat": "Bi\u0142gorajski",
+        "ludnosc": "879"
+    },
+    {
+        "miasto": "Hrubiesz\u00f3w",
+        "powiat": "Hrubieszowski",
+        "ludnosc": "16191"
+    },
+    {
+        "miasto": "Izbica",
+        "powiat": "Krasnostawski",
+        "ludnosc": "1718"
+    },
+    {
+        "miasto": "Jan\u00f3w Lubelski",
+        "powiat": "Janowski",
+        "ludnosc": "11046"
+    },
+    {
+        "miasto": "J\u00f3zef\u00f3w",
+        "powiat": "Bi\u0142gorajski",
+        "ludnosc": "2342"
+    },
+    {
+        "miasto": "J\u00f3zef\u00f3w nad Wis\u0142\u0105",
+        "powiat": "Opolski",
+        "ludnosc": "817"
+    },
+    {
+        "miasto": "Kamionka",
+        "powiat": "Lubartowski",
+        "ludnosc": "1699"
+    },
+    {
+        "miasto": "Kazimierz Dolny",
+        "powiat": "Pu\u0142awski",
+        "ludnosc": "3257"
+    },
+    {
+        "miasto": "Kock",
+        "powiat": "Lubartowski",
+        "ludnosc": "2888"
+    },
+    {
+        "miasto": "Krasnobr\u00f3d",
+        "powiat": "Zamojski",
+        "ludnosc": "2999"
+    },
+    {
+        "miasto": "Krasnystaw",
+        "powiat": "Krasnostawski",
+        "ludnosc": "17519"
+    },
+    {
+        "miasto": "Kra\u015bnik",
+        "powiat": "Kra\u015bnicki",
+        "ludnosc": "31744"
+    },
+    {
+        "miasto": "Lubart\u00f3w",
+        "powiat": "Lubartowski",
+        "ludnosc": "20000"
+    },
+    {
+        "miasto": "Lublin",
+        "powiat": "Lublin",
+        "ludnosc": "331243"
+    },
+    {
+        "miasto": "Lubycza Kr\u00f3lewska",
+        "powiat": "Tomaszowski",
+        "ludnosc": "2163"
+    },
+    {
+        "miasto": "\u0141aszcz\u00f3w",
+        "powiat": "Tomaszowski",
+        "ludnosc": "1982"
+    },
+    {
+        "miasto": "\u0141\u0119czna",
+        "powiat": "\u0141\u0119czy\u0144ski",
+        "ludnosc": "17826"
+    },
+    {
+        "miasto": "\u0141uk\u00f3w",
+        "powiat": "\u0141ukowski",
+        "ludnosc": "27453"
+    },
+    {
+        "miasto": "Mi\u0119dzyrzec Podlaski",
+        "powiat": "Bialski",
+        "ludnosc": "15557"
+    },
+    {
+        "miasto": "Modliborzyce",
+        "powiat": "Janowski",
+        "ludnosc": "1413"
+    },
+    {
+        "miasto": "Na\u0142\u0119cz\u00f3w",
+        "powiat": "Pu\u0142awski",
+        "ludnosc": "3618"
+    },
+    {
+        "miasto": "Opole Lubelskie",
+        "powiat": "Opolski",
+        "ludnosc": "7954"
+    },
+    {
+        "miasto": "Ostr\u00f3w Lubelski",
+        "powiat": "Lubartowski",
+        "ludnosc": "1976"
+    },
+    {
+        "miasto": "Parczew",
+        "powiat": "Parczewski",
+        "ludnosc": "10298"
+    },
+    {
+        "miasto": "Piaski",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "2433"
+    },
+    {
+        "miasto": "Poniatowa",
+        "powiat": "Opolski",
+        "ludnosc": "8367"
+    },
+    {
+        "miasto": "Pu\u0142awy",
+        "powiat": "Pu\u0142awski",
+        "ludnosc": "44397"
+    },
+    {
+        "miasto": "Radzy\u0144 Podlaski",
+        "powiat": "Radzy\u0144ski",
+        "ludnosc": "14452"
+    },
+    {
+        "miasto": "Rejowiec",
+        "powiat": "Che\u0142mski",
+        "ludnosc": "2000"
+    },
+    {
+        "miasto": "Rejowiec Fabryczny",
+        "powiat": "Che\u0142mski",
+        "ludnosc": "4029"
+    },
+    {
+        "miasto": "Ryki",
+        "powiat": "Rycki",
+        "ludnosc": "9098"
+    },
+    {
+        "miasto": "Siedliszcze",
+        "powiat": "Che\u0142mski",
+        "ludnosc": "1345"
+    },
+    {
+        "miasto": "Stoczek \u0141ukowski",
+        "powiat": "\u0141ukowski",
+        "ludnosc": "2389"
+    },
+    {
+        "miasto": "Szczebrzeszyn",
+        "powiat": "Zamojski",
+        "ludnosc": "4784"
+    },
+    {
+        "miasto": "\u015awidnik",
+        "powiat": "\u015awidnicki",
+        "ludnosc": "36992"
+    },
+    {
+        "miasto": "Tarnogr\u00f3d",
+        "powiat": "Bi\u0142gorajski",
+        "ludnosc": "3161"
+    },
+    {
+        "miasto": "Terespol",
+        "powiat": "Bialski",
+        "ludnosc": "5163"
+    },
+    {
+        "miasto": "Tomasz\u00f3w Lubelski",
+        "powiat": "Tomaszowski",
+        "ludnosc": "18061"
+    },
+    {
+        "miasto": "Tyszowce",
+        "powiat": "Tomaszowski",
+        "ludnosc": "1852"
+    },
+    {
+        "miasto": "Urz\u0119d\u00f3w",
+        "powiat": "Kra\u015bnicki",
+        "ludnosc": "1688"
+    },
+    {
+        "miasto": "W\u0142odawa",
+        "powiat": "W\u0142odawski",
+        "ludnosc": "12266"
+    },
+    {
+        "miasto": "Zamo\u015b\u0107",
+        "powiat": "Zamo\u015b\u0107",
+        "ludnosc": "58942"
+    },
+    {
+        "miasto": "Zwierzyniec",
+        "powiat": "Zamojski",
+        "ludnosc": "2829"
+    },
+    {
+        "miasto": "Babimost",
+        "powiat": "Zielonog\u00f3rski",
+        "ludnosc": "3837"
+    },
+    {
+        "miasto": "Bytom Odrza\u0144ski",
+        "powiat": "Nowosolski",
+        "ludnosc": "3983"
+    },
+    {
+        "miasto": "Cybinka",
+        "powiat": "S\u0142ubicki",
+        "ludnosc": "2674"
+    },
+    {
+        "miasto": "Czerwie\u0144sk",
+        "powiat": "Zielonog\u00f3rski",
+        "ludnosc": "3812"
+    },
+    {
+        "miasto": "Dobiegniew",
+        "powiat": "Strzelecko-drezdenecki",
+        "ludnosc": "3004"
+    },
+    {
+        "miasto": "Drezdenko",
+        "powiat": "Strzelecko-drezdenecki",
+        "ludnosc": "9574"
+    },
+    {
+        "miasto": "Gorz\u00f3w Wielkopolski",
+        "powiat": "Gorz\u00f3w Wielkopolski",
+        "ludnosc": "116436"
+    },
+    {
+        "miasto": "Gozdnica",
+        "powiat": "\u017baga\u0144ski",
+        "ludnosc": "2779"
+    },
+    {
+        "miasto": "Gubin",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "15798"
+    },
+    {
+        "miasto": "I\u0142owa",
+        "powiat": "\u017baga\u0144ski",
+        "ludnosc": "3652"
+    },
+    {
+        "miasto": "Jasie\u0144",
+        "powiat": "\u017barski",
+        "ludnosc": "4071"
+    },
+    {
+        "miasto": "Kargowa",
+        "powiat": "Zielonog\u00f3rski",
+        "ludnosc": "3797"
+    },
+    {
+        "miasto": "Kostrzyn nad Odr\u0105",
+        "powiat": "Gorzowski",
+        "ludnosc": "17704"
+    },
+    {
+        "miasto": "Ko\u017cuch\u00f3w",
+        "powiat": "Nowosolski",
+        "ludnosc": "8945"
+    },
+    {
+        "miasto": "Krosno Odrza\u0144skie",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "10679"
+    },
+    {
+        "miasto": "Lubniewice",
+        "powiat": "Sul\u0119ci\u0144ski",
+        "ludnosc": "1990"
+    },
+    {
+        "miasto": "Lubsko",
+        "powiat": "\u017barski",
+        "ludnosc": "12971"
+    },
+    {
+        "miasto": "\u0141\u0119knica",
+        "powiat": "\u017barski",
+        "ludnosc": "2277"
+    },
+    {
+        "miasto": "Ma\u0142omice",
+        "powiat": "\u017baga\u0144ski",
+        "ludnosc": "3442"
+    },
+    {
+        "miasto": "Mi\u0119dzyrzecz",
+        "powiat": "Mi\u0119dzyrzecki",
+        "ludnosc": "17057"
+    },
+    {
+        "miasto": "Nowa S\u00f3l",
+        "powiat": "Nowosolski",
+        "ludnosc": "36327"
+    },
+    {
+        "miasto": "Nowe Miasteczko",
+        "powiat": "Nowosolski",
+        "ludnosc": "2654"
+    },
+    {
+        "miasto": "Nowogr\u00f3d Bobrza\u0144ski",
+        "powiat": "Zielonog\u00f3rski",
+        "ludnosc": "4804"
+    },
+    {
+        "miasto": "O\u015bno Lubuskie",
+        "powiat": "S\u0142ubicki",
+        "ludnosc": "3915"
+    },
+    {
+        "miasto": "Oty\u0144",
+        "powiat": "Nowosolski",
+        "ludnosc": "1732"
+    },
+    {
+        "miasto": "Rzepin",
+        "powiat": "S\u0142ubicki",
+        "ludnosc": "6421"
+    },
+    {
+        "miasto": "Skwierzyna",
+        "powiat": "Mi\u0119dzyrzecki",
+        "ludnosc": "9186"
+    },
+    {
+        "miasto": "S\u0142awa",
+        "powiat": "Wschowski",
+        "ludnosc": "4126"
+    },
+    {
+        "miasto": "S\u0142ubice",
+        "powiat": "S\u0142ubicki",
+        "ludnosc": "16339"
+    },
+    {
+        "miasto": "Strzelce Kraje\u0144skie",
+        "powiat": "Strzelecko-drezdenecki",
+        "ludnosc": "9754"
+    },
+    {
+        "miasto": "Sulech\u00f3w",
+        "powiat": "Zielonog\u00f3rski",
+        "ludnosc": "15676"
+    },
+    {
+        "miasto": "Sul\u0119cin",
+        "powiat": "Sul\u0119ci\u0144ski",
+        "ludnosc": "9818"
+    },
+    {
+        "miasto": "Szlichtyngowa",
+        "powiat": "Wschowski",
+        "ludnosc": "1261"
+    },
+    {
+        "miasto": "Szprotawa",
+        "powiat": "\u017baga\u0144ski",
+        "ludnosc": "10747"
+    },
+    {
+        "miasto": "\u015awiebodzin",
+        "powiat": "\u015awiebodzi\u0144ski",
+        "ludnosc": "21035"
+    },
+    {
+        "miasto": "Torzym",
+        "powiat": "Sul\u0119ci\u0144ski",
+        "ludnosc": "2431"
+    },
+    {
+        "miasto": "Trzciel",
+        "powiat": "Mi\u0119dzyrzecki",
+        "ludnosc": "2244"
+    },
+    {
+        "miasto": "Witnica",
+        "powiat": "Gorzowski",
+        "ludnosc": "6447"
+    },
+    {
+        "miasto": "Wschowa",
+        "powiat": "Wschowski",
+        "ludnosc": "13166"
+    },
+    {
+        "miasto": "Zb\u0105szynek",
+        "powiat": "\u015awiebodzi\u0144ski",
+        "ludnosc": "4921"
+    },
+    {
+        "miasto": "Zielona G\u00f3ra",
+        "powiat": "Zielona G\u00f3ra",
+        "ludnosc": "139278"
+    },
+    {
+        "miasto": "\u017baga\u0144",
+        "powiat": "\u017baga\u0144ski",
+        "ludnosc": "23730"
+    },
+    {
+        "miasto": "\u017bary",
+        "powiat": "\u017barski",
+        "ludnosc": "35198"
+    },
+    {
+        "miasto": "Aleksandr\u00f3w \u0141\u00f3dzki",
+        "powiat": "Zgierski",
+        "ludnosc": "22090"
+    },
+    {
+        "miasto": "Be\u0142chat\u00f3w",
+        "powiat": "Be\u0142chatowski",
+        "ludnosc": "52851"
+    },
+    {
+        "miasto": "Bia\u0142a Rawska",
+        "powiat": "Rawski",
+        "ludnosc": "3048"
+    },
+    {
+        "miasto": "B\u0142aszki",
+        "powiat": "Sieradzki",
+        "ludnosc": "2022"
+    },
+    {
+        "miasto": "Bolim\u00f3w",
+        "powiat": "Skierniewicki",
+        "ludnosc": "899"
+    },
+    {
+        "miasto": "Brzeziny",
+        "powiat": "Brzezi\u0144ski",
+        "ludnosc": "11995"
+    },
+    {
+        "miasto": "D\u0105browice",
+        "powiat": "Kutnowski",
+        "ludnosc": "948"
+    },
+    {
+        "miasto": "Drzewica",
+        "powiat": "Opoczy\u0144ski",
+        "ludnosc": "3551"
+    },
+    {
+        "miasto": "Dzia\u0142oszyn",
+        "powiat": "Paj\u0119cza\u0144ski",
+        "ludnosc": "5330"
+    },
+    {
+        "miasto": "G\u0142owno",
+        "powiat": "Zgierski",
+        "ludnosc": "13216"
+    },
+    {
+        "miasto": "Je\u017c\u00f3w",
+        "powiat": "Brzezi\u0144ski",
+        "ludnosc": "1268"
+    },
+    {
+        "miasto": "Kamie\u0144sk",
+        "powiat": "Radomszcza\u0144ski",
+        "ludnosc": "2608"
+    },
+    {
+        "miasto": "Koluszki",
+        "powiat": "\u0141\u00f3dzki wschodni",
+        "ludnosc": "12143"
+    },
+    {
+        "miasto": "Konstantyn\u00f3w \u0141\u00f3dzki",
+        "powiat": "Pabianicki",
+        "ludnosc": "19161"
+    },
+    {
+        "miasto": "Kro\u015bniewice",
+        "powiat": "Kutnowski",
+        "ludnosc": "4047"
+    },
+    {
+        "miasto": "Kutno",
+        "powiat": "Kutnowski",
+        "ludnosc": "41231"
+    },
+    {
+        "miasto": "Lutomiersk",
+        "powiat": "Pabianicki",
+        "ludnosc": "1581"
+    },
+    {
+        "miasto": "Lutut\u00f3w",
+        "powiat": "Wieruszowski",
+        "ludnosc": "2218"
+    },
+    {
+        "miasto": "\u0141ask",
+        "powiat": "\u0141aski",
+        "ludnosc": "16191"
+    },
+    {
+        "miasto": "\u0141\u0119czyca",
+        "powiat": "\u0141\u0119czycki",
+        "ludnosc": "13183"
+    },
+    {
+        "miasto": "\u0141owicz",
+        "powiat": "\u0141owicki",
+        "ludnosc": "26247"
+    },
+    {
+        "miasto": "\u0141\u00f3d\u017a",
+        "powiat": "\u0141\u00f3d\u017a",
+        "ludnosc": "658444"
+    },
+    {
+        "miasto": "Opoczno",
+        "powiat": "Opoczy\u0144ski",
+        "ludnosc": "19246"
+    },
+    {
+        "miasto": "Ozork\u00f3w",
+        "powiat": "Zgierski",
+        "ludnosc": "18259"
+    },
+    {
+        "miasto": "Pabianice",
+        "powiat": "Pabianicki",
+        "ludnosc": "61353"
+    },
+    {
+        "miasto": "Paj\u0119czno",
+        "powiat": "Paj\u0119cza\u0144ski",
+        "ludnosc": "6410"
+    },
+    {
+        "miasto": "Pi\u0105tek",
+        "powiat": "\u0141\u0119czycki",
+        "ludnosc": "1569"
+    },
+    {
+        "miasto": "Piotrk\u00f3w Trybunalski",
+        "powiat": "Piotrk\u00f3w Trybunalski",
+        "ludnosc": "67264"
+    },
+    {
+        "miasto": "Podd\u0119bice",
+        "powiat": "Podd\u0119bicki",
+        "ludnosc": "6853"
+    },
+    {
+        "miasto": "Przedb\u00f3rz",
+        "powiat": "Radomszcza\u0144ski",
+        "ludnosc": "3226"
+    },
+    {
+        "miasto": "Radomsko",
+        "powiat": "Radomszcza\u0144ski",
+        "ludnosc": "43417"
+    },
+    {
+        "miasto": "Rawa Mazowiecka",
+        "powiat": "Rawski",
+        "ludnosc": "16090"
+    },
+    {
+        "miasto": "Rozprza",
+        "powiat": "Piotrkowski",
+        "ludnosc": "1614"
+    },
+    {
+        "miasto": "Rzg\u00f3w",
+        "powiat": "\u0141\u00f3dzki wschodni",
+        "ludnosc": "3442"
+    },
+    {
+        "miasto": "Sieradz",
+        "powiat": "Sieradzki",
+        "ludnosc": "39158"
+    },
+    {
+        "miasto": "Skierniewice",
+        "powiat": "Skierniewice",
+        "ludnosc": "45560"
+    },
+    {
+        "miasto": "Stryk\u00f3w",
+        "powiat": "Zgierski",
+        "ludnosc": "3401"
+    },
+    {
+        "miasto": "Sulej\u00f3w",
+        "powiat": "Piotrkowski",
+        "ludnosc": "5985"
+    },
+    {
+        "miasto": "Szadek",
+        "powiat": "Zdu\u0144skowolski",
+        "ludnosc": "1768"
+    },
+    {
+        "miasto": "Tomasz\u00f3w Mazowiecki",
+        "powiat": "Tomaszowski",
+        "ludnosc": "58089"
+    },
+    {
+        "miasto": "Tuszyn",
+        "powiat": "\u0141\u00f3dzki wschodni",
+        "ludnosc": "7173"
+    },
+    {
+        "miasto": "Ujazd",
+        "powiat": "Tomaszowski",
+        "ludnosc": "1539"
+    },
+    {
+        "miasto": "Uniej\u00f3w",
+        "powiat": "Podd\u0119bicki",
+        "ludnosc": "2950"
+    },
+    {
+        "miasto": "Warta",
+        "powiat": "Sieradzki",
+        "ludnosc": "2969"
+    },
+    {
+        "miasto": "Wielu\u0144",
+        "powiat": "Wielu\u0144ski",
+        "ludnosc": "20826"
+    },
+    {
+        "miasto": "Wierusz\u00f3w",
+        "powiat": "Wieruszowski",
+        "ludnosc": "8394"
+    },
+    {
+        "miasto": "Wolb\u00f3rz",
+        "powiat": "Piotrkowski",
+        "ludnosc": "2275"
+    },
+    {
+        "miasto": "Zdu\u0144ska Wola",
+        "powiat": "Zdu\u0144skowolski",
+        "ludnosc": "38848"
+    },
+    {
+        "miasto": "Zel\u00f3w",
+        "powiat": "Be\u0142chatowski",
+        "ludnosc": "7152"
+    },
+    {
+        "miasto": "Zgierz",
+        "powiat": "Zgierski",
+        "ludnosc": "54012"
+    },
+    {
+        "miasto": "Z\u0142oczew",
+        "powiat": "Sieradzki",
+        "ludnosc": "3417"
+    },
+    {
+        "miasto": "\u017bychlin",
+        "powiat": "Kutnowski",
+        "ludnosc": "7647"
+    },
+    {
+        "miasto": "Alwernia",
+        "powiat": "Chrzanowski",
+        "ludnosc": "3260"
+    },
+    {
+        "miasto": "Andrych\u00f3w",
+        "powiat": "Wadowicki",
+        "ludnosc": "18655"
+    },
+    {
+        "miasto": "Biecz",
+        "powiat": "Gorlicki",
+        "ludnosc": "4349"
+    },
+    {
+        "miasto": "Bobowa",
+        "powiat": "Gorlicki",
+        "ludnosc": "3066"
+    },
+    {
+        "miasto": "Bochnia",
+        "powiat": "Boche\u0144ski",
+        "ludnosc": "28692"
+    },
+    {
+        "miasto": "Brzesko",
+        "powiat": "Brzeski",
+        "ludnosc": "16026"
+    },
+    {
+        "miasto": "Brzeszcze",
+        "powiat": "O\u015bwi\u0119cimski",
+        "ludnosc": "10787"
+    },
+    {
+        "miasto": "Bukowno",
+        "powiat": "Olkuski",
+        "ludnosc": "9604"
+    },
+    {
+        "miasto": "Che\u0142mek",
+        "powiat": "O\u015bwi\u0119cimski",
+        "ludnosc": "8492"
+    },
+    {
+        "miasto": "Chrzan\u00f3w",
+        "powiat": "Chrzanowski",
+        "ludnosc": "34387"
+    },
+    {
+        "miasto": "Ci\u0119\u017ckowice",
+        "powiat": "Tarnowski",
+        "ludnosc": "2500"
+    },
+    {
+        "miasto": "Czarny Dunajec",
+        "powiat": "Nowotarski",
+        "ludnosc": "3689"
+    },
+    {
+        "miasto": "Czch\u00f3w",
+        "powiat": "Brzeski",
+        "ludnosc": "2311"
+    },
+    {
+        "miasto": "D\u0105browa Tarnowska",
+        "powiat": "D\u0105browski",
+        "ludnosc": "11495"
+    },
+    {
+        "miasto": "Dobczyce",
+        "powiat": "My\u015blenicki",
+        "ludnosc": "6205"
+    },
+    {
+        "miasto": "Gorlice",
+        "powiat": "Gorlicki",
+        "ludnosc": "25818"
+    },
+    {
+        "miasto": "Gryb\u00f3w",
+        "powiat": "Nowos\u0105decki",
+        "ludnosc": "5953"
+    },
+    {
+        "miasto": "Jordan\u00f3w",
+        "powiat": "Suski",
+        "ludnosc": "5420"
+    },
+    {
+        "miasto": "Kalwaria Zebrzydowska",
+        "powiat": "Wadowicki",
+        "ludnosc": "4332"
+    },
+    {
+        "miasto": "K\u0119ty",
+        "powiat": "O\u015bwi\u0119cimski",
+        "ludnosc": "17866"
+    },
+    {
+        "miasto": "Koszyce",
+        "powiat": "Proszowicki",
+        "ludnosc": "769"
+    },
+    {
+        "miasto": "Krak\u00f3w",
+        "powiat": "Krak\u00f3w",
+        "ludnosc": "803282"
+    },
+    {
+        "miasto": "Krynica-Zdr\u00f3j",
+        "powiat": "Nowos\u0105decki",
+        "ludnosc": "9712"
+    },
+    {
+        "miasto": "Krzeszowice",
+        "powiat": "Krakowski",
+        "ludnosc": "9755"
+    },
+    {
+        "miasto": "Ksi\u0105\u017c Wielki",
+        "powiat": "Miechowski",
+        "ludnosc": "849"
+    },
+    {
+        "miasto": "Libi\u0105\u017c",
+        "powiat": "Chrzanowski",
+        "ludnosc": "16079"
+    },
+    {
+        "miasto": "Limanowa",
+        "powiat": "Limanowski",
+        "ludnosc": "14514"
+    },
+    {
+        "miasto": "Mak\u00f3w Podhala\u0144ski",
+        "powiat": "Suski",
+        "ludnosc": "5565"
+    },
+    {
+        "miasto": "Miech\u00f3w",
+        "powiat": "Miechowski",
+        "ludnosc": "11027"
+    },
+    {
+        "miasto": "Mszana Dolna",
+        "powiat": "Limanowski",
+        "ludnosc": "7817"
+    },
+    {
+        "miasto": "Muszyna",
+        "powiat": "Nowos\u0105decki",
+        "ludnosc": "4464"
+    },
+    {
+        "miasto": "My\u015blenice",
+        "powiat": "My\u015blenicki",
+        "ludnosc": "17846"
+    },
+    {
+        "miasto": "Niepo\u0142omice",
+        "powiat": "Wielicki",
+        "ludnosc": "16493"
+    },
+    {
+        "miasto": "Nowe Brzesko",
+        "powiat": "Proszowicki",
+        "ludnosc": "1611"
+    },
+    {
+        "miasto": "Nowy S\u0105cz",
+        "powiat": "Nowy S\u0105cz",
+        "ludnosc": "80587"
+    },
+    {
+        "miasto": "Nowy Targ",
+        "powiat": "Nowotarski",
+        "ludnosc": "33103"
+    },
+    {
+        "miasto": "Nowy Wi\u015bnicz",
+        "powiat": "Boche\u0144ski",
+        "ludnosc": "2751"
+    },
+    {
+        "miasto": "Olkusz",
+        "powiat": "Olkuski",
+        "ludnosc": "32670"
+    },
+    {
+        "miasto": "O\u015bwi\u0119cim",
+        "powiat": "O\u015bwi\u0119cimski",
+        "ludnosc": "36048"
+    },
+    {
+        "miasto": "Piwniczna-Zdr\u00f3j",
+        "powiat": "Nowos\u0105decki",
+        "ludnosc": "5448"
+    },
+    {
+        "miasto": "Proszowice",
+        "powiat": "Proszowicki",
+        "ludnosc": "5796"
+    },
+    {
+        "miasto": "Rabka-Zdr\u00f3j",
+        "powiat": "Nowotarski",
+        "ludnosc": "12315"
+    },
+    {
+        "miasto": "Rad\u0142\u00f3w",
+        "powiat": "Tarnowski",
+        "ludnosc": "2687"
+    },
+    {
+        "miasto": "Ryglice",
+        "powiat": "Tarnowski",
+        "ludnosc": "2689"
+    },
+    {
+        "miasto": "Ska\u0142a",
+        "powiat": "Krakowski",
+        "ludnosc": "3876"
+    },
+    {
+        "miasto": "Skawina",
+        "powiat": "Krakowski",
+        "ludnosc": "24071"
+    },
+    {
+        "miasto": "S\u0142omniki",
+        "powiat": "Krakowski",
+        "ludnosc": "4194"
+    },
+    {
+        "miasto": "Stary S\u0105cz",
+        "powiat": "Nowos\u0105decki",
+        "ludnosc": "8683"
+    },
+    {
+        "miasto": "Sucha Beskidzka",
+        "powiat": "Suski",
+        "ludnosc": "8927"
+    },
+    {
+        "miasto": "Su\u0142kowice",
+        "powiat": "My\u015blenicki",
+        "ludnosc": "6513"
+    },
+    {
+        "miasto": "Szczawnica",
+        "powiat": "Nowotarski",
+        "ludnosc": "5317"
+    },
+    {
+        "miasto": "Szczucin",
+        "powiat": "D\u0105browski",
+        "ludnosc": "4101"
+    },
+    {
+        "miasto": "\u015awi\u0105tniki G\u00f3rne",
+        "powiat": "Krakowski",
+        "ludnosc": "2408"
+    },
+    {
+        "miasto": "Tarn\u00f3w",
+        "powiat": "Tarn\u00f3w",
+        "ludnosc": "103960"
+    },
+    {
+        "miasto": "Trzebinia",
+        "powiat": "Chrzanowski",
+        "ludnosc": "18704"
+    },
+    {
+        "miasto": "Tuch\u00f3w",
+        "powiat": "Tarnowski",
+        "ludnosc": "6239"
+    },
+    {
+        "miasto": "Wadowice",
+        "powiat": "Wadowicki",
+        "ludnosc": "17455"
+    },
+    {
+        "miasto": "Wieliczka",
+        "powiat": "Wielicki",
+        "ludnosc": "27362"
+    },
+    {
+        "miasto": "Wojnicz",
+        "powiat": "Tarnowski",
+        "ludnosc": "3135"
+    },
+    {
+        "miasto": "Wolbrom",
+        "powiat": "Olkuski",
+        "ludnosc": "8155"
+    },
+    {
+        "miasto": "Zakliczyn",
+        "powiat": "Tarnowski",
+        "ludnosc": "1574"
+    },
+    {
+        "miasto": "Zakopane",
+        "powiat": "Tatrza\u0144ski",
+        "ludnosc": "25389"
+    },
+    {
+        "miasto": "Zator",
+        "powiat": "O\u015bwi\u0119cimski",
+        "ludnosc": "3623"
+    },
+    {
+        "miasto": "\u017babno",
+        "powiat": "Tarnowski",
+        "ludnosc": "4123"
+    },
+    {
+        "miasto": "Bia\u0142obrzegi",
+        "powiat": "Bia\u0142obrzeski",
+        "ludnosc": "6453"
+    },
+    {
+        "miasto": "Bie\u017cu\u0144",
+        "powiat": "\u017buromi\u0144ski",
+        "ludnosc": "1719"
+    },
+    {
+        "miasto": "B\u0142onie",
+        "powiat": "Warszawski zachodni",
+        "ludnosc": "12100"
+    },
+    {
+        "miasto": "Bodzan\u00f3w",
+        "powiat": "P\u0142ocki",
+        "ludnosc": "1156"
+    },
+    {
+        "miasto": "Brok",
+        "powiat": "Ostrowski",
+        "ludnosc": "1763"
+    },
+    {
+        "miasto": "Brwin\u00f3w",
+        "powiat": "Pruszkowski",
+        "ludnosc": "14447"
+    },
+    {
+        "miasto": "Ceg\u0142\u00f3w",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "2282"
+    },
+    {
+        "miasto": "Chorzele",
+        "powiat": "Przasnyski",
+        "ludnosc": "2936"
+    },
+    {
+        "miasto": "Ciechan\u00f3w",
+        "powiat": "Ciechanowski",
+        "ludnosc": "41980"
+    },
+    {
+        "miasto": "Czerwi\u0144sk nad Wis\u0142\u0105",
+        "powiat": "P\u0142o\u0144ski",
+        "ludnosc": "1001"
+    },
+    {
+        "miasto": "Drobin",
+        "powiat": "P\u0142ocki",
+        "ludnosc": "2657"
+    },
+    {
+        "miasto": "Garwolin",
+        "powiat": "Garwoli\u0144ski",
+        "ludnosc": "17310"
+    },
+    {
+        "miasto": "G\u0105bin",
+        "powiat": "P\u0142ocki",
+        "ludnosc": "4097"
+    },
+    {
+        "miasto": "Glinojeck",
+        "powiat": "Ciechanowski",
+        "ludnosc": "2809"
+    },
+    {
+        "miasto": "Gostynin",
+        "powiat": "Gostyni\u0144ski",
+        "ludnosc": "17207"
+    },
+    {
+        "miasto": "G\u00f3ra Kalwaria",
+        "powiat": "Piaseczy\u0144ski",
+        "ludnosc": "12130"
+    },
+    {
+        "miasto": "Grodzisk Mazowiecki",
+        "powiat": "Grodziski",
+        "ludnosc": "34448"
+    },
+    {
+        "miasto": "Gr\u00f3jec",
+        "powiat": "Gr\u00f3jecki",
+        "ludnosc": "16893"
+    },
+    {
+        "miasto": "Halin\u00f3w",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "3752"
+    },
+    {
+        "miasto": "I\u0142\u017ca",
+        "powiat": "Radomski",
+        "ludnosc": "4361"
+    },
+    {
+        "miasto": "Jad\u00f3w",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "908"
+    },
+    {
+        "miasto": "Jastrz\u0105b",
+        "powiat": "Szyd\u0142owiecki",
+        "ludnosc": "1102"
+    },
+    {
+        "miasto": "Jedlnia-Letnisko",
+        "powiat": "Radomski",
+        "ludnosc": "3977"
+    },
+    {
+        "miasto": "J\u00f3zef\u00f3w",
+        "powiat": "Otwocki",
+        "ludnosc": "21116"
+    },
+    {
+        "miasto": "Ka\u0142uszyn",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "2700"
+    },
+    {
+        "miasto": "Karczew",
+        "powiat": "Otwocki",
+        "ludnosc": "9338"
+    },
+    {
+        "miasto": "Koby\u0142ka",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "27998"
+    },
+    {
+        "miasto": "Konstancin-Jeziorna",
+        "powiat": "Piaseczy\u0144ski",
+        "ludnosc": "17006"
+    },
+    {
+        "miasto": "Kos\u00f3w Lacki",
+        "powiat": "Soko\u0142owski",
+        "ludnosc": "1973"
+    },
+    {
+        "miasto": "Kozienice",
+        "powiat": "Kozienicki",
+        "ludnosc": "15760"
+    },
+    {
+        "miasto": "Latowicz",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "1355"
+    },
+    {
+        "miasto": "Legionowo",
+        "powiat": "Legionowski",
+        "ludnosc": "52792"
+    },
+    {
+        "miasto": "Lipsko",
+        "powiat": "Lipski",
+        "ludnosc": "5043"
+    },
+    {
+        "miasto": "Lubowidz",
+        "powiat": "\u017buromi\u0144ski",
+        "ludnosc": "1519"
+    },
+    {
+        "miasto": "\u0141askarzew",
+        "powiat": "Garwoli\u0144ski",
+        "ludnosc": "4504"
+    },
+    {
+        "miasto": "\u0141och\u00f3w",
+        "powiat": "W\u0119growski",
+        "ludnosc": "6568"
+    },
+    {
+        "miasto": "\u0141omianki",
+        "powiat": "Warszawski zachodni",
+        "ludnosc": "18168"
+    },
+    {
+        "miasto": "\u0141osice",
+        "powiat": "\u0141osicki",
+        "ludnosc": "6886"
+    },
+    {
+        "miasto": "Mak\u00f3w Mazowiecki",
+        "powiat": "Makowski",
+        "ludnosc": "9009"
+    },
+    {
+        "miasto": "Marki",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "44387"
+    },
+    {
+        "miasto": "Milan\u00f3wek",
+        "powiat": "Grodziski",
+        "ludnosc": "16421"
+    },
+    {
+        "miasto": "Mi\u0144sk Mazowiecki",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "40083"
+    },
+    {
+        "miasto": "M\u0142awa",
+        "powiat": "M\u0142awski",
+        "ludnosc": "30831"
+    },
+    {
+        "miasto": "Mogielnica",
+        "powiat": "Gr\u00f3jecki",
+        "ludnosc": "2144"
+    },
+    {
+        "miasto": "Mordy",
+        "powiat": "Siedlecki",
+        "ludnosc": "1602"
+    },
+    {
+        "miasto": "Mrozy",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "3611"
+    },
+    {
+        "miasto": "Mszczon\u00f3w",
+        "powiat": "\u017byrardowski",
+        "ludnosc": "6159"
+    },
+    {
+        "miasto": "Myszyniec",
+        "powiat": "Ostro\u0142\u0119cki",
+        "ludnosc": "3223"
+    },
+    {
+        "miasto": "Nasielsk",
+        "powiat": "Nowodworski",
+        "ludnosc": "7378"
+    },
+    {
+        "miasto": "Nowe Miasto",
+        "powiat": "P\u0142o\u0144ski",
+        "ludnosc": "1530"
+    },
+    {
+        "miasto": "Nowe Miasto nad Pilic\u0105",
+        "powiat": "Gr\u00f3jecki",
+        "ludnosc": "3536"
+    },
+    {
+        "miasto": "Nowy Dw\u00f3r Mazowiecki",
+        "powiat": "Nowodworski",
+        "ludnosc": "28573"
+    },
+    {
+        "miasto": "Ostro\u0142\u0119ka",
+        "powiat": "Ostro\u0142\u0119ka",
+        "ludnosc": "48712"
+    },
+    {
+        "miasto": "Ostr\u00f3w Mazowiecka",
+        "powiat": "Ostrowski",
+        "ludnosc": "21607"
+    },
+    {
+        "miasto": "Otwock",
+        "powiat": "Otwocki",
+        "ludnosc": "44096"
+    },
+    {
+        "miasto": "O\u017car\u00f3w Mazowiecki",
+        "powiat": "Warszawski zachodni",
+        "ludnosc": "15157"
+    },
+    {
+        "miasto": "Piaseczno",
+        "powiat": "Piaseczy\u0144ski",
+        "ludnosc": "52017"
+    },
+    {
+        "miasto": "Piast\u00f3w",
+        "powiat": "Pruszkowski",
+        "ludnosc": "23065"
+    },
+    {
+        "miasto": "Pilawa",
+        "powiat": "Garwoli\u0144ski",
+        "ludnosc": "4421"
+    },
+    {
+        "miasto": "Pionki",
+        "powiat": "Radomski",
+        "ludnosc": "16279"
+    },
+    {
+        "miasto": "P\u0142ock",
+        "powiat": "P\u0142ock",
+        "ludnosc": "112483"
+    },
+    {
+        "miasto": "P\u0142o\u0144sk",
+        "powiat": "P\u0142o\u0144ski",
+        "ludnosc": "21591"
+    },
+    {
+        "miasto": "Podkowa Le\u015bna",
+        "powiat": "Grodziski",
+        "ludnosc": "3832"
+    },
+    {
+        "miasto": "Pruszk\u00f3w",
+        "powiat": "Pruszkowski",
+        "ludnosc": "65321"
+    },
+    {
+        "miasto": "Przasnysz",
+        "powiat": "Przasnyski",
+        "ludnosc": "16384"
+    },
+    {
+        "miasto": "Przysucha",
+        "powiat": "Przysuski",
+        "ludnosc": "5393"
+    },
+    {
+        "miasto": "Pu\u0142tusk",
+        "powiat": "Pu\u0142tuski",
+        "ludnosc": "19224"
+    },
+    {
+        "miasto": "Raci\u0105\u017c",
+        "powiat": "P\u0142o\u0144ski",
+        "ludnosc": "3994"
+    },
+    {
+        "miasto": "Radom",
+        "powiat": "Radom",
+        "ludnosc": "197848"
+    },
+    {
+        "miasto": "Radzymin",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "14668"
+    },
+    {
+        "miasto": "R\u00f3\u017can",
+        "powiat": "Makowski",
+        "ludnosc": "2632"
+    },
+    {
+        "miasto": "Sanniki",
+        "powiat": "Gostyni\u0144ski",
+        "ludnosc": "1746"
+    },
+    {
+        "miasto": "Serock",
+        "powiat": "Legionowski",
+        "ludnosc": "5152"
+    },
+    {
+        "miasto": "Siedlce",
+        "powiat": "Siedlce",
+        "ludnosc": "75623"
+    },
+    {
+        "miasto": "Sierpc",
+        "powiat": "Sierpecki",
+        "ludnosc": "17026"
+    },
+    {
+        "miasto": "Skaryszew",
+        "powiat": "Radomski",
+        "ludnosc": "4418"
+    },
+    {
+        "miasto": "Sochaczew",
+        "powiat": "Sochaczewski",
+        "ludnosc": "33698"
+    },
+    {
+        "miasto": "Sochocin",
+        "powiat": "P\u0142o\u0144ski",
+        "ludnosc": "1948"
+    },
+    {
+        "miasto": "Soko\u0142\u00f3w Podlaski",
+        "powiat": "Soko\u0142owski",
+        "ludnosc": "18473"
+    },
+    {
+        "miasto": "Solec nad Wis\u0142\u0105",
+        "powiat": "Lipski",
+        "ludnosc": "928"
+    },
+    {
+        "miasto": "Sulej\u00f3wek",
+        "powiat": "Mi\u0144ski",
+        "ludnosc": "21335"
+    },
+    {
+        "miasto": "Szyd\u0142owiec",
+        "powiat": "Szyd\u0142owiecki",
+        "ludnosc": "10671"
+    },
+    {
+        "miasto": "Tarczyn",
+        "powiat": "Piaseczy\u0144ski",
+        "ludnosc": "4283"
+    },
+    {
+        "miasto": "T\u0142uszcz",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "8007"
+    },
+    {
+        "miasto": "Warka",
+        "powiat": "Gr\u00f3jecki",
+        "ludnosc": "11958"
+    },
+    {
+        "miasto": "Warszawa",
+        "powiat": "Warszawa",
+        "ludnosc": "1861975"
+    },
+    {
+        "miasto": "W\u0119gr\u00f3w",
+        "powiat": "W\u0119growski",
+        "ludnosc": "11839"
+    },
+    {
+        "miasto": "Wiskitki",
+        "powiat": "\u017byrardowski",
+        "ludnosc": "1421"
+    },
+    {
+        "miasto": "Wo\u0142omin",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "35821"
+    },
+    {
+        "miasto": "Wyszk\u00f3w",
+        "powiat": "Wyszkowski",
+        "ludnosc": "26132"
+    },
+    {
+        "miasto": "Wyszogr\u00f3d",
+        "powiat": "P\u0142ocki",
+        "ludnosc": "2423"
+    },
+    {
+        "miasto": "Wy\u015bmierzyce",
+        "powiat": "Bia\u0142obrzeski",
+        "ludnosc": "877"
+    },
+    {
+        "miasto": "Zakroczym",
+        "powiat": "Nowodworski",
+        "ludnosc": "3143"
+    },
+    {
+        "miasto": "Z\u0105bki",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "45013"
+    },
+    {
+        "miasto": "Zielonka",
+        "powiat": "Wo\u0142omi\u0144ski",
+        "ludnosc": "18137"
+    },
+    {
+        "miasto": "Zwole\u0144",
+        "powiat": "Zwole\u0144ski",
+        "ludnosc": "7240"
+    },
+    {
+        "miasto": "\u017belech\u00f3w",
+        "powiat": "Garwoli\u0144ski",
+        "ludnosc": "3759"
+    },
+    {
+        "miasto": "\u017buromin",
+        "powiat": "\u017buromi\u0144ski",
+        "ludnosc": "8490"
+    },
+    {
+        "miasto": "\u017byrard\u00f3w",
+        "powiat": "\u017byrardowski",
+        "ludnosc": "38784"
+    },
+    {
+        "miasto": "Babor\u00f3w",
+        "powiat": "G\u0142ubczycki",
+        "ludnosc": "2842"
+    },
+    {
+        "miasto": "Bia\u0142a",
+        "powiat": "Prudnicki",
+        "ludnosc": "2276"
+    },
+    {
+        "miasto": "Brzeg",
+        "powiat": "Brzeski",
+        "ludnosc": "33768"
+    },
+    {
+        "miasto": "Byczyna",
+        "powiat": "Kluczborski",
+        "ludnosc": "3393"
+    },
+    {
+        "miasto": "Dobrodzie\u0144",
+        "powiat": "Oleski",
+        "ludnosc": "3489"
+    },
+    {
+        "miasto": "G\u0142og\u00f3wek",
+        "powiat": "Prudnicki",
+        "ludnosc": "5479"
+    },
+    {
+        "miasto": "G\u0142ubczyce",
+        "powiat": "G\u0142ubczycki",
+        "ludnosc": "11778"
+    },
+    {
+        "miasto": "G\u0142ucho\u0142azy",
+        "powiat": "Nyski",
+        "ludnosc": "12801"
+    },
+    {
+        "miasto": "Gogolin",
+        "powiat": "Krapkowicki",
+        "ludnosc": "6393"
+    },
+    {
+        "miasto": "Gorz\u00f3w \u015al\u0105ski",
+        "powiat": "Oleski",
+        "ludnosc": "2432"
+    },
+    {
+        "miasto": "Grodk\u00f3w",
+        "powiat": "Brzeski",
+        "ludnosc": "8010"
+    },
+    {
+        "miasto": "K\u0119dzierzyn-Ko\u017ale",
+        "powiat": "K\u0119dzierzy\u0144sko-kozielski",
+        "ludnosc": "55172"
+    },
+    {
+        "miasto": "Kietrz",
+        "powiat": "G\u0142ubczycki",
+        "ludnosc": "5522"
+    },
+    {
+        "miasto": "Kluczbork",
+        "powiat": "Kluczborski",
+        "ludnosc": "22258"
+    },
+    {
+        "miasto": "Kolonowskie",
+        "powiat": "Strzelecki",
+        "ludnosc": "3196"
+    },
+    {
+        "miasto": "Korfant\u00f3w",
+        "powiat": "Nyski",
+        "ludnosc": "1715"
+    },
+    {
+        "miasto": "Krapkowice",
+        "powiat": "Krapkowicki",
+        "ludnosc": "15464"
+    },
+    {
+        "miasto": "Le\u015bnica",
+        "powiat": "Strzelecki",
+        "ludnosc": "2561"
+    },
+    {
+        "miasto": "Lewin Brzeski",
+        "powiat": "Brzeski",
+        "ludnosc": "5602"
+    },
+    {
+        "miasto": "Namys\u0142\u00f3w",
+        "powiat": "Namys\u0142owski",
+        "ludnosc": "16910"
+    },
+    {
+        "miasto": "Niemodlin",
+        "powiat": "Opolski",
+        "ludnosc": "5926"
+    },
+    {
+        "miasto": "Nysa",
+        "powiat": "Nyski",
+        "ludnosc": "41205"
+    },
+    {
+        "miasto": "Olesno",
+        "powiat": "Oleski",
+        "ludnosc": "9092"
+    },
+    {
+        "miasto": "Opole",
+        "powiat": "Opole",
+        "ludnosc": "126458"
+    },
+    {
+        "miasto": "Otmuch\u00f3w",
+        "powiat": "Nyski",
+        "ludnosc": "6230"
+    },
+    {
+        "miasto": "Ozimek",
+        "powiat": "Opolski",
+        "ludnosc": "8033"
+    },
+    {
+        "miasto": "Paczk\u00f3w",
+        "powiat": "Nyski",
+        "ludnosc": "6748"
+    },
+    {
+        "miasto": "Praszka",
+        "powiat": "Oleski",
+        "ludnosc": "7182"
+    },
+    {
+        "miasto": "Pr\u00f3szk\u00f3w",
+        "powiat": "Opolski",
+        "ludnosc": "2568"
+    },
+    {
+        "miasto": "Prudnik",
+        "powiat": "Prudnicki",
+        "ludnosc": "19251"
+    },
+    {
+        "miasto": "Strzelce Opolskie",
+        "powiat": "Strzelecki",
+        "ludnosc": "17147"
+    },
+    {
+        "miasto": "Tu\u0142owice",
+        "powiat": "Opolski",
+        "ludnosc": "3681"
+    },
+    {
+        "miasto": "Ujazd",
+        "powiat": "Strzelecki",
+        "ludnosc": "1799"
+    },
+    {
+        "miasto": "Wo\u0142czyn",
+        "powiat": "Kluczborski",
+        "ludnosc": "5369"
+    },
+    {
+        "miasto": "Zawadzkie",
+        "powiat": "Strzelecki",
+        "ludnosc": "6452"
+    },
+    {
+        "miasto": "Zdzieszowice",
+        "powiat": "Krapkowicki",
+        "ludnosc": "10267"
+    },
+    {
+        "miasto": "Baran\u00f3w Sandomierski",
+        "powiat": "Tarnobrzeski",
+        "ludnosc": "1405"
+    },
+    {
+        "miasto": "B\u0142a\u017cowa",
+        "powiat": "Rzeszowski",
+        "ludnosc": "2099"
+    },
+    {
+        "miasto": "Boguchwa\u0142a",
+        "powiat": "Rzeszowski",
+        "ludnosc": "6249"
+    },
+    {
+        "miasto": "Brzostek",
+        "powiat": "D\u0119bicki",
+        "ludnosc": "2674"
+    },
+    {
+        "miasto": "Brzoz\u00f3w",
+        "powiat": "Brzozowski",
+        "ludnosc": "7245"
+    },
+    {
+        "miasto": "Cieszan\u00f3w",
+        "powiat": "Lubaczowski",
+        "ludnosc": "1840"
+    },
+    {
+        "miasto": "D\u0119bica",
+        "powiat": "D\u0119bicki",
+        "ludnosc": "43301"
+    },
+    {
+        "miasto": "Dubiecko",
+        "powiat": "Przemyski",
+        "ludnosc": "815"
+    },
+    {
+        "miasto": "Dukla",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "1978"
+    },
+    {
+        "miasto": "Dyn\u00f3w",
+        "powiat": "Rzeszowski",
+        "ludnosc": "6009"
+    },
+    {
+        "miasto": "G\u0142og\u00f3w Ma\u0142opolski",
+        "powiat": "Rzeszowski",
+        "ludnosc": "10431"
+    },
+    {
+        "miasto": "Iwonicz-Zdr\u00f3j",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "1555"
+    },
+    {
+        "miasto": "Jaros\u0142aw",
+        "powiat": "Jaros\u0142awski",
+        "ludnosc": "35610"
+    },
+    {
+        "miasto": "Jas\u0142o",
+        "powiat": "Jasielski",
+        "ludnosc": "33100"
+    },
+    {
+        "miasto": "Jedlicze",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "5554"
+    },
+    {
+        "miasto": "Ka\u0144czuga",
+        "powiat": "Przeworski",
+        "ludnosc": "2935"
+    },
+    {
+        "miasto": "Kolbuszowa",
+        "powiat": "Kolbuszowski",
+        "ludnosc": "8564"
+    },
+    {
+        "miasto": "Ko\u0142aczyce",
+        "powiat": "Jasielski",
+        "ludnosc": "1378"
+    },
+    {
+        "miasto": "Krosno",
+        "powiat": "Krosno",
+        "ludnosc": "44322"
+    },
+    {
+        "miasto": "Lesko",
+        "powiat": "Leski",
+        "ludnosc": "5171"
+    },
+    {
+        "miasto": "Le\u017cajsk",
+        "powiat": "Le\u017cajski",
+        "ludnosc": "12833"
+    },
+    {
+        "miasto": "Lubacz\u00f3w",
+        "powiat": "Lubaczowski",
+        "ludnosc": "11420"
+    },
+    {
+        "miasto": "\u0141a\u0144cut",
+        "powiat": "\u0141a\u0144cucki",
+        "ludnosc": "17649"
+    },
+    {
+        "miasto": "Mielec",
+        "powiat": "Mielecki",
+        "ludnosc": "57363"
+    },
+    {
+        "miasto": "Narol",
+        "powiat": "Lubaczowski",
+        "ludnosc": "2003"
+    },
+    {
+        "miasto": "Nisko",
+        "powiat": "Ni\u017ca\u0144ski",
+        "ludnosc": "14606"
+    },
+    {
+        "miasto": "Nowa D\u0119ba",
+        "powiat": "Tarnobrzeski",
+        "ludnosc": "10446"
+    },
+    {
+        "miasto": "Nowa Sarzyna",
+        "powiat": "Le\u017cajski",
+        "ludnosc": "5502"
+    },
+    {
+        "miasto": "Oleszyce",
+        "powiat": "Lubaczowski",
+        "ludnosc": "2840"
+    },
+    {
+        "miasto": "Pilzno",
+        "powiat": "D\u0119bicki",
+        "ludnosc": "4980"
+    },
+    {
+        "miasto": "Pruchnik",
+        "powiat": "Jaros\u0142awski",
+        "ludnosc": "3633"
+    },
+    {
+        "miasto": "Przec\u0142aw",
+        "powiat": "Mielecki",
+        "ludnosc": "1805"
+    },
+    {
+        "miasto": "Przemy\u015bl",
+        "powiat": "Przemy\u015bl",
+        "ludnosc": "56802"
+    },
+    {
+        "miasto": "Przeworsk",
+        "powiat": "Przeworski",
+        "ludnosc": "14652"
+    },
+    {
+        "miasto": "Radomy\u015bl Wielki",
+        "powiat": "Mielecki",
+        "ludnosc": "3374"
+    },
+    {
+        "miasto": "Radymno",
+        "powiat": "Jaros\u0142awski",
+        "ludnosc": "5019"
+    },
+    {
+        "miasto": "Ropczyce",
+        "powiat": "Ropczycko-s\u0119dziszowski",
+        "ludnosc": "15837"
+    },
+    {
+        "miasto": "Rudnik nad Sanem",
+        "powiat": "Ni\u017ca\u0144ski",
+        "ludnosc": "6462"
+    },
+    {
+        "miasto": "Ryman\u00f3w",
+        "powiat": "Kro\u015bnie\u0144ski",
+        "ludnosc": "3575"
+    },
+    {
+        "miasto": "Rzesz\u00f3w",
+        "powiat": "Rzesz\u00f3w",
+        "ludnosc": "197181"
+    },
+    {
+        "miasto": "Sanok",
+        "powiat": "Sanocki",
+        "ludnosc": "34690"
+    },
+    {
+        "miasto": "S\u0119dzisz\u00f3w Ma\u0142opolski",
+        "powiat": "Ropczycko-s\u0119dziszowski",
+        "ludnosc": "12362"
+    },
+    {
+        "miasto": "Sieniawa",
+        "powiat": "Przeworski",
+        "ludnosc": "2006"
+    },
+    {
+        "miasto": "Soko\u0142\u00f3w Ma\u0142opolski",
+        "powiat": "Rzeszowski",
+        "ludnosc": "4303"
+    },
+    {
+        "miasto": "Stalowa Wola",
+        "powiat": "Stalowowolski",
+        "ludnosc": "55846"
+    },
+    {
+        "miasto": "Strzy\u017c\u00f3w",
+        "powiat": "Strzy\u017cowski",
+        "ludnosc": "8482"
+    },
+    {
+        "miasto": "Tarnobrzeg",
+        "powiat": "Tarnobrzeg",
+        "ludnosc": "44156"
+    },
+    {
+        "miasto": "Tyczyn",
+        "powiat": "Rzeszowski",
+        "ludnosc": "4500"
+    },
+    {
+        "miasto": "Ulan\u00f3w",
+        "powiat": "Ni\u017ca\u0144ski",
+        "ludnosc": "1370"
+    },
+    {
+        "miasto": "Ustrzyki Dolne",
+        "powiat": "Bieszczadzki",
+        "ludnosc": "8509"
+    },
+    {
+        "miasto": "Zag\u00f3rz",
+        "powiat": "Sanocki",
+        "ludnosc": "4984"
+    },
+    {
+        "miasto": "Zaklik\u00f3w",
+        "powiat": "Stalowowolski",
+        "ludnosc": "2805"
+    },
+    {
+        "miasto": "August\u00f3w",
+        "powiat": "Augustowski",
+        "ludnosc": "29173"
+    },
+    {
+        "miasto": "Bia\u0142ystok",
+        "powiat": "Bia\u0142ystok",
+        "ludnosc": "292600"
+    },
+    {
+        "miasto": "Bielsk Podlaski",
+        "powiat": "Bielski",
+        "ludnosc": "24026"
+    },
+    {
+        "miasto": "Bra\u0144sk",
+        "powiat": "Bielski",
+        "ludnosc": "3541"
+    },
+    {
+        "miasto": "Choroszcz",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "6033"
+    },
+    {
+        "miasto": "Ciechanowiec",
+        "powiat": "Wysokomazowiecki",
+        "ludnosc": "4402"
+    },
+    {
+        "miasto": "Czarna Bia\u0142ostocka",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "8697"
+    },
+    {
+        "miasto": "Czy\u017cew",
+        "powiat": "Wysokomazowiecki",
+        "ludnosc": "2482"
+    },
+    {
+        "miasto": "D\u0105browa Bia\u0142ostocka",
+        "powiat": "Sok\u00f3lski",
+        "ludnosc": "5082"
+    },
+    {
+        "miasto": "Drohiczyn",
+        "powiat": "Siemiatycki",
+        "ludnosc": "1786"
+    },
+    {
+        "miasto": "Goni\u0105dz",
+        "powiat": "Moniecki",
+        "ludnosc": "1740"
+    },
+    {
+        "miasto": "Grajewo",
+        "powiat": "Grajewski",
+        "ludnosc": "21089"
+    },
+    {
+        "miasto": "Hajn\u00f3wka",
+        "powiat": "Hajnowski",
+        "ludnosc": "19221"
+    },
+    {
+        "miasto": "Jedwabne",
+        "powiat": "\u0141om\u017cy\u0144ski",
+        "ludnosc": "1693"
+    },
+    {
+        "miasto": "Kleszczele",
+        "powiat": "Hajnowski",
+        "ludnosc": "1075"
+    },
+    {
+        "miasto": "Knyszyn",
+        "powiat": "Moniecki",
+        "ludnosc": "2648"
+    },
+    {
+        "miasto": "Kolno",
+        "powiat": "Kolne\u0144ski",
+        "ludnosc": "9927"
+    },
+    {
+        "miasto": "Krynki",
+        "powiat": "Sok\u00f3lski",
+        "ludnosc": "2185"
+    },
+    {
+        "miasto": "Lipsk",
+        "powiat": "Augustowski",
+        "ludnosc": "2091"
+    },
+    {
+        "miasto": "\u0141apy",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "14570"
+    },
+    {
+        "miasto": "\u0141om\u017ca",
+        "powiat": "\u0141om\u017ca",
+        "ludnosc": "60128"
+    },
+    {
+        "miasto": "Micha\u0142owo",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "2785"
+    },
+    {
+        "miasto": "Mo\u0144ki",
+        "powiat": "Moniecki",
+        "ludnosc": "9511"
+    },
+    {
+        "miasto": "Nowogr\u00f3d",
+        "powiat": "\u0141om\u017cy\u0144ski",
+        "ludnosc": "2095"
+    },
+    {
+        "miasto": "Rajgr\u00f3d",
+        "powiat": "Grajewski",
+        "ludnosc": "1421"
+    },
+    {
+        "miasto": "Sejny",
+        "powiat": "Sejne\u0144ski",
+        "ludnosc": "4943"
+    },
+    {
+        "miasto": "Siemiatycze",
+        "powiat": "Siemiatycki",
+        "ludnosc": "13491"
+    },
+    {
+        "miasto": "Sok\u00f3\u0142ka",
+        "powiat": "Sok\u00f3lski",
+        "ludnosc": "17235"
+    },
+    {
+        "miasto": "Stawiski",
+        "powiat": "Kolne\u0144ski",
+        "ludnosc": "2027"
+    },
+    {
+        "miasto": "Suchowola",
+        "powiat": "Sok\u00f3lski",
+        "ludnosc": "2062"
+    },
+    {
+        "miasto": "Supra\u015bl",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "4369"
+    },
+    {
+        "miasto": "Sura\u017c",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "971"
+    },
+    {
+        "miasto": "Suwa\u0142ki",
+        "powiat": "Suwa\u0142ki",
+        "ludnosc": "68525"
+    },
+    {
+        "miasto": "Szczuczyn",
+        "powiat": "Grajewski",
+        "ludnosc": "3176"
+    },
+    {
+        "miasto": "Szepietowo",
+        "powiat": "Wysokomazowiecki",
+        "ludnosc": "2023"
+    },
+    {
+        "miasto": "Tykocin",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "1874"
+    },
+    {
+        "miasto": "Wasilk\u00f3w",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "12559"
+    },
+    {
+        "miasto": "Wysokie Mazowieckie",
+        "powiat": "Wysokomazowiecki",
+        "ludnosc": "9021"
+    },
+    {
+        "miasto": "Zab\u0142ud\u00f3w",
+        "powiat": "Bia\u0142ostocki",
+        "ludnosc": "2506"
+    },
+    {
+        "miasto": "Zambr\u00f3w",
+        "powiat": "Zambrowski",
+        "ludnosc": "21004"
+    },
+    {
+        "miasto": "Brusy",
+        "powiat": "Chojnicki",
+        "ludnosc": "5112"
+    },
+    {
+        "miasto": "Byt\u00f3w",
+        "powiat": "Bytowski",
+        "ludnosc": "16475"
+    },
+    {
+        "miasto": "Chojnice",
+        "powiat": "Chojnicki",
+        "ludnosc": "38934"
+    },
+    {
+        "miasto": "Czarna Woda",
+        "powiat": "Starogardzki",
+        "ludnosc": "2682"
+    },
+    {
+        "miasto": "Czarne",
+        "powiat": "Cz\u0142uchowski",
+        "ludnosc": "5637"
+    },
+    {
+        "miasto": "Czersk",
+        "powiat": "Chojnicki",
+        "ludnosc": "9924"
+    },
+    {
+        "miasto": "Cz\u0142uch\u00f3w",
+        "powiat": "Cz\u0142uchowski",
+        "ludnosc": "13164"
+    },
+    {
+        "miasto": "Debrzno",
+        "powiat": "Cz\u0142uchowski",
+        "ludnosc": "4908"
+    },
+    {
+        "miasto": "Dzierzgo\u0144",
+        "powiat": "Sztumski",
+        "ludnosc": "4991"
+    },
+    {
+        "miasto": "Gda\u0144sk",
+        "powiat": "Gda\u0144sk",
+        "ludnosc": "486345"
+    },
+    {
+        "miasto": "Gdynia",
+        "powiat": "Gdynia",
+        "ludnosc": "242874"
+    },
+    {
+        "miasto": "Gniew",
+        "powiat": "Tczewski",
+        "ludnosc": "6209"
+    },
+    {
+        "miasto": "Hel",
+        "powiat": "Pucki",
+        "ludnosc": "2835"
+    },
+    {
+        "miasto": "Jastarnia",
+        "powiat": "Pucki",
+        "ludnosc": "2627"
+    },
+    {
+        "miasto": "Kartuzy",
+        "powiat": "Kartuski",
+        "ludnosc": "13960"
+    },
+    {
+        "miasto": "K\u0119pice",
+        "powiat": "S\u0142upski",
+        "ludnosc": "3307"
+    },
+    {
+        "miasto": "Ko\u015bcierzyna",
+        "powiat": "Ko\u015bcierski",
+        "ludnosc": "23406"
+    },
+    {
+        "miasto": "Krynica Morska",
+        "powiat": "Nowodworski",
+        "ludnosc": "1173"
+    },
+    {
+        "miasto": "Kwidzyn",
+        "powiat": "Kwidzy\u0144ski",
+        "ludnosc": "37175"
+    },
+    {
+        "miasto": "L\u0119bork",
+        "powiat": "L\u0119borski",
+        "ludnosc": "34157"
+    },
+    {
+        "miasto": "\u0141eba",
+        "powiat": "L\u0119borski",
+        "ludnosc": "3100"
+    },
+    {
+        "miasto": "Malbork",
+        "powiat": "Malborski",
+        "ludnosc": "37050"
+    },
+    {
+        "miasto": "Miastko",
+        "powiat": "Bytowski",
+        "ludnosc": "9491"
+    },
+    {
+        "miasto": "Nowy Dw\u00f3r Gda\u0144ski",
+        "powiat": "Nowodworski",
+        "ludnosc": "9506"
+    },
+    {
+        "miasto": "Nowy Staw",
+        "powiat": "Malborski",
+        "ludnosc": "3999"
+    },
+    {
+        "miasto": "Pelplin",
+        "powiat": "Tczewski",
+        "ludnosc": "7244"
+    },
+    {
+        "miasto": "Prabuty",
+        "powiat": "Kwidzy\u0144ski",
+        "ludnosc": "8165"
+    },
+    {
+        "miasto": "Pruszcz Gda\u0144ski",
+        "powiat": "Gda\u0144ski",
+        "ludnosc": "32031"
+    },
+    {
+        "miasto": "Puck",
+        "powiat": "Pucki",
+        "ludnosc": "10644"
+    },
+    {
+        "miasto": "Reda",
+        "powiat": "Wejherowski",
+        "ludnosc": "28506"
+    },
+    {
+        "miasto": "Rumia",
+        "powiat": "Wejherowski",
+        "ludnosc": "52634"
+    },
+    {
+        "miasto": "Skarszewy",
+        "powiat": "Starogardzki",
+        "ludnosc": "6695"
+    },
+    {
+        "miasto": "Sk\u00f3rcz",
+        "powiat": "Starogardzki",
+        "ludnosc": "3458"
+    },
+    {
+        "miasto": "S\u0142upsk",
+        "powiat": "S\u0142upsk",
+        "ludnosc": "86365"
+    },
+    {
+        "miasto": "Sopot",
+        "powiat": "Sopot",
+        "ludnosc": "32276"
+    },
+    {
+        "miasto": "Starogard Gda\u0144ski",
+        "powiat": "Starogardzki",
+        "ludnosc": "45626"
+    },
+    {
+        "miasto": "Sztum",
+        "powiat": "Sztumski",
+        "ludnosc": "9237"
+    },
+    {
+        "miasto": "Tczew",
+        "powiat": "Tczewski",
+        "ludnosc": "57394"
+    },
+    {
+        "miasto": "Ustka",
+        "powiat": "S\u0142upski",
+        "ludnosc": "13950"
+    },
+    {
+        "miasto": "Wejherowo",
+        "powiat": "Wejherowski",
+        "ludnosc": "46446"
+    },
+    {
+        "miasto": "W\u0142adys\u0142awowo",
+        "powiat": "Pucki",
+        "ludnosc": "9363"
+    },
+    {
+        "miasto": "\u017bukowo",
+        "powiat": "Kartuski",
+        "ludnosc": "6673"
+    },
+    {
+        "miasto": "B\u0119dzin",
+        "powiat": "B\u0119dzi\u0144ski",
+        "ludnosc": "54322"
+    },
+    {
+        "miasto": "Bielsko-Bia\u0142a",
+        "powiat": "Bielsko-Bia\u0142a",
+        "ludnosc": "166765"
+    },
+    {
+        "miasto": "Bieru\u0144",
+        "powiat": "Bieru\u0144sko-l\u0119dzi\u0144ski",
+        "ludnosc": "18966"
+    },
+    {
+        "miasto": "Blachownia",
+        "powiat": "Cz\u0119stochowski",
+        "ludnosc": "9151"
+    },
+    {
+        "miasto": "Bytom",
+        "powiat": "Bytom",
+        "ludnosc": "149576"
+    },
+    {
+        "miasto": "Chorz\u00f3w",
+        "powiat": "Chorz\u00f3w",
+        "ludnosc": "101914"
+    },
+    {
+        "miasto": "Cieszyn",
+        "powiat": "Cieszy\u0144ski",
+        "ludnosc": "33251"
+    },
+    {
+        "miasto": "Czechowice-Dziedzice",
+        "powiat": "Bielski",
+        "ludnosc": "34943"
+    },
+    {
+        "miasto": "Czelad\u017a",
+        "powiat": "B\u0119dzi\u0144ski",
+        "ludnosc": "30165"
+    },
+    {
+        "miasto": "Czerwionka-Leszczyny",
+        "powiat": "Rybnicki",
+        "ludnosc": "26695"
+    },
+    {
+        "miasto": "Cz\u0119stochowa",
+        "powiat": "Cz\u0119stochowa",
+        "ludnosc": "208282"
+    },
+    {
+        "miasto": "D\u0105browa G\u00f3rnicza",
+        "powiat": "D\u0105browa G\u00f3rnicza",
+        "ludnosc": "114765"
+    },
+    {
+        "miasto": "Gliwice",
+        "powiat": "Gliwice",
+        "ludnosc": "171023"
+    },
+    {
+        "miasto": "Imielin",
+        "powiat": "Bieru\u0144sko-l\u0119dzi\u0144ski",
+        "ludnosc": "9411"
+    },
+    {
+        "miasto": "Jastrz\u0119bie-Zdr\u00f3j",
+        "powiat": "Jastrz\u0119bie-Zdr\u00f3j",
+        "ludnosc": "83139"
+    },
+    {
+        "miasto": "Jaworzno",
+        "powiat": "Jaworzno",
+        "ludnosc": "87552"
+    },
+    {
+        "miasto": "Kalety",
+        "powiat": "Tarnog\u00f3rski",
+        "ludnosc": "8209"
+    },
+    {
+        "miasto": "Katowice",
+        "powiat": "Katowice",
+        "ludnosc": "280190"
+    },
+    {
+        "miasto": "K\u0142obuck",
+        "powiat": "K\u0142obucki",
+        "ludnosc": "12327"
+    },
+    {
+        "miasto": "Knur\u00f3w",
+        "powiat": "Gliwicki",
+        "ludnosc": "35899"
+    },
+    {
+        "miasto": "Koniecpol",
+        "powiat": "Cz\u0119stochowski",
+        "ludnosc": "5449"
+    },
+    {
+        "miasto": "Kozieg\u0142owy",
+        "powiat": "Myszkowski",
+        "ludnosc": "2395"
+    },
+    {
+        "miasto": "Krzanowice",
+        "powiat": "Raciborski",
+        "ludnosc": "2030"
+    },
+    {
+        "miasto": "Krzepice",
+        "powiat": "K\u0142obucki",
+        "ludnosc": "4145"
+    },
+    {
+        "miasto": "Ku\u017ania Raciborska",
+        "powiat": "Raciborski",
+        "ludnosc": "4672"
+    },
+    {
+        "miasto": "L\u0119dziny",
+        "powiat": "Bieru\u0144sko-l\u0119dzi\u0144ski",
+        "ludnosc": "16466"
+    },
+    {
+        "miasto": "Lubliniec",
+        "powiat": "Lubliniecki",
+        "ludnosc": "23427"
+    },
+    {
+        "miasto": "\u0141aziska G\u00f3rne",
+        "powiat": "Miko\u0142owski",
+        "ludnosc": "21274"
+    },
+    {
+        "miasto": "\u0141azy",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "6461"
+    },
+    {
+        "miasto": "Miasteczko \u015al\u0105skie",
+        "powiat": "Tarnog\u00f3rski",
+        "ludnosc": "6971"
+    },
+    {
+        "miasto": "Miko\u0142\u00f3w",
+        "powiat": "Miko\u0142owski",
+        "ludnosc": "41327"
+    },
+    {
+        "miasto": "Mys\u0142owice",
+        "powiat": "Mys\u0142owice",
+        "ludnosc": "71643"
+    },
+    {
+        "miasto": "Myszk\u00f3w",
+        "powiat": "Myszkowski",
+        "ludnosc": "29717"
+    },
+    {
+        "miasto": "Ogrodzieniec",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "4115"
+    },
+    {
+        "miasto": "Olsztyn",
+        "powiat": "Cz\u0119stochowski",
+        "ludnosc": "2493"
+    },
+    {
+        "miasto": "Orzesze",
+        "powiat": "Miko\u0142owski",
+        "ludnosc": "21824"
+    },
+    {
+        "miasto": "Piekary \u015al\u0105skie",
+        "powiat": "Piekary \u015al\u0105skie",
+        "ludnosc": "52137"
+    },
+    {
+        "miasto": "Pilica",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "1776"
+    },
+    {
+        "miasto": "Por\u0119ba",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "8179"
+    },
+    {
+        "miasto": "Pszczyna",
+        "powiat": "Pszczy\u0144ski",
+        "ludnosc": "25260"
+    },
+    {
+        "miasto": "Psz\u00f3w",
+        "powiat": "Wodzis\u0142awski",
+        "ludnosc": "13090"
+    },
+    {
+        "miasto": "Pyskowice",
+        "powiat": "Gliwicki",
+        "ludnosc": "17153"
+    },
+    {
+        "miasto": "Racib\u00f3rz",
+        "powiat": "Raciborski",
+        "ludnosc": "50130"
+    },
+    {
+        "miasto": "Radlin",
+        "powiat": "Wodzis\u0142awski",
+        "ludnosc": "17026"
+    },
+    {
+        "miasto": "Radzionk\u00f3w",
+        "powiat": "Tarnog\u00f3rski",
+        "ludnosc": "16132"
+    },
+    {
+        "miasto": "Ruda \u015al\u0105ska",
+        "powiat": "Ruda \u015al\u0105ska",
+        "ludnosc": "131532"
+    },
+    {
+        "miasto": "Rybnik",
+        "powiat": "Rybnik",
+        "ludnosc": "131744"
+    },
+    {
+        "miasto": "Rydu\u0142towy",
+        "powiat": "Wodzis\u0142awski",
+        "ludnosc": "20359"
+    },
+    {
+        "miasto": "Siemianowice \u015al\u0105skie",
+        "powiat": "Siemianowice \u015al\u0105skie",
+        "ludnosc": "63892"
+    },
+    {
+        "miasto": "Siewierz",
+        "powiat": "B\u0119dzi\u0144ski",
+        "ludnosc": "5714"
+    },
+    {
+        "miasto": "Skocz\u00f3w",
+        "powiat": "Cieszy\u0144ski",
+        "ludnosc": "13613"
+    },
+    {
+        "miasto": "S\u0142awk\u00f3w",
+        "powiat": "B\u0119dzi\u0144ski",
+        "ludnosc": "6879"
+    },
+    {
+        "miasto": "Sosnowiec",
+        "powiat": "Sosnowiec",
+        "ludnosc": "189178"
+    },
+    {
+        "miasto": "So\u015bnicowice",
+        "powiat": "Gliwicki",
+        "ludnosc": "1964"
+    },
+    {
+        "miasto": "Strumie\u0144",
+        "powiat": "Cieszy\u0144ski",
+        "ludnosc": "3560"
+    },
+    {
+        "miasto": "Szczekociny",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "3370"
+    },
+    {
+        "miasto": "Szczyrk",
+        "powiat": "Bielski",
+        "ludnosc": "5347"
+    },
+    {
+        "miasto": "\u015awi\u0119toch\u0142owice",
+        "powiat": "\u015awi\u0119toch\u0142owice",
+        "ludnosc": "45795"
+    },
+    {
+        "miasto": "Tarnowskie G\u00f3ry",
+        "powiat": "Tarnog\u00f3rski",
+        "ludnosc": "61439"
+    },
+    {
+        "miasto": "Toszek",
+        "powiat": "Gliwicki",
+        "ludnosc": "3518"
+    },
+    {
+        "miasto": "Tychy",
+        "powiat": "Tychy",
+        "ludnosc": "123105"
+    },
+    {
+        "miasto": "Ustro\u0144",
+        "powiat": "Cieszy\u0144ski",
+        "ludnosc": "16007"
+    },
+    {
+        "miasto": "Wilamowice",
+        "powiat": "Bielski",
+        "ludnosc": "3180"
+    },
+    {
+        "miasto": "Wis\u0142a",
+        "powiat": "Cieszy\u0144ski",
+        "ludnosc": "10711"
+    },
+    {
+        "miasto": "W\u0142odowice",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "1151"
+    },
+    {
+        "miasto": "Wodzis\u0142aw \u015al\u0105ski",
+        "powiat": "Wodzis\u0142awski",
+        "ludnosc": "45120"
+    },
+    {
+        "miasto": "Wojkowice",
+        "powiat": "B\u0119dzi\u0144ski",
+        "ludnosc": "8543"
+    },
+    {
+        "miasto": "Wo\u017aniki",
+        "powiat": "Lubliniecki",
+        "ludnosc": "4143"
+    },
+    {
+        "miasto": "Zabrze",
+        "powiat": "Zabrze",
+        "ludnosc": "155430"
+    },
+    {
+        "miasto": "Zawiercie",
+        "powiat": "Zawiercia\u0144ski",
+        "ludnosc": "46727"
+    },
+    {
+        "miasto": "\u017barki",
+        "powiat": "Myszkowski",
+        "ludnosc": "4378"
+    },
+    {
+        "miasto": "\u017bory",
+        "powiat": "\u017bory",
+        "ludnosc": "61817"
+    },
+    {
+        "miasto": "\u017bywiec",
+        "powiat": "\u017bywiecki",
+        "ludnosc": "29878"
+    },
+    {
+        "miasto": "Bodzentyn",
+        "powiat": "Kielecki",
+        "ludnosc": "2118"
+    },
+    {
+        "miasto": "Busko-Zdr\u00f3j",
+        "powiat": "Buski",
+        "ludnosc": "14588"
+    },
+    {
+        "miasto": "Ch\u0119ciny",
+        "powiat": "Kielecki",
+        "ludnosc": "4316"
+    },
+    {
+        "miasto": "Chmielnik",
+        "powiat": "Kielecki",
+        "ludnosc": "3503"
+    },
+    {
+        "miasto": "\u0106miel\u00f3w",
+        "powiat": "Ostrowiecki",
+        "ludnosc": "2829"
+    },
+    {
+        "miasto": "Daleszyce",
+        "powiat": "Kielecki",
+        "ludnosc": "2781"
+    },
+    {
+        "miasto": "Dzia\u0142oszyce",
+        "powiat": "Pi\u0144czowski",
+        "ludnosc": "852"
+    },
+    {
+        "miasto": "Iwaniska",
+        "powiat": "Opatowski",
+        "ludnosc": "1238"
+    },
+    {
+        "miasto": "J\u0119drzej\u00f3w",
+        "powiat": "J\u0119drzejowski",
+        "ludnosc": "14308"
+    },
+    {
+        "miasto": "Kazimierza Wielka",
+        "powiat": "Kazimierski",
+        "ludnosc": "5038"
+    },
+    {
+        "miasto": "Kielce",
+        "powiat": "Kielce",
+        "ludnosc": "183885"
+    },
+    {
+        "miasto": "Klimont\u00f3w",
+        "powiat": "Sandomierski",
+        "ludnosc": "1760"
+    },
+    {
+        "miasto": "Ko\u0144skie",
+        "powiat": "Konecki",
+        "ludnosc": "17629"
+    },
+    {
+        "miasto": "Koprzywnica",
+        "powiat": "Sandomierski",
+        "ludnosc": "2365"
+    },
+    {
+        "miasto": "Kun\u00f3w",
+        "powiat": "Ostrowiecki",
+        "ludnosc": "2739"
+    },
+    {
+        "miasto": "\u0141ag\u00f3w",
+        "powiat": "Kielecki",
+        "ludnosc": "1544"
+    },
+    {
+        "miasto": "\u0141opuszno",
+        "powiat": "Kielecki",
+        "ludnosc": "1427"
+    },
+    {
+        "miasto": "Ma\u0142ogoszcz",
+        "powiat": "J\u0119drzejowski",
+        "ludnosc": "3399"
+    },
+    {
+        "miasto": "Morawica",
+        "powiat": "Kielecki",
+        "ludnosc": "1782"
+    },
+    {
+        "miasto": "Nowa S\u0142upia",
+        "powiat": "Kielecki",
+        "ludnosc": "1312"
+    },
+    {
+        "miasto": "Nowy Korczyn",
+        "powiat": "Buski",
+        "ludnosc": "904"
+    },
+    {
+        "miasto": "Ole\u015bnica",
+        "powiat": "Staszowski",
+        "ludnosc": "1724"
+    },
+    {
+        "miasto": "Opatowiec",
+        "powiat": "Kazimierski",
+        "ludnosc": "317"
+    },
+    {
+        "miasto": "Opat\u00f3w",
+        "powiat": "Opatowski",
+        "ludnosc": "5965"
+    },
+    {
+        "miasto": "Osiek",
+        "powiat": "Staszowski",
+        "ludnosc": "1954"
+    },
+    {
+        "miasto": "Ostrowiec \u015awi\u0119tokrzyski",
+        "powiat": "Ostrowiecki",
+        "ludnosc": "62980"
+    },
+    {
+        "miasto": "O\u017car\u00f3w",
+        "powiat": "Opatowski",
+        "ludnosc": "4261"
+    },
+    {
+        "miasto": "Pacan\u00f3w",
+        "powiat": "Buski",
+        "ludnosc": "1045"
+    },
+    {
+        "miasto": "Piekosz\u00f3w",
+        "powiat": "Kielecki",
+        "ludnosc": "2942"
+    },
+    {
+        "miasto": "Pierzchnica",
+        "powiat": "Kielecki",
+        "ludnosc": "1257"
+    },
+    {
+        "miasto": "Pi\u0144cz\u00f3w",
+        "powiat": "Pi\u0144czowski",
+        "ludnosc": "9843"
+    },
+    {
+        "miasto": "Po\u0142aniec",
+        "powiat": "Staszowski",
+        "ludnosc": "7526"
+    },
+    {
+        "miasto": "Radoszyce",
+        "powiat": "Konecki",
+        "ludnosc": "2874"
+    },
+    {
+        "miasto": "Sandomierz",
+        "powiat": "Sandomierski",
+        "ludnosc": "21586"
+    },
+    {
+        "miasto": "S\u0119dzisz\u00f3w",
+        "powiat": "J\u0119drzejowski",
+        "ludnosc": "6173"
+    },
+    {
+        "miasto": "Skalbmierz",
+        "powiat": "Kazimierski",
+        "ludnosc": "1202"
+    },
+    {
+        "miasto": "Skar\u017cysko-Kamienna",
+        "powiat": "Skar\u017cyski",
+        "ludnosc": "41793"
+    },
+    {
+        "miasto": "Starachowice",
+        "powiat": "Starachowicki",
+        "ludnosc": "44992"
+    },
+    {
+        "miasto": "Stasz\u00f3w",
+        "powiat": "Staszowski",
+        "ludnosc": "13758"
+    },
+    {
+        "miasto": "St\u0105pork\u00f3w",
+        "powiat": "Konecki",
+        "ludnosc": "5165"
+    },
+    {
+        "miasto": "Stopnica",
+        "powiat": "Buski",
+        "ludnosc": "1150"
+    },
+    {
+        "miasto": "Suchedni\u00f3w",
+        "powiat": "Skar\u017cyski",
+        "ludnosc": "7588"
+    },
+    {
+        "miasto": "Szyd\u0142\u00f3w",
+        "powiat": "Staszowski",
+        "ludnosc": "974"
+    },
+    {
+        "miasto": "W\u0105chock",
+        "powiat": "Starachowicki",
+        "ludnosc": "2507"
+    },
+    {
+        "miasto": "Wi\u015blica",
+        "powiat": "Buski",
+        "ludnosc": "468"
+    },
+    {
+        "miasto": "W\u0142oszczowa",
+        "powiat": "W\u0142oszczowski",
+        "ludnosc": "9617"
+    },
+    {
+        "miasto": "Wodzis\u0142aw",
+        "powiat": "J\u0119drzejowski",
+        "ludnosc": "981"
+    },
+    {
+        "miasto": "Zawichost",
+        "powiat": "Sandomierski",
+        "ludnosc": "1609"
+    },
+    {
+        "miasto": "Barczewo",
+        "powiat": "Olszty\u0144ski",
+        "ludnosc": "7416"
+    },
+    {
+        "miasto": "Bartoszyce",
+        "powiat": "Bartoszycki",
+        "ludnosc": "21682"
+    },
+    {
+        "miasto": "Bia\u0142a Piska",
+        "powiat": "Piski",
+        "ludnosc": "3725"
+    },
+    {
+        "miasto": "Biskupiec",
+        "powiat": "Olszty\u0144ski",
+        "ludnosc": "10010"
+    },
+    {
+        "miasto": "Bisztynek",
+        "powiat": "Bartoszycki",
+        "ludnosc": "2184"
+    },
+    {
+        "miasto": "Braniewo",
+        "powiat": "Braniewski",
+        "ludnosc": "16223"
+    },
+    {
+        "miasto": "Dobre Miasto",
+        "powiat": "Olszty\u0144ski",
+        "ludnosc": "9397"
+    },
+    {
+        "miasto": "Dzia\u0142dowo",
+        "powiat": "Dzia\u0142dowski",
+        "ludnosc": "20367"
+    },
+    {
+        "miasto": "Elbl\u0105g",
+        "powiat": "Elbl\u0105g",
+        "ludnosc": "113567"
+    },
+    {
+        "miasto": "E\u0142k",
+        "powiat": "E\u0142cki",
+        "ludnosc": "60070"
+    },
+    {
+        "miasto": "Frombork",
+        "powiat": "Braniewski",
+        "ludnosc": "2099"
+    },
+    {
+        "miasto": "Gi\u017cycko",
+        "powiat": "Gi\u017cycki",
+        "ludnosc": "27596"
+    },
+    {
+        "miasto": "Go\u0142dap",
+        "powiat": "Go\u0142dapski",
+        "ludnosc": "13283"
+    },
+    {
+        "miasto": "G\u00f3rowo I\u0142aweckie",
+        "powiat": "Bartoszycki",
+        "ludnosc": "3663"
+    },
+    {
+        "miasto": "I\u0142awa",
+        "powiat": "I\u0142awski",
+        "ludnosc": "32319"
+    },
+    {
+        "miasto": "Jeziorany",
+        "powiat": "Olszty\u0144ski",
+        "ludnosc": "3006"
+    },
+    {
+        "miasto": "K\u0119trzyn",
+        "powiat": "K\u0119trzy\u0144ski",
+        "ludnosc": "25487"
+    },
+    {
+        "miasto": "Kisielice",
+        "powiat": "I\u0142awski",
+        "ludnosc": "2035"
+    },
+    {
+        "miasto": "Korsze",
+        "powiat": "K\u0119trzy\u0144ski",
+        "ludnosc": "4005"
+    },
+    {
+        "miasto": "Lidzbark",
+        "powiat": "Dzia\u0142dowski",
+        "ludnosc": "7300"
+    },
+    {
+        "miasto": "Lidzbark Warmi\u0144ski",
+        "powiat": "Lidzbarski",
+        "ludnosc": "14614"
+    },
+    {
+        "miasto": "Lubawa",
+        "powiat": "I\u0142awski",
+        "ludnosc": "10619"
+    },
+    {
+        "miasto": "Miko\u0142ajki",
+        "powiat": "Mr\u0105gowski",
+        "ludnosc": "3408"
+    },
+    {
+        "miasto": "Mi\u0142akowo",
+        "powiat": "Ostr\u00f3dzki",
+        "ludnosc": "2419"
+    },
+    {
+        "miasto": "Mi\u0142om\u0142yn",
+        "powiat": "Ostr\u00f3dzki",
+        "ludnosc": "2426"
+    },
+    {
+        "miasto": "M\u0142ynary",
+        "powiat": "Elbl\u0105ski",
+        "ludnosc": "1686"
+    },
+    {
+        "miasto": "Mor\u0105g",
+        "powiat": "Ostr\u00f3dzki",
+        "ludnosc": "12981"
+    },
+    {
+        "miasto": "Mr\u0105gowo",
+        "powiat": "Mr\u0105gowski",
+        "ludnosc": "20808"
+    },
+    {
+        "miasto": "Nidzica",
+        "powiat": "Nidzicki",
+        "ludnosc": "12757"
+    },
+    {
+        "miasto": "Nowe Miasto Lubawskie",
+        "powiat": "Nowomiejski",
+        "ludnosc": "10214"
+    },
+    {
+        "miasto": "Olecko",
+        "powiat": "Olecki",
+        "ludnosc": "15792"
+    },
+    {
+        "miasto": "Olsztyn",
+        "powiat": "Olsztyn",
+        "ludnosc": "168212"
+    },
+    {
+        "miasto": "Olsztynek",
+        "powiat": "Olszty\u0144ski",
+        "ludnosc": "7229"
+    },
+    {
+        "miasto": "Orneta",
+        "powiat": "Lidzbarski",
+        "ludnosc": "8114"
+    },
+    {
+        "miasto": "Orzysz",
+        "powiat": "Piski",
+        "ludnosc": "5317"
+    },
+    {
+        "miasto": "Ostr\u00f3da",
+        "powiat": "Ostr\u00f3dzki",
+        "ludnosc": "31488"
+    },
+    {
+        "miasto": "Pas\u0142\u0119k",
+        "powiat": "Elbl\u0105ski",
+        "ludnosc": "11880"
+    },
+    {
+        "miasto": "Pasym",
+        "powiat": "Szczycie\u0144ski",
+        "ludnosc": "2389"
+    },
+    {
+        "miasto": "Pieni\u0119\u017cno",
+        "powiat": "Braniewski",
+        "ludnosc": "2450"
+    },
+    {
+        "miasto": "Pisz",
+        "powiat": "Piski",
+        "ludnosc": "17828"
+    },
+    {
+        "miasto": "Reszel",
+        "powiat": "K\u0119trzy\u0144ski",
+        "ludnosc": "4080"
+    },
+    {
+        "miasto": "Ruciane-Nida",
+        "powiat": "Piski",
+        "ludnosc": "4130"
+    },
+    {
+        "miasto": "Ryn",
+        "powiat": "Gi\u017cycki",
+        "ludnosc": "2709"
+    },
+    {
+        "miasto": "S\u0119popol",
+        "powiat": "Bartoszycki",
+        "ludnosc": "1887"
+    },
+    {
+        "miasto": "Susz",
+        "powiat": "I\u0142awski",
+        "ludnosc": "5255"
+    },
+    {
+        "miasto": "Szczytno",
+        "powiat": "Szczycie\u0144ski",
+        "ludnosc": "22081"
+    },
+    {
+        "miasto": "Tolkmicko",
+        "powiat": "Elbl\u0105ski",
+        "ludnosc": "2430"
+    },
+    {
+        "miasto": "W\u0119gorzewo",
+        "powiat": "W\u0119gorzewski",
+        "ludnosc": "10669"
+    },
+    {
+        "miasto": "Wielbark",
+        "powiat": "Szczycie\u0144ski",
+        "ludnosc": "2973"
+    },
+    {
+        "miasto": "Zalewo",
+        "powiat": "I\u0142awski",
+        "ludnosc": "2042"
+    },
+    {
+        "miasto": "Bojanowo",
+        "powiat": "Rawicki",
+        "ludnosc": "2816"
+    },
+    {
+        "miasto": "Borek Wielkopolski",
+        "powiat": "Gosty\u0144ski",
+        "ludnosc": "2437"
+    },
+    {
+        "miasto": "Budzy\u0144",
+        "powiat": "Chodzieski",
+        "ludnosc": "4644"
+    },
+    {
+        "miasto": "Buk",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "5568"
+    },
+    {
+        "miasto": "Chocz",
+        "powiat": "Pleszewski",
+        "ludnosc": "1642"
+    },
+    {
+        "miasto": "Chodzie\u017c",
+        "powiat": "Chodzieski",
+        "ludnosc": "17595"
+    },
+    {
+        "miasto": "Czarnk\u00f3w",
+        "powiat": "Czarnkowsko-trzcianecki",
+        "ludnosc": "10097"
+    },
+    {
+        "miasto": "Czempi\u0144",
+        "powiat": "Ko\u015bcia\u0144ski",
+        "ludnosc": "5128"
+    },
+    {
+        "miasto": "Czerniejewo",
+        "powiat": "Gnie\u017anie\u0144ski",
+        "ludnosc": "2553"
+    },
+    {
+        "miasto": "D\u0105bie",
+        "powiat": "Kolski",
+        "ludnosc": "1727"
+    },
+    {
+        "miasto": "Dobra",
+        "powiat": "Turecki",
+        "ludnosc": "1341"
+    },
+    {
+        "miasto": "Dobrzyca",
+        "powiat": "Pleszewski",
+        "ludnosc": "2950"
+    },
+    {
+        "miasto": "Dolsk",
+        "powiat": "\u015aremski",
+        "ludnosc": "1574"
+    },
+    {
+        "miasto": "Gniezno",
+        "powiat": "Gnie\u017anie\u0144ski",
+        "ludnosc": "64220"
+    },
+    {
+        "miasto": "Golina",
+        "powiat": "Koni\u0144ski",
+        "ludnosc": "4321"
+    },
+    {
+        "miasto": "Go\u0142a\u0144cz",
+        "powiat": "W\u0105growiecki",
+        "ludnosc": "3200"
+    },
+    {
+        "miasto": "Gosty\u0144",
+        "powiat": "Gosty\u0144ski",
+        "ludnosc": "20023"
+    },
+    {
+        "miasto": "Grab\u00f3w nad Prosn\u0105",
+        "powiat": "Ostrzeszowski",
+        "ludnosc": "1912"
+    },
+    {
+        "miasto": "Grodzisk Wielkopolski",
+        "powiat": "Grodziski",
+        "ludnosc": "15141"
+    },
+    {
+        "miasto": "Jaraczewo",
+        "powiat": "Jaroci\u0144ski",
+        "ludnosc": "1369"
+    },
+    {
+        "miasto": "Jarocin",
+        "powiat": "Jaroci\u0144ski",
+        "ludnosc": "26399"
+    },
+    {
+        "miasto": "Jastrowie",
+        "powiat": "Z\u0142otowski",
+        "ludnosc": "8318"
+    },
+    {
+        "miasto": "Jutrosin",
+        "powiat": "Rawicki",
+        "ludnosc": "1886"
+    },
+    {
+        "miasto": "Kaczory",
+        "powiat": "Pilski",
+        "ludnosc": "2792"
+    },
+    {
+        "miasto": "Kalisz",
+        "powiat": "Kalisz",
+        "ludnosc": "93973"
+    },
+    {
+        "miasto": "K\u0119pno",
+        "powiat": "K\u0119pi\u0144ski",
+        "ludnosc": "13680"
+    },
+    {
+        "miasto": "Kleczew",
+        "powiat": "Koni\u0144ski",
+        "ludnosc": "3921"
+    },
+    {
+        "miasto": "K\u0142ecko",
+        "powiat": "Gnie\u017anie\u0144ski",
+        "ludnosc": "2544"
+    },
+    {
+        "miasto": "K\u0142odawa",
+        "powiat": "Kolski",
+        "ludnosc": "5919"
+    },
+    {
+        "miasto": "Kobylin",
+        "powiat": "Krotoszy\u0144ski",
+        "ludnosc": "3180"
+    },
+    {
+        "miasto": "Ko\u0142o",
+        "powiat": "Kolski",
+        "ludnosc": "19686"
+    },
+    {
+        "miasto": "Konin",
+        "powiat": "Konin",
+        "ludnosc": "68112"
+    },
+    {
+        "miasto": "Kostrzyn",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "9839"
+    },
+    {
+        "miasto": "Ko\u015bcian",
+        "powiat": "Ko\u015bcia\u0144ski",
+        "ludnosc": "23563"
+    },
+    {
+        "miasto": "Ko\u017amin Wielkopolski",
+        "powiat": "Krotoszy\u0144ski",
+        "ludnosc": "6158"
+    },
+    {
+        "miasto": "Ko\u017aminek",
+        "powiat": "Kaliski",
+        "ludnosc": "1839"
+    },
+    {
+        "miasto": "K\u00f3rnik",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "8184"
+    },
+    {
+        "miasto": "Krajenka",
+        "powiat": "Z\u0142otowski",
+        "ludnosc": "3510"
+    },
+    {
+        "miasto": "Krobia",
+        "powiat": "Gosty\u0144ski",
+        "ludnosc": "4469"
+    },
+    {
+        "miasto": "Krotoszyn",
+        "powiat": "Krotoszy\u0144ski",
+        "ludnosc": "28287"
+    },
+    {
+        "miasto": "Krzywi\u0144",
+        "powiat": "Ko\u015bcia\u0144ski",
+        "ludnosc": "1663"
+    },
+    {
+        "miasto": "Krzy\u017c Wielkopolski",
+        "powiat": "Czarnkowsko-trzcianecki",
+        "ludnosc": "5943"
+    },
+    {
+        "miasto": "Ksi\u0105\u017c Wielkopolski",
+        "powiat": "\u015aremski",
+        "ludnosc": "2573"
+    },
+    {
+        "miasto": "Leszno",
+        "powiat": "Leszno",
+        "ludnosc": "60642"
+    },
+    {
+        "miasto": "Lubo\u0144",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "32848"
+    },
+    {
+        "miasto": "Lw\u00f3wek",
+        "powiat": "Nowotomyski",
+        "ludnosc": "2939"
+    },
+    {
+        "miasto": "\u0141ob\u017cenica",
+        "powiat": "Pilski",
+        "ludnosc": "2812"
+    },
+    {
+        "miasto": "Margonin",
+        "powiat": "Chodzieski",
+        "ludnosc": "2991"
+    },
+    {
+        "miasto": "Miasteczko Kraje\u0144skie",
+        "powiat": "Pilski",
+        "ludnosc": "1073"
+    },
+    {
+        "miasto": "Miejska G\u00f3rka",
+        "powiat": "Rawicki",
+        "ludnosc": "3090"
+    },
+    {
+        "miasto": "Mi\u0119dzych\u00f3d",
+        "powiat": "Mi\u0119dzychodzki",
+        "ludnosc": "10070"
+    },
+    {
+        "miasto": "Mikstat",
+        "powiat": "Ostrzeszowski",
+        "ludnosc": "1707"
+    },
+    {
+        "miasto": "Mi\u0142os\u0142aw",
+        "powiat": "Wrzesi\u0144ski",
+        "ludnosc": "3440"
+    },
+    {
+        "miasto": "Mosina",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "14499"
+    },
+    {
+        "miasto": "Murowana Go\u015blina",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "10259"
+    },
+    {
+        "miasto": "Nekla",
+        "powiat": "Wrzesi\u0144ski",
+        "ludnosc": "3830"
+    },
+    {
+        "miasto": "Nowe Skalmierzyce",
+        "powiat": "Ostrowski",
+        "ludnosc": "4661"
+    },
+    {
+        "miasto": "Nowy Tomy\u015bl",
+        "powiat": "Nowotomyski",
+        "ludnosc": "13759"
+    },
+    {
+        "miasto": "Oborniki",
+        "powiat": "Obornicki",
+        "ludnosc": "17378"
+    },
+    {
+        "miasto": "Obrzycko",
+        "powiat": "Szamotulski",
+        "ludnosc": "2387"
+    },
+    {
+        "miasto": "Odolan\u00f3w",
+        "powiat": "Ostrowski",
+        "ludnosc": "4943"
+    },
+    {
+        "miasto": "Okonek",
+        "powiat": "Z\u0142otowski",
+        "ludnosc": "3665"
+    },
+    {
+        "miasto": "Opalenica",
+        "powiat": "Nowotomyski",
+        "ludnosc": "9319"
+    },
+    {
+        "miasto": "Opat\u00f3wek",
+        "powiat": "Kaliski",
+        "ludnosc": "3533"
+    },
+    {
+        "miasto": "Osieczna",
+        "powiat": "Leszczy\u0144ski",
+        "ludnosc": "2442"
+    },
+    {
+        "miasto": "Ostror\u00f3g",
+        "powiat": "Szamotulski",
+        "ludnosc": "1852"
+    },
+    {
+        "miasto": "Ostr\u00f3w Wielkopolski",
+        "powiat": "Ostrowski",
+        "ludnosc": "69755"
+    },
+    {
+        "miasto": "Ostrzesz\u00f3w",
+        "powiat": "Ostrzeszowski",
+        "ludnosc": "13776"
+    },
+    {
+        "miasto": "Pi\u0142a",
+        "powiat": "Pilski",
+        "ludnosc": "70624"
+    },
+    {
+        "miasto": "Pleszew",
+        "powiat": "Pleszewski",
+        "ludnosc": "16641"
+    },
+    {
+        "miasto": "Pniewy",
+        "powiat": "Szamotulski",
+        "ludnosc": "8142"
+    },
+    {
+        "miasto": "Pobiedziska",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "9858"
+    },
+    {
+        "miasto": "Pogorzela",
+        "powiat": "Gosty\u0144ski",
+        "ludnosc": "2031"
+    },
+    {
+        "miasto": "Poniec",
+        "powiat": "Gosty\u0144ski",
+        "ludnosc": "2926"
+    },
+    {
+        "miasto": "Pozna\u0144",
+        "powiat": "Pozna\u0144",
+        "ludnosc": "541316"
+    },
+    {
+        "miasto": "Przedecz",
+        "powiat": "Kolski",
+        "ludnosc": "1524"
+    },
+    {
+        "miasto": "Puszczykowo",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "9376"
+    },
+    {
+        "miasto": "Pyzdry",
+        "powiat": "Wrzesi\u0144ski",
+        "ludnosc": "2974"
+    },
+    {
+        "miasto": "Rakoniewice",
+        "powiat": "Grodziski",
+        "ludnosc": "3617"
+    },
+    {
+        "miasto": "Raszk\u00f3w",
+        "powiat": "Ostrowski",
+        "ludnosc": "2099"
+    },
+    {
+        "miasto": "Rawicz",
+        "powiat": "Rawicki",
+        "ludnosc": "19939"
+    },
+    {
+        "miasto": "Rogo\u017ano",
+        "powiat": "Obornicki",
+        "ludnosc": "10875"
+    },
+    {
+        "miasto": "Rychwa\u0142",
+        "powiat": "Koni\u0144ski",
+        "ludnosc": "2356"
+    },
+    {
+        "miasto": "Rydzyna",
+        "powiat": "Leszczy\u0144ski",
+        "ludnosc": "2900"
+    },
+    {
+        "miasto": "Sierak\u00f3w",
+        "powiat": "Mi\u0119dzychodzki",
+        "ludnosc": "5831"
+    },
+    {
+        "miasto": "Skoki",
+        "powiat": "W\u0105growiecki",
+        "ludnosc": "4746"
+    },
+    {
+        "miasto": "S\u0142upca",
+        "powiat": "S\u0142upecki",
+        "ludnosc": "13102"
+    },
+    {
+        "miasto": "Sompolno",
+        "powiat": "Koni\u0144ski",
+        "ludnosc": "3351"
+    },
+    {
+        "miasto": "Stawiszyn",
+        "powiat": "Kaliski",
+        "ludnosc": "1375"
+    },
+    {
+        "miasto": "St\u0119szew",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "5923"
+    },
+    {
+        "miasto": "Sulmierzyce",
+        "powiat": "Krotoszy\u0144ski",
+        "ludnosc": "2746"
+    },
+    {
+        "miasto": "Swarz\u0119dz",
+        "powiat": "Pozna\u0144ski",
+        "ludnosc": "28561"
+    },
+    {
+        "miasto": "Szamocin",
+        "powiat": "Chodzieski",
+        "ludnosc": "3903"
+    },
+    {
+        "miasto": "Szamotu\u0142y",
+        "powiat": "Szamotulski",
+        "ludnosc": "18398"
+    },
+    {
+        "miasto": "\u015alesin",
+        "powiat": "Koni\u0144ski",
+        "ludnosc": "3121"
+    },
+    {
+        "miasto": "\u015amigiel",
+        "powiat": "Ko\u015bcia\u0144ski",
+        "ludnosc": "5580"
+    },
+    {
+        "miasto": "\u015arem",
+        "powiat": "\u015aremski",
+        "ludnosc": "28262"
+    },
+    {
+        "miasto": "\u015aroda Wielkopolska",
+        "powiat": "\u015aredzki",
+        "ludnosc": "24339"
+    },
+    {
+        "miasto": "Trzcianka",
+        "powiat": "Czarnkowsko-trzcianecki",
+        "ludnosc": "16514"
+    },
+    {
+        "miasto": "Trzemeszno",
+        "powiat": "Gnie\u017anie\u0144ski",
+        "ludnosc": "7355"
+    },
+    {
+        "miasto": "Tuliszk\u00f3w",
+        "powiat": "Turecki",
+        "ludnosc": "3079"
+    },
+    {
+        "miasto": "Turek",
+        "powiat": "Turecki",
+        "ludnosc": "24788"
+    },
+    {
+        "miasto": "Uj\u015bcie",
+        "powiat": "Pilski",
+        "ludnosc": "3420"
+    },
+    {
+        "miasto": "W\u0105growiec",
+        "powiat": "W\u0105growiecki",
+        "ludnosc": "25457"
+    },
+    {
+        "miasto": "Wiele\u0144",
+        "powiat": "Czarnkowsko-trzcianecki",
+        "ludnosc": "5754"
+    },
+    {
+        "miasto": "Wielichowo",
+        "powiat": "Grodziski",
+        "ludnosc": "1677"
+    },
+    {
+        "miasto": "Witkowo",
+        "powiat": "Gnie\u017anie\u0144ski",
+        "ludnosc": "7495"
+    },
+    {
+        "miasto": "Wolsztyn",
+        "powiat": "Wolszty\u0144ski",
+        "ludnosc": "12085"
+    },
+    {
+        "miasto": "Wronki",
+        "powiat": "Szamotulski",
+        "ludnosc": "10562"
+    },
+    {
+        "miasto": "Wrze\u015bnia",
+        "powiat": "Wrzesi\u0144ski",
+        "ludnosc": "31857"
+    },
+    {
+        "miasto": "Wyrzysk",
+        "powiat": "Pilski",
+        "ludnosc": "5079"
+    },
+    {
+        "miasto": "Wysoka",
+        "powiat": "Pilski",
+        "ludnosc": "2530"
+    },
+    {
+        "miasto": "Zag\u00f3r\u00f3w",
+        "powiat": "S\u0142upecki",
+        "ludnosc": "2780"
+    },
+    {
+        "miasto": "Zb\u0105szy\u0144",
+        "powiat": "Nowotomyski",
+        "ludnosc": "7095"
+    },
+    {
+        "miasto": "Zduny",
+        "powiat": "Krotoszy\u0144ski",
+        "ludnosc": "4345"
+    },
+    {
+        "miasto": "Z\u0142ot\u00f3w",
+        "powiat": "Z\u0142otowski",
+        "ludnosc": "18275"
+    },
+    {
+        "miasto": "\u017berk\u00f3w",
+        "powiat": "Jaroci\u0144ski",
+        "ludnosc": "2078"
+    },
+    {
+        "miasto": "Barlinek",
+        "powiat": "My\u015bliborski",
+        "ludnosc": "13119"
+    },
+    {
+        "miasto": "Barwice",
+        "powiat": "Szczecinecki",
+        "ludnosc": "3479"
+    },
+    {
+        "miasto": "Bia\u0142ogard",
+        "powiat": "Bia\u0142ogardzki",
+        "ludnosc": "22664"
+    },
+    {
+        "miasto": "Bia\u0142y B\u00f3r",
+        "powiat": "Szczecinecki",
+        "ludnosc": "2097"
+    },
+    {
+        "miasto": "Bobolice",
+        "powiat": "Koszali\u0144ski",
+        "ludnosc": "3772"
+    },
+    {
+        "miasto": "Borne Sulinowo",
+        "powiat": "Szczecinecki",
+        "ludnosc": "4933"
+    },
+    {
+        "miasto": "Cedynia",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "1485"
+    },
+    {
+        "miasto": "Chociwel",
+        "powiat": "Stargardzki",
+        "ludnosc": "2997"
+    },
+    {
+        "miasto": "Chojna",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "7362"
+    },
+    {
+        "miasto": "Choszczno",
+        "powiat": "Choszcze\u0144ski",
+        "ludnosc": "14064"
+    },
+    {
+        "miasto": "Czaplinek",
+        "powiat": "Drawski",
+        "ludnosc": "6740"
+    },
+    {
+        "miasto": "Cz\u0142opa",
+        "powiat": "Wa\u0142ecki",
+        "ludnosc": "2176"
+    },
+    {
+        "miasto": "Dar\u0142owo",
+        "powiat": "S\u0142awie\u0144ski",
+        "ludnosc": "12715"
+    },
+    {
+        "miasto": "D\u0119bno",
+        "powiat": "My\u015bliborski",
+        "ludnosc": "13024"
+    },
+    {
+        "miasto": "Dobra",
+        "powiat": "\u0141obeski",
+        "ludnosc": "2032"
+    },
+    {
+        "miasto": "Dobrzany",
+        "powiat": "Stargardzki",
+        "ludnosc": "2189"
+    },
+    {
+        "miasto": "Drawno",
+        "powiat": "Choszcze\u0144ski",
+        "ludnosc": "2176"
+    },
+    {
+        "miasto": "Drawsko Pomorskie",
+        "powiat": "Drawski",
+        "ludnosc": "11298"
+    },
+    {
+        "miasto": "Dziwn\u00f3w",
+        "powiat": "Kamie\u0144ski",
+        "ludnosc": "2329"
+    },
+    {
+        "miasto": "Golczewo",
+        "powiat": "Kamie\u0144ski",
+        "ludnosc": "2517"
+    },
+    {
+        "miasto": "Goleni\u00f3w",
+        "powiat": "Goleniowski",
+        "ludnosc": "21762"
+    },
+    {
+        "miasto": "Go\u015bcino",
+        "powiat": "Ko\u0142obrzeski",
+        "ludnosc": "2692"
+    },
+    {
+        "miasto": "Gryfice",
+        "powiat": "Gryficki",
+        "ludnosc": "15572"
+    },
+    {
+        "miasto": "Gryfino",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "19908"
+    },
+    {
+        "miasto": "I\u0144sko",
+        "powiat": "Stargardzki",
+        "ludnosc": "1790"
+    },
+    {
+        "miasto": "Kalisz Pomorski",
+        "powiat": "Drawski",
+        "ludnosc": "4048"
+    },
+    {
+        "miasto": "Kamie\u0144 Pomorski",
+        "powiat": "Kamie\u0144ski",
+        "ludnosc": "8400"
+    },
+    {
+        "miasto": "Karlino",
+        "powiat": "Bia\u0142ogardzki",
+        "ludnosc": "5507"
+    },
+    {
+        "miasto": "Ko\u0142obrzeg",
+        "powiat": "Ko\u0142obrzeski",
+        "ludnosc": "43678"
+    },
+    {
+        "miasto": "Koszalin",
+        "powiat": "Koszalin",
+        "ludnosc": "106136"
+    },
+    {
+        "miasto": "Lipiany",
+        "powiat": "Pyrzycki",
+        "ludnosc": "3819"
+    },
+    {
+        "miasto": "\u0141obez",
+        "powiat": "\u0141obeski",
+        "ludnosc": "9574"
+    },
+    {
+        "miasto": "Maszewo",
+        "powiat": "Goleniowski",
+        "ludnosc": "3291"
+    },
+    {
+        "miasto": "Mielno",
+        "powiat": "Koszali\u0144ski",
+        "ludnosc": "2773"
+    },
+    {
+        "miasto": "Mieszkowice",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "3371"
+    },
+    {
+        "miasto": "Mi\u0119dzyzdroje",
+        "powiat": "Kamie\u0144ski",
+        "ludnosc": "4936"
+    },
+    {
+        "miasto": "Miros\u0142awiec",
+        "powiat": "Wa\u0142ecki",
+        "ludnosc": "3009"
+    },
+    {
+        "miasto": "Mory\u0144",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "1629"
+    },
+    {
+        "miasto": "My\u015blib\u00f3rz",
+        "powiat": "My\u015bliborski",
+        "ludnosc": "10433"
+    },
+    {
+        "miasto": "Nowe Warpno",
+        "powiat": "Policki",
+        "ludnosc": "1076"
+    },
+    {
+        "miasto": "Nowogard",
+        "powiat": "Goleniowski",
+        "ludnosc": "15807"
+    },
+    {
+        "miasto": "Pe\u0142czyce",
+        "powiat": "Choszcze\u0144ski",
+        "ludnosc": "2433"
+    },
+    {
+        "miasto": "P\u0142oty",
+        "powiat": "Gryficki",
+        "ludnosc": "3724"
+    },
+    {
+        "miasto": "Polan\u00f3w",
+        "powiat": "Koszali\u0144ski",
+        "ludnosc": "2840"
+    },
+    {
+        "miasto": "Police",
+        "powiat": "Policki",
+        "ludnosc": "30020"
+    },
+    {
+        "miasto": "Po\u0142czyn-Zdr\u00f3j",
+        "powiat": "\u015awidwi\u0144ski",
+        "ludnosc": "7335"
+    },
+    {
+        "miasto": "Pyrzyce",
+        "powiat": "Pyrzycki",
+        "ludnosc": "11932"
+    },
+    {
+        "miasto": "Recz",
+        "powiat": "Choszcze\u0144ski",
+        "ludnosc": "2677"
+    },
+    {
+        "miasto": "Resko",
+        "powiat": "\u0141obeski",
+        "ludnosc": "3930"
+    },
+    {
+        "miasto": "Sian\u00f3w",
+        "powiat": "Koszali\u0144ski",
+        "ludnosc": "6523"
+    },
+    {
+        "miasto": "S\u0142awno",
+        "powiat": "S\u0142awie\u0144ski",
+        "ludnosc": "11875"
+    },
+    {
+        "miasto": "Stargard",
+        "powiat": "Stargardzki",
+        "ludnosc": "66923"
+    },
+    {
+        "miasto": "Stepnica",
+        "powiat": "Goleniowski",
+        "ludnosc": "2465"
+    },
+    {
+        "miasto": "Sucha\u0144",
+        "powiat": "Stargardzki",
+        "ludnosc": "1403"
+    },
+    {
+        "miasto": "Szczecin",
+        "powiat": "Szczecin",
+        "ludnosc": "391566"
+    },
+    {
+        "miasto": "Szczecinek",
+        "powiat": "Szczecinecki",
+        "ludnosc": "37899"
+    },
+    {
+        "miasto": "\u015awidwin",
+        "powiat": "\u015awidwi\u0144ski",
+        "ludnosc": "14635"
+    },
+    {
+        "miasto": "\u015awinouj\u015bcie",
+        "powiat": "\u015awinouj\u015bcie",
+        "ludnosc": "39368"
+    },
+    {
+        "miasto": "Trzci\u0144sko-Zdr\u00f3j",
+        "powiat": "Gryfi\u0144ski",
+        "ludnosc": "2125"
+    },
+    {
+        "miasto": "Trzebiat\u00f3w",
+        "powiat": "Gryficki",
+        "ludnosc": "9437"
+    },
+    {
+        "miasto": "Tuczno",
+        "powiat": "Wa\u0142ecki",
+        "ludnosc": "1794"
+    },
+    {
+        "miasto": "Tychowo",
+        "powiat": "Bia\u0142ogardzki",
+        "ludnosc": "2366"
+    },
+    {
+        "miasto": "Wa\u0142cz",
+        "powiat": "Wa\u0142ecki",
+        "ludnosc": "23780"
+    },
+    {
+        "miasto": "W\u0119gorzyno",
+        "powiat": "\u0141obeski",
+        "ludnosc": "2636"
+    },
+    {
+        "miasto": "Wolin",
+        "powiat": "Kamie\u0144ski",
+        "ludnosc": "4690"
+    },
+    {
+        "miasto": "Z\u0142ocieniec",
+        "powiat": "Drawski",
+        "ludnosc": "12193"
+    }
+]
