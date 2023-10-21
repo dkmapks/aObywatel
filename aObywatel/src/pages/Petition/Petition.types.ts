@@ -7,7 +7,7 @@ export enum PetitionSymbol {
 
 export enum PetitionStatus {
     SENT = 'SENT',
-    CANCELLED = "CANCELLED",
+    PENDING = "PENDING",
     DROPPED = "DROPPED",
 }
 
