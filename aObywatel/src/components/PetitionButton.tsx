@@ -14,6 +14,7 @@ const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
     text-decoration: none;
     padding: 23px 25px;
     background-color: white;
+    border: 1px solid ${(props) => props.theme.colors.neutral[40]}
   }
 `;
 
