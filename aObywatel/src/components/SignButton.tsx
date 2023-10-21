@@ -1,21 +1,21 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ComponentProps } from 'react';
-import customTheme from '../customTheme';
+import { ReactNode } from 'react';
 
 const buttonStyles = css`
-  height: 100px;
   border: 5px solid ${props => props.theme.colors.primary[200]};
   border-radius: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 21.6px;
   color: black;
   text-decoration: none;
   padding: 0 25px;
   font-weight: bold;
+  padding: 15px 0;
 `;
 
 const StyledSignButton = styled(Link)<{ isBlueBackground?: boolean }>`
@@ -26,10 +26,10 @@ const StyledSignButton = styled(Link)<{ isBlueBackground?: boolean }>`
   }
 `;
 
-function SignButton(props: { to: string; isBlueBackground?: boolean }) {
+function SignButton(props: { to: string; isBlueBackground?: boolean; children?: ReactNode }) {
   return (
     <StyledSignButton to={props.to} isBlueBackground={props.isBlueBackground}>
-      <span>Tekst Tekst</span>
+      {props.children}
     </StyledSignButton>
   );
 }
