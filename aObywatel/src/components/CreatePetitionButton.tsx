@@ -1,8 +1,8 @@
 import customTheme from "../customTheme";
-import SignButton from "./SignButton";
+import LinkButton from "./LinkButton";
 
 function CreatePetitionButton() {
-    return <SignButton customBgColor={customTheme.colors.primary[200]} customTextColor="#FFF"  to="/create">Utwórz petycję</SignButton>;
+    return <LinkButton customBgColor={customTheme.colors.primary[200]} customTextColor="#FFF"  to="/create">Utwórz petycję</LinkButton>;
 }
 
 export default CreatePetitionButton;
