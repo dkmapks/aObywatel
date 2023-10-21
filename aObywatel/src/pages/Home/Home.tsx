@@ -20,6 +20,8 @@ function HomePage() {
     const [petitions, setPetitions] = useState<Petition[]>([]);
     const [filteredPetitions, setFilteredPetitions] = useState<Petition[]>([]);
     const [offices, _] = useState<Office[]>(officesJSON)
+
+    const activeFilterClassNames = "px-3 py-1 border border-primary-200 text-primary-200 bg-white rounded-full font-medium"
     
     const [filtersInDrawer, setFiltersInDrawer] = useState({
         petitionStatus: [],
@@ -56,7 +58,7 @@ function HomePage() {
 
         if(filtersInDrawer['petitionStatus'].length !== 0) {
             filteredPetitionsByFiltersInDrawer = filteredPetitionsByFiltersInDrawer.filter(petition => {
-                 filtersInDrawer['petitionStatus'].find(filter => {
+                return filtersInDrawer['petitionStatus'].find(filter => {
                     return filter.value === petition.status;
                 })
             })
@@ -89,9 +91,9 @@ function HomePage() {
                 <h4 className="font-medium text-lg mb-1">Zastosowane filtry</h4>
                 <ul className="flex flex-wrap gap-2">
                     {filtersInDrawer['petitionStatus'].map(filter => {
-                        return <li className="px-2 py-1 border border-neutral-200 bg-white rounded-full font-medium">{`Status: ${filter.text}`}</li>
+                        return <li className={activeFilterClassNames}>{`Status: ${filter.text}`}</li>
                     })}                    
-                    {filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd" && <li className="px-2 py-1 border border-neutral-200 bg-white rounded-full font-medium">{`Urząd: ${filtersInDrawer['searchOfficeTerm']}`}</li>}
+                    {filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd" && <li className={activeFilterClassNames}>{`Urząd: ${filtersInDrawer['searchOfficeTerm']}`}</li>}
                 </ul>
             </div> : null}
             <ul className="h-[calc(100vh-152px-100px)] pt-5 pb-[98px] overflow-y-auto">
