@@ -1,9 +1,9 @@
-enum PetitionSymbol {
+export enum PetitionSymbol {
     PETITION = 'PETITION',
     PETITION_MULTIPLE = 'PETITIONW',
 }
 
-enum PetitionStatus {
+export enum PetitionStatus {
     ACCEPTED = 'ACCEPTED',
     REJECTED = 'REJECTED',
     ACTIVE = 'ACTIVE',
