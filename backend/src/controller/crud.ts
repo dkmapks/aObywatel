@@ -36,7 +36,6 @@ export const makeCrudRouter = <T extends {}>(
 			res.json({
 				id,
 			})
-			res.sendStatus(200)
 		})
 	)
 
