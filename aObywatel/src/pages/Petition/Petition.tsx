@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
-import customTheme from "../customTheme";
+import customTheme from "../../customTheme";
 
 const Wrapper = styled.div`
   display: flex;
