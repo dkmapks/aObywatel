@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import IconChevron from '../components/IconChevron';
-import { ReactNode } from 'react';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import IconChevron from "../components/Icons/IconChevron";
+import { ReactNode } from "react";
 
 const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   && {
@@ -15,12 +15,11 @@ const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
     text-decoration: none;
     padding: 23px 25px;
     background-color: white;
-    border: 1px solid ${(props) => props.theme.colors.neutral[40]}
+    border: 1px solid ${(props) => props.theme.colors.neutral[40]};
   }
 `;
 
-
-function PetitionButton(props: Link & {children: ReactNode}) {
+function PetitionButton(props: { children: ReactNode; to: any }) {
   return (
     <StyledPetitionButton to={props.to} {...props}>
       {props.children}
