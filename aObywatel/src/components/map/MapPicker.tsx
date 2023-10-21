@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, useMapEvents } from "react-leaflet";
 import { Location } from "./Map";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import IconLocation from "../Icons/IconLocation";
 
 const LocationFinderDummy = () => {
     const map = useMapEvents({
@@ -26,16 +27,18 @@ const OuterContainer = styled.div`
     }
 `
 
-const Pin = styled.img`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 100000;
+const Pin = styled.div`
+    & > svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 100000;
 
-    width: 30px;
-    height: 30px;
-    border-radius: 20000px;
+        width: 30px;
+        height: 30px;
+        border-radius: 20000px;
+    }
 
 `
 
@@ -69,7 +72,9 @@ export const MapPicker = (props: {
     }, [map])
     return (
         <OuterContainer>
-            <Pin src="http://placekitten.com/200/300" />
+            <Pin>
+                <IconLocation />
+            </Pin>
             <MyMapContainer
                 ref={setMap}
                 {...{
