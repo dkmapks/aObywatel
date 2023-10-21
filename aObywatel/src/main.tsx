@@ -5,6 +5,7 @@ import "./index.css";
 import HomePage from "./pages/Home/Home.tsx";
 import PetitionPage from "./pages/Petition/Petition.tsx";
 import CreatePetitionPage from "./pages/CreatePetition/CreatePetition.tsx";
+import { ProvideUserLocalStoarge } from "./user/user.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProvideUserLocalStoarge>
+      <RouterProvider router={router} />
+    </ProvideUserLocalStoarge>
   </React.StrictMode>
 );
