@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import CreatePetitionHeader from "../../components/CreatePetitionHeader";
 import customTheme from "../../customTheme";
 import { useState } from "react";
 import BaseInput from "../../components/BaseInput";
@@ -12,9 +11,15 @@ import { Office } from "../Home/Home";
 import { offices as officeJSON } from "../../data/data";
 import { Autocomplete, TextField } from "@mui/material";
 import HomeHeader from "../../components/HomeHeader";
+import MapPicker from "../../components/map/MapPicker";
 
 
 function CreatePetitionPage() {
+    const WARSAW_GEO_COORDINATES = {
+        location_lat: 52.2504,
+        location_lng: 21.0029
+    }
+
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [authors, setAuthors] = useState("");
@@ -23,6 +28,10 @@ function CreatePetitionPage() {
     const [officeSearchTerm, setOfficeSearchTerm] = useState("Wybierz urząd");
 
     const [content, setContent] = useState("");
+    const [geoLocation, setGeoLocation] = useState({
+        location_lat: null,
+        location_lng: null
+    })
 
     const userId =  useUserId() || "1";
 
@@ -44,6 +53,7 @@ function CreatePetitionPage() {
             recipient: officeSearchTerm === "Wybierz urząd" ? null : officeSearchTerm,
             content,
             response: "",
+            coordinates: geoLocation
 
         }
         const jsonPayload = JSON.stringify(petition)
@@ -71,6 +81,17 @@ function CreatePetitionPage() {
         
     }
 
+    const getLocationInputValue = () => {
+        if(!geoLocation.location_lat || !geoLocation.location_lng) {
+            return "Wybierz lokację"
+        }
+
+        const toFixedLat = geoLocation.location_lat.toFixed(4);
+        const toFixedLng = geoLocation.location_lng.toFixed(4);
+
+        return `Zapisana lokacja: ${toFixedLat}, ${toFixedLng}`
+    }
+
     return <ThemeProvider theme={customTheme}>
         <div className="bg-neutral-10 min-h-[100vh] px-[20px]">
             <HomeHeader title={"Utwórz petycję"} />
@@ -86,6 +107,12 @@ function CreatePetitionPage() {
             <div className="mb-5">
                 <label htmlFor="create-petition-text" className="block font-medium text-lg text-neutral-200 mb-1">Tekst petycji</label>
                 <BaseInput value={content} onChange={(e) => setContent(e.target.value)} multiline minRows={4} id="create-petition-text" className="w-full" />
+            </div>
+            <div className="mb-5">
+                <div className="mb-2">
+                    <BaseInput disabled value={getLocationInputValue()} className="w-full" />
+                </div>
+                <MapPicker height="200px" onLatLng={setGeoLocation} center={WARSAW_GEO_COORDINATES} />
             </div>
             <div className="mb-5">
                 <Autocomplete getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...offices, {
