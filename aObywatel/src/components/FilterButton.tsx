@@ -6,7 +6,8 @@ import { PetitionStatus } from "../pages/Petition/Petition.types";
 import { Office } from "../pages/Home/Home";
 
 const StyledFilterButton = styled(Button)`
-    padding: 0;
+    padding: 0 !important;
+    min-width: 0 !important;
 `
 
 type Filter = {

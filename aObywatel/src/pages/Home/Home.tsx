@@ -79,7 +79,7 @@ function HomePage() {
         <div className="bg-neutral-10 px-[20px] h-[100vh]">
             <div className="fixed top-0 left-0 px-[20px] bg-neutral-10 w-full">
                 <HomeHeader title={"Petycje"} />
-                <div className="flex gap-x-4 pe-[20px] mb-10 items-center">
+                <div className="flex gap-x-4 mb-10 items-center">
                     <FilterButton onFilterChange={(filters) => updateFiltersInDrawer(filters)} offices={offices} />
                     <BaseInput placeholder="Tytuł poszukiwanej petycji" value={searchTerm} className="w-full bg-white" onInput={(e) => setSearchTerm(e.target.value)} />
                 </div>
