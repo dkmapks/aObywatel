@@ -56,7 +56,9 @@ export const makeCrudRouter = <T extends {}>(
 			const files = await fs.readdir(dir);
 			const results = []
 			for (const file of files) {
-				results.push(JSON.parse(await fs.readFile(dir + '/' + file, { encoding: "utf-8" })))
+				const fileName = file.toString()
+				if(fileName.startsWith('.')) continue
+				results.push(JSON.parse(await fs.readFile(dir + '/' + fileName, { encoding: "utf-8" })))
 			}
 			res.json(results)
 			console.log(results)
