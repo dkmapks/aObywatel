@@ -1,15 +1,15 @@
+import { ThemeProvider } from "@mui/material";
 import "./App.css";
+import customTheme from "./customTheme";
 import PetitionButton from "./components/PetitionButton";
 
 function App() {
   return (
-
-    <>
-      <h2 className="text-3xl font-3xl">aObywatel</h2>
+    <ThemeProvider theme={customTheme}>
       <PetitionButton>
-        wqewqe
+        <p>Test</p>
       </PetitionButton>
-    </>
+    </ThemeProvider>
   );
 }
 
