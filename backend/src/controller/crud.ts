@@ -32,6 +32,7 @@ export const makeCrudRouter = <T extends {}>(
 
 			const id = generateUUID()
 			console.log("POST body", req.body)
+			req.body = { ...(req.body || {}), id, }
 			await fs.writeFile(dir + '/' + id, JSON.stringify(req.body))
 			res.json({
 				id,
