@@ -7,7 +7,7 @@ import { Petition, PetitionStatus } from "../Petition/Petition.types";
 import { generateUUID } from "../../utils/generateUUID";
 import { useUserId } from "../../user/user";
 import {useNavigate} from "react-router-dom"
-import { Office } from "../Home/Home"; 
+import { Office } from "../Home/Home";
 import { offices as officeJSON } from "../../data/data";
 import { Autocomplete, TextField } from "@mui/material";
 import HomeHeader from "../../components/HomeHeader";
@@ -78,7 +78,7 @@ function CreatePetitionPage() {
             setAuthors("");
 
         }
-        
+
     }
 
     const getLocationInputValue = () => {
@@ -130,8 +130,8 @@ function CreatePetitionPage() {
             </div>
         </form>
         </div>
-    </ThemeProvider> 
-    
+    </ThemeProvider>
+
 }
 
 export default CreatePetitionPage;

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 import { ReactNode } from 'react';
 
 const buttonStyles = css`
@@ -17,7 +18,7 @@ const buttonStyles = css`
   padding: 15px 0;
 `;
 
-export const StyledSignButton = styled.button<{ customBgColor: string, customTextColor: string, onClick: any}>`
+export const StyledLinkButton = styled(Link)<{ customBgColor: string, customTextColor: string}>`
   && {
     ${buttonStyles}
     background-color: ${props => props.customBgColor};
@@ -25,15 +26,16 @@ export const StyledSignButton = styled.button<{ customBgColor: string, customTex
   }
 `;
 
-function SignButton(props: { customBgColor: string, customTextColor: string; children?: ReactNode }) {
+function LinkButton(props: { to: string; customBgColor: string, customTextColor: string; children?: ReactNode }) {
   return (
-    <StyledSignButton
+    <StyledLinkButton
+      to={props.to}
       customTextColor={props.customTextColor}
       customBgColor={props.customBgColor}
     >
       {props.children}
-    </StyledSignButton>
+    </StyledLinkButton>
   );
 }
 
-export default SignButton;
+export default LinkButton;

@@ -11,6 +11,8 @@ import If from "../../components/If";
 import ProgressBar from "../../components/ProgressBar";
 import { useEffect, useState } from "react";
 import { Petition } from "./Petition.types";
+import LinkButton from "../../components/LinkButton";
+import SignButton from "../../components/SignButton";
 
 const ICON_SIZE = "30";
 
@@ -24,21 +26,23 @@ const Wrapper = styled.div`
   gap: 20px;
 `;
 
-
 function PetitionPage() {
   const [petition, setPetition] = useState<Petition>({
     title: "Bezpieczne skrzyżowania",
-    description: 'niesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE.',
+    description:
+      "niesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE.",
     location: "Gdynia, Pomorskie",
     signedBy: ["Jan Kowalski, Stanisław Jarocki"],
   } as Petition);
-  const { petitionId } =  useParams();
+  const { petitionId } = useParams();
 
   useEffect(() => {
     (async () => {
-        const response = await fetch(`http://localhost:9125/api/petitions/${petitionId}`);
-        const data = await response.json();
-        setPetition(data);
+      const response = await fetch(
+        `http://localhost:9125/api/petitions/${petitionId}`
+      );
+      const data = await response.json();
+      setPetition(data);
     })();
   }, [petitionId]);
 
@@ -51,10 +55,13 @@ function PetitionPage() {
     targetSignatures,
   } = petition;
   const isBeingConsidered = Boolean(parliament);
-  const formattedTargetSignatures = targetSignatures ? targetSignatures
-    .toString()
-    .replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-    : null
+  const formattedTargetSignatures = targetSignatures
+    ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    : null;
+  const signedTargetPercentage = Number(
+    Math.floor((Number(signedBy.length) / Number(targetSignatures)) * 100)
+  );
+
   return (
     <ThemeProvider theme={customTheme}>
       <Wrapper>
@@ -72,19 +79,15 @@ function PetitionPage() {
           }
         />
         <If
-          condition={Boolean(signedBy && signedBy.length && formattedTargetSignatures)}
+          condition={Boolean(
+            signedBy && signedBy.length && formattedTargetSignatures
+          )}
         >
           <ContentBox
             title={`${signedBy.length} z ${formattedTargetSignatures} podpisów`}
             icon={<IconPen width={ICON_SIZE} />}
           >
-            <ProgressBar
-              progress={Number(
-                Math.floor(
-                  (Number(signedBy.length) / Number(targetSignatures)) * 100
-                )
-              )}
-            />
+            <ProgressBar progress={signedTargetPercentage} />
           </ContentBox>
         </If>
         <If condition={isBeingConsidered}>
@@ -93,6 +96,12 @@ function PetitionPage() {
             icon={<IconReader width={ICON_SIZE} />}
           />
         </If>
+        <SignButton
+          customBgColor={customTheme.colors.primary[200]}
+          customTextColor={customTheme.colors.neutral[10]}
+        >
+          Podpisz
+        </SignButton>
       </Wrapper>
     </ThemeProvider>
   );
