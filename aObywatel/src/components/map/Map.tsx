@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+import { Link } from "react-router-dom";
 
 export interface Location {
     location_lat: number;
@@ -25,7 +26,7 @@ export interface MapProps {
 
 const Map = ({ center, markers }: MapProps) => {
     const [computedMarkers, _] = useState(markers);
-    console.log(markers);
+
     return (
         <MapContainer
             {...{
@@ -57,13 +58,13 @@ const Map = ({ center, markers }: MapProps) => {
                         <p
                             style={{ marginTop: "0.5rem" }}
                         >{point.createdAt.toLocaleDateString()}</p>
-                        <a
-                            href={point.link}
+                        <Link
+                            to={point.link}
                             target="_blank"
                             className="underline font-medium"
                         >
                             Zobacz szczegóły
-                        </a>
+                        </Link>
                     </Popup>
                 </Marker>
             ))}
