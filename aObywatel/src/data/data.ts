@@ -8,7 +8,3 @@ export const offices = raw.resultset.row.filter(r => {
     name: r.name,
     url: r.url,
 }))
-
-offices.sort((a, b) => a.name.localeCompare(b.name))
-
-console.log(offices)

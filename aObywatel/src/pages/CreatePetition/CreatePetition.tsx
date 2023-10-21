@@ -64,7 +64,7 @@ function CreatePetitionPage() {
             <CreatePetitionHeader />
         <form className="ps-[20px]">
             <div className="mb-5">
-                <label className="block font-medium text-lg text-neutral-200 mb-1">Tytuł (min. 8 znaków)</label>
+                <label className="block font-medium text-lg text-neutral-200 mb-1">Tytuł</label>
                 <BaseInput min={8} className="w-full" value={title} onInput={(e) => setTitle(e.target.value)} />
             </div>
             <div className="mb-5">
@@ -72,7 +72,7 @@ function CreatePetitionPage() {
                 <BaseInput className="w-full" value={authors} onInput={(e) => setAuthors(e.target.value)} />
             </div>
             <div className="mb-10">
-                <label className="block font-medium text-lg text-neutral-200 mb-1">Opis petycji (min. 40 znaków)</label>
+                <label className="block font-medium text-lg text-neutral-200 mb-1">Opis petycji</label>
                 <BaseInput min={40} className="w-full" minRows={4} multiline value={description} onInput={(e) => setDescription(e.target.value)} />
             </div>
 
