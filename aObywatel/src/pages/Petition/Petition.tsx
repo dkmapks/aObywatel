@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 import { Petition } from "./Petition.types";
 import LinkButton from "../../components/LinkButton";
 import SignButton from "../../components/SignButton";
+import QrModal from "../../components/QrModal";
+import { Button } from "@mui/material";
 
 const ICON_SIZE = "30";
 
@@ -35,6 +37,9 @@ function PetitionPage() {
     signedBy: ["Jan Kowalski, Stanisław Jarocki"],
   } as Petition);
   const { petitionId } = useParams();
+
+  const petitionURL = window.location.href;
+  const [isQrModalOpen, setIsQrModalOpen] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -102,6 +107,11 @@ function PetitionPage() {
         >
           Podpisz
         </SignButton>
+
+        <ContentBox title="Udostępnij" icon={<IconReader width={ICON_SIZE} />}>
+            <Button onClick={() => setIsQrModalOpen(true)}>Pokaż kod QR</Button>
+        </ContentBox>
+        <QrModal isOpen={isQrModalOpen} data={petitionURL} setIsOpen={setIsQrModalOpen} />
       </Wrapper>
     </ThemeProvider>
   );
