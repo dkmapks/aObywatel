@@ -108,9 +108,9 @@ function CreatePetitionPage() {
                 <label htmlFor="create-petition-text" className="block font-medium text-neutral-200 mb-1">Tekst petycji</label>
                 <BaseInput value={content} onChange={(e) => setContent(e.target.value)} multiline minRows={4} id="create-petition-text" className="w-full" />
             </div>
-            <div className="flex align-middle">
-            <Checkbox value={hasNoLocation} onChange={(e) => setHasNoLocation(e.target.checked)} />
-                <label className="block font-medium text-neutral-200 mb-1">Petycja nie ma lokalizacji</label>
+            <div className="flex items-center mb-2">
+                <Checkbox id="create-petition-disable-location" value={hasNoLocation} onChange={(e) => setHasNoLocation(e.target.checked)} />
+                <label htmlFor="create-petition-disable-location" className="block font-medium text-neutral-200">Petycja nie ma lokalizacji</label>
             </div>
             {!hasNoLocation ? <div className="mb-5">
                 <div className="mb-2">
