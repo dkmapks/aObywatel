@@ -16,6 +16,7 @@ import QrModal from "../../components/QrModal";
 import IconCheck from "../../components/Icons/IconCheck";
 import { DEFAULT_PETITION, ICON_SIZE, Wrapper } from "./Petition.utils";
 import Socials from "../../components/Socials";
+import PetitionResponseAlert from "../../components/PetitionResponseAlert";
 
 function PetitionPage() {
   const [isSigned, setIsSigned] = useState(null);
@@ -49,6 +50,8 @@ function PetitionPage() {
     description,
     parliament,
     targetSignatures,
+    response,
+    status
   } = petition;
   const isBeingConsidered = Boolean(parliament);
   const formattedTargetSignatures = targetSignatures
@@ -62,6 +65,9 @@ function PetitionPage() {
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <HomeHeader title={title ?? "Bezpieczne skrzyżowania"} />
+        <If condition={Boolean(status)}>
+          <PetitionResponseAlert text={response} status={status} />
+        </If>
         <If condition={isSigned}>
           <ContentBox
             title="Podpisano"

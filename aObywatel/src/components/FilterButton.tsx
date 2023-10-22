@@ -32,12 +32,20 @@ function FilterButton(props: FilterButtonProps) {
             value: PetitionStatus.PENDING
         },
         {
-            text: "Odrzucone",
+            text: "Nie zebrano podpisów",
             value: PetitionStatus.DROPPED
         },
         {
             text: "Wysłane",
             value: PetitionStatus.SENT
+        },
+        {
+            text: "Zaakceptowane",
+            value: PetitionStatus.ACCEPTED
+        },
+        {
+            text: "Odrzucone",
+            value: PetitionStatus.DECLINED
         }
     ]
 
@@ -81,7 +89,7 @@ function FilterButton(props: FilterButtonProps) {
         const selectedFilterClassNames = "text-white bg-primary-100 border-primary-100"
         const notSelectedFilterClassNames = "text-primary-100 border-primary-100 bg-transparent"
         const isSelected = selectedStatusFilters.find(iteratedFilter => iteratedFilter.value === filter.value);
-        const baseClassNames = "py-2 px-3 rounded-full border-2"
+        const baseClassNames = "py-2 px-3 rounded-full border-2 whitespace-nowrap"
         return isSelected ? `${baseClassNames} ${selectedFilterClassNames}` : `${baseClassNames} ${notSelectedFilterClassNames}`;
     }
 
