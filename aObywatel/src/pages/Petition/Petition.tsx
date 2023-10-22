@@ -17,6 +17,7 @@ import IconCheck from "../../components/Icons/IconCheck";
 import { DEFAULT_PETITION, ICON_SIZE, Wrapper } from "./Petition.utils";
 import Socials from "../../components/Socials";
 import PetitionResponseAlert from "../../components/PetitionResponseAlert";
+import { useUserId } from "../../user/user";
 
 function PetitionPage() {
   const [isSigned, setIsSigned] = useState(null);
@@ -25,8 +26,7 @@ function PetitionPage() {
   const [petition, setPetition] = useState<Petition>(DEFAULT_PETITION);
 
   const { petitionId } = useParams();
-  // const { userId } = useUserId()
-  const userId = '23k4'
+  const userId = useUserId()
 
   const petitionURL = window.location.href;
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
@@ -37,13 +37,13 @@ function PetitionPage() {
       const response = await fetch(
         `http://localhost:9125/api/petitions/${petitionId}`
       );
-      const data = await response.json();
+      const data: Petition = await response.json();
       setPetition(data);
-      setIsSigned(data.signedBy.includes(userId));
+      setIsSigned(data.signedBy.includes(userId ?? ""));
       setSignedByLocal(data.signedBy);
     })();
-  }, []);
-  
+  }, [petitionId]);
+
   const {
     title,
     location,

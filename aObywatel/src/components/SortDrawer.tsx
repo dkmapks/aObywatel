@@ -23,6 +23,22 @@ function SortDrawer(props: SortDrawerProps) {
         {
             label: "Nazwa Z-A",
             value: "name-desc"
+        },
+        {
+            label: "Najbardziej lokalnie relewantne",
+            value: "importancy-asc"
+        },
+        {
+            label: "Najmniej lokalnie relewantne",
+            value: "importancy-desc",
+        },
+        {
+            label: "Najstarsze",
+            value: "created-at-asc",
+        },
+        {
+            label: "Najnowsze",
+            value: "created-at-desc",
         }
     ]
 
