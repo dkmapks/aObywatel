@@ -17,11 +17,11 @@ function SortDrawer(props: SortDrawerProps) {
 
     const sortOptions = [
         {
-            label: "Nazwy (A-Z)",
+            label: "Nazwa A-Z",
             value: "name-asc"
         },
         {
-            label: "Nazwy (Z-A)",
+            label: "Nazwa Z-A",
             value: "name-desc"
         }
     ]
