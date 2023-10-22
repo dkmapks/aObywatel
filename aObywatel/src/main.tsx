@@ -9,6 +9,7 @@ import { ProvideUserLocalStoarge } from "./user/user.tsx";
 import RawPetitionPage from "./pages/RawPetition/RawPetition.tsx";
 import { UserPage } from "./pages/User.tsx";
 import { ChatPage } from "./pages/Chat.tsx";
+import { MapPage } from "./pages/Map.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/chat",
     element: <ChatPage />,
+  },
+  {
+    path: "/map",
+    element: <MapPage />
   }
 ]);
 
