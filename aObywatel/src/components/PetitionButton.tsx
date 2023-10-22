@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import IconChevron from "../components/Icons/IconChevron";
 import { ReactNode } from "react";
+
 const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
   && {
     height: 70px;

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
 import HomeHeader from "../../components/HomeHeader";
 import IconPen from "../../components/Icons/IconPen";
@@ -11,32 +11,21 @@ import If from "../../components/If";
 import ProgressBar from "../../components/ProgressBar";
 import { useEffect, useState } from "react";
 import { Petition } from "./Petition.types";
-import LinkButton from "../../components/LinkButton";
 import SignButton from "../../components/SignButton";
 import QrModal from "../../components/QrModal";
-import { Button } from "@mui/material";
-
-const ICON_SIZE = "30";
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${(props) => props.theme.colors.neutral[10]};
-  padding-inline: 20px;
-  min-height: 100vh;
-  gap: 20px;
-`;
+import IconCheck from "../../components/Icons/IconCheck";
+import { DEFAULT_PETITION, ICON_SIZE, Wrapper } from "./Petition.utils";
+import Socials from "../../components/Socials";
 
 function PetitionPage() {
-  const [petition, setPetition] = useState<Petition>({
-    title: "Bezpieczne skrzyżowania",
-    description:
-      "niesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE.",
-    location: "Gdynia, Pomorskie",
-    signedBy: ["Jan Kowalski, Stanisław Jarocki"],
-  } as Petition);
+  const [isSigned, setIsSigned] = useState(null);
+  const [isSigningLoading, setIsSigningLoading] = useState(null);
+  const [signedByLocal, setSignedByLocal] = useState<string[]>([]);
+  const [petition, setPetition] = useState<Petition>(DEFAULT_PETITION);
+
   const { petitionId } = useParams();
+  // const { userId } = useUserId()
+  const userId = '23k4'
 
   const petitionURL = window.location.href;
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
@@ -47,16 +36,18 @@ function PetitionPage() {
         `http://localhost:9125/api/petitions/${petitionId}`
       );
       const data = await response.json();
+      console.log('data: ', data)
       setPetition(data);
+      setIsSigned(data.signedByLocal.includes(userId));
+      setSignedByLocal(data.signedBy);
     })();
-  }, [petitionId]);
+  }, [petitionId, signedByLocal]);
 
   const {
     title,
     location,
     description,
     parliament,
-    signedBy,
     targetSignatures,
   } = petition;
   const isBeingConsidered = Boolean(parliament);
@@ -64,13 +55,19 @@ function PetitionPage() {
     ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
     : null;
   const signedTargetPercentage = Number(
-    Math.floor((Number(signedBy.length) / Number(targetSignatures)) * 100)
+    Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
   );
 
   return (
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <HomeHeader title={title ?? "Bezpieczne skrzyżowania"} />
+        <If condition={isSigned}>
+          <ContentBox
+            title="Podpisano"
+            icon={<IconCheck width={ICON_SIZE} />}
+          />
+        </If>
         <ContentBox
           title={location ?? "Gdynia, Pomorskie"}
           icon={<IconLocation width={ICON_SIZE} />}
@@ -85,11 +82,11 @@ function PetitionPage() {
         />
         <If
           condition={Boolean(
-            signedBy && signedBy.length && formattedTargetSignatures
+            signedByLocal && formattedTargetSignatures
           )}
         >
           <ContentBox
-            title={`${signedBy.length} z ${formattedTargetSignatures} podpisów`}
+            title={`${signedByLocal.length} z ${formattedTargetSignatures} podpisów`}
             icon={<IconPen width={ICON_SIZE} />}
           >
             <ProgressBar progress={signedTargetPercentage} />
@@ -102,15 +99,22 @@ function PetitionPage() {
           />
         </If>
         <SignButton
-          customBgColor={customTheme.colors.primary[200]}
-          customTextColor={customTheme.colors.neutral[10]}
-        >
-          Podpisz
-        </SignButton>
-
-        <ContentBox title="Udostępnij" icon={<IconReader width={ICON_SIZE} />}>
-            <Button onClick={() => setIsQrModalOpen(true)}>Pokaż kod QR</Button>
-        </ContentBox>
+          isSigned={isSigned}
+          isLoading={isSigningLoading}
+          handleClick={
+            () => {
+              setIsSigningLoading(true);
+              setTimeout(() => {
+                isSigned
+                  ? setSignedByLocal([...signedByLocal].filter(personId => personId !== userId))
+                  : setSignedByLocal([...signedByLocal, String(userId)]);
+                setIsSigned(!isSigned);
+                setIsSigningLoading(false);
+              }, 1000);
+            }
+          }
+        />
+        <Socials showQr={setIsQrModalOpen} />
         <QrModal isOpen={isQrModalOpen} data={petitionURL} setIsOpen={setIsQrModalOpen} />
       </Wrapper>
     </ThemeProvider>

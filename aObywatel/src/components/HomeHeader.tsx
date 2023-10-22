@@ -3,7 +3,7 @@ import IconArrow from "./Icons/IconArrow";
 
 function HomeHeader({ title }: { title: string }) {
   return (
-    <div className="flex py-[20px] items-center justify-between w-full">
+    <div className="flex pt-[20px] items-center justify-between w-full">
       <Link to="/" >
         <IconArrow width="24" />
       </Link>
