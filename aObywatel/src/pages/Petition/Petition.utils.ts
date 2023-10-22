@@ -106,7 +106,7 @@ export const DEFAULT_PETITION: Petition = {
         '2b1a0f9e-8d7c6b5a-4f3e2d1c0b9',
     ],
     creationDate: 1697923803277,
-    recipient: null,
+    recipient: '',
     targetSignatures: 25000,
     content: 'W imieniu mieszkańców domów położonych przy ul. Obrońców Pokoju w Kolbuszowej, zwracam się z prośbą o montaż oświetlenia (lampy) przy przejściach dla pieszych na głównej drodze w okolicach skrzyżowania ul. Św. Brata Alberta i ul. Obrońców Pokoju, na zlokalizowanych słupach energetycznych linii napowietrznej.\n' +
     '\n' +
