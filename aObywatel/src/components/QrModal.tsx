@@ -22,7 +22,7 @@ function QrModal({data, isOpen, setIsOpen}: QrModalProps) {
       <QRCodeDisplay data={data} width={200} height={200} />
     </div>
   </Modal>
-    
+
 }
 
 export default QrModal;

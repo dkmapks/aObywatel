@@ -27,9 +27,9 @@ const StyledBaseButton = styled(Button)<{ isBlueBackground?: boolean }>`
   }
 `;
 
-function BaseButton(props: { isBlueBackground?: boolean; children?: ReactNode }) {
+function BaseButton(props: { isBlueBackground?: boolean; children?: ReactNode, onClick?: () => void }) {
   return (
-    <StyledBaseButton {...props} isBlueBackground={props.isBlueBackground}>
+    <StyledBaseButton {...props} isBlueBackground={props.isBlueBackground} onClick={props?.onClick}>
       {props.children}
     </StyledBaseButton>
   );
