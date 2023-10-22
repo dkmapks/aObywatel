@@ -94,7 +94,7 @@ function PetitionPage() {
           />
         </If>
         <ContentBox
-          title={location ?? "Gdynia, Pomorskie"}
+          title={petition.recipient}
           icon={<IconLocation width={ICON_SIZE} />}
         />
         <ContentBox

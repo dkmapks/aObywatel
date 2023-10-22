@@ -9,7 +9,7 @@ import { useUserId } from "../../user/user";
 import {useNavigate} from "react-router-dom"
 import { Office } from "../Home/Home";
 import { offices as officeJSON } from "../../data/data";
-import { Autocomplete, TextField } from "@mui/material";
+import { Autocomplete, Checkbox, TextField } from "@mui/material";
 import HomeHeader from "../../components/HomeHeader";
 import MapPicker from "../../components/map/MapPicker";
 
@@ -32,6 +32,7 @@ function CreatePetitionPage() {
         location_lat: null,
         location_lng: null
     })
+    const [hasNoLocation, setHasNoLocation] = useState(false)
 
     const userId =  useUserId() || "1";
 
@@ -53,7 +54,7 @@ function CreatePetitionPage() {
             recipient: officeSearchTerm === "Wybierz urząd" ? null : officeSearchTerm,
             content,
             response: "",
-            coordinates: geoLocation
+            coordinates: hasNoLocation ? undefined : geoLocation
 
         }
         const jsonPayload = JSON.stringify(petition)
@@ -107,12 +108,16 @@ function CreatePetitionPage() {
                 <label htmlFor="create-petition-text" className="block font-medium text-neutral-200 mb-1">Tekst petycji</label>
                 <BaseInput value={content} onChange={(e) => setContent(e.target.value)} multiline minRows={4} id="create-petition-text" className="w-full" />
             </div>
-            <div className="mb-5">
+            <div className="flex align-middle">
+            <Checkbox value={hasNoLocation} onChange={(e) => setHasNoLocation(e.target.checked)} />
+                <label className="block font-medium text-neutral-200 mb-1">Petycja nie ma lokalizacji</label>
+            </div>
+            {!hasNoLocation ? <div className="mb-5">
                 <div className="mb-2">
                     <BaseInput disabled value={getLocationInputValue()} className="w-full" />
                 </div>
                 <MapPicker height="200px" onLatLng={setGeoLocation} center={WARSAW_GEO_COORDINATES} />
-            </div>
+            </div> : null}
             <div className="mb-5">
                 <label htmlFor="create-petition-autocomplete" className="block font-medium text-neutral-200 mb-1">Urząd</label>
                 <Autocomplete id="create-petition-autocomplete" getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...offices, {
