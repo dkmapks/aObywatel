@@ -77,7 +77,7 @@ function PetitionPage() {
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
   );
 
-  const isPetitionAvailableToSign = status === PetitionStatus.PENDING;
+  const isPetitionAvailableToSign = status === PetitionStatus.PENDING && userId;
 
   return (
     <ThemeProvider theme={customTheme}>
@@ -132,6 +132,19 @@ function PetitionPage() {
                     : setSignedByLocal([...signedByLocal, String(userId)]);
                   setIsSigned(!isSigned);
                   setIsSigningLoading(false);
+
+                  fetch(`http://localhost:9125/api/petitions/${petition.id}`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                      ...petition,
+                      signedBy: [...petition.signedBy, userId],
+                    }),
+                  }).then(() => {
+                    window.location.reload()
+                  })
                 }, 1000);
               }
             }

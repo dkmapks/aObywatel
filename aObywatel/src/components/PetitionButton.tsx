@@ -23,7 +23,7 @@ const StyledPetitionButton = styled(Link)<Parameters<typeof Link>[0]>`
 function PetitionButton(props: { children: ReactNode; to: string }) {
   return (
     <StyledPetitionButton to={props.to} {...props}>
-      <span className='line-clamp-1 text-ellipsis'>{props.children}</span>
+      {props.children}
       <IconChevron to={props.to} {...props} width={8} />
     </StyledPetitionButton>
   );

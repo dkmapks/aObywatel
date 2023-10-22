@@ -18,11 +18,15 @@ export type Office = {
 
 export type PetitionSortType = "name-asc" | "name-desc" | "importancy-asc" | "importancy-desc" | "created-at-asc" | "created-at-desc"
 
+export interface PetitionExt extends Petition {
+    importance: number
+}
+
 function HomePage() {
     const [searchTerm, setSearchTerm] = useState("");
-    const [petitions, setPetitions] = useState<Petition[]>([]);
-    const [filteredPetitions, setFilteredPetitions] = useState<Petition[]>([]);
-    const [filteredAndSortedPetitions, setFilteredAndSortedPetitions] = useState<Petition[]>([]);
+    const [petitions, setPetitions] = useState<PetitionExt[]>([]);
+    const [filteredPetitions, setFilteredPetitions] = useState<PetitionExt[]>([]);
+    const [filteredAndSortedPetitions, setFilteredAndSortedPetitions] = useState<PetitionExt[]>([]);
     const [offices, _] = useState<Office[]>(officesJSON)
 
     const [selectedSort, setSelectedSort] = useState<PetitionSortType>("name-asc");
@@ -56,34 +60,14 @@ function HomePage() {
                     return -(a.creationDate - b.creationDate)
                 }))
                 break;
-            case "importancy-asc":
-                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
-                    const locA = officesJSON.find(o => o.name === a.recipient)
-                    const locB = officesJSON.find(o => o.name === b.recipient)
-
-                    const pplA = locA.ludnosc ?? 0
-                    const pplB = locB.ludnosc ?? 0
-
-                    if (pplA === pplB && a.signedBy.length === b.signedBy.length) {
-                        return a.title.localeCompare(b.title)
-                    }
-
-                    return a.signedBy.length / pplA - b.signedBy.length / pplB
-                }))
-                break;
             case "importancy-desc":
                 setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
-                    const locA = officesJSON.find(o => o.name === a.recipient)
-                    const locB = officesJSON.find(o => o.name === b.recipient)
-
-                    const pplA = locA.ludnosc ?? 0
-                    const pplB = locB.ludnosc ?? 0
-
-                    if (pplA === pplB && a.signedBy.length === b.signedBy.length) {
-                        return b.title.localeCompare(a.title)
-                    }
-
-                    return -(a.signedBy.length / pplA - b.signedBy.length / pplB)
+                    return a.importance - b.importance
+                }))
+                break;
+            case "importancy-asc":
+                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
+                    return b.importance - a.importance
                 }))
                 break;
             default:
@@ -99,8 +83,16 @@ function HomePage() {
     useEffect(() => {
         (async () => {
             const response = await fetch(`http://localhost:9125/api/petitions/`);
-            const data = await response.json();
-            setPetitions(data);
+            const data: Petition[] = await response.json();
+            const pets = data.map((p): PetitionExt => {
+                const loc = officesJSON.find(o => o.name === p.recipient)
+                const ppl = loc.ludnosc ?? 27338
+                return {
+                    ...p,
+                    importance: p.signedBy.length / ppl,
+                }
+            })
+            setPetitions(pets);
 
             applyFilters();
             sortPetitions();
@@ -172,7 +164,14 @@ function HomePage() {
             <ul className="h-[calc(100vh-152px-100px)] pt-5 pb-[98px] overflow-y-auto">
                 {filteredAndSortedPetitions.map(petition => {
                     return <li key={petition.id}>
-                        <PetitionButton className="mb-4" to={`/petition/${petition.id}`}>{petition.title}</PetitionButton>
+                        <PetitionButton className="mb-4" to={`/petition/${petition.id}`}>
+                            <div>
+                                {petition.title}
+                                <div className="text-sm">
+                                    Importance: <strong>{petition.importance.toFixed(2)}%</strong>
+                                </div>
+                            </div>
+                        </PetitionButton>
                     </li>
                 })}
             </ul>
