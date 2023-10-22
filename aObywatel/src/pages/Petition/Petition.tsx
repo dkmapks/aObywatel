@@ -10,7 +10,7 @@ import ContentBox from "../../components/ContentBox";
 import If from "../../components/If";
 import ProgressBar from "../../components/ProgressBar";
 import { useEffect, useState } from "react";
-import { Petition } from "./Petition.types";
+import { Petition, PetitionStatus } from "./Petition.types";
 import SignButton from "../../components/SignButton";
 import QrModal from "../../components/QrModal";
 import IconCheck from "../../components/Icons/IconCheck";
@@ -31,6 +31,7 @@ function PetitionPage() {
   const petitionURL = window.location.href;
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
 
+  
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -43,7 +44,7 @@ function PetitionPage() {
       setSignedByLocal(data.signedBy);
     })();
   }, [petitionId, signedByLocal]);
-
+  
   const {
     title,
     location,
@@ -55,11 +56,13 @@ function PetitionPage() {
   } = petition;
   const isBeingConsidered = Boolean(parliament);
   const formattedTargetSignatures = targetSignatures
-    ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-    : null;
+  ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+  : null;
   const signedTargetPercentage = Number(
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
-  );
+    );
+
+  const isPetitionAvailableToSign = status === PetitionStatus.PENDING;
 
   return (
     <ThemeProvider theme={customTheme}>
@@ -68,7 +71,7 @@ function PetitionPage() {
         <If condition={Boolean(status)}>
           <PetitionResponseAlert text={response} status={status} />
         </If>
-        <If condition={isSigned}>
+        <If condition={isSigned && isPetitionAvailableToSign}>
           <ContentBox
             title="Podpisano"
             icon={<IconCheck width={ICON_SIZE} />}
@@ -104,22 +107,24 @@ function PetitionPage() {
             icon={<IconReader width={ICON_SIZE} />}
           />
         </If>
-        <SignButton
-          isSigned={isSigned}
-          isLoading={isSigningLoading}
-          handleClick={
-            () => {
-              setIsSigningLoading(true);
-              setTimeout(() => {
-                isSigned
-                  ? setSignedByLocal([...signedByLocal].filter(personId => personId !== userId))
-                  : setSignedByLocal([...signedByLocal, String(userId)]);
-                setIsSigned(!isSigned);
-                setIsSigningLoading(false);
-              }, 1000);
+        <If condition={isPetitionAvailableToSign}>
+          <SignButton
+            isSigned={isSigned && isPetitionAvailableToSign}
+            isLoading={isSigningLoading}
+            handleClick={
+              () => {
+                setIsSigningLoading(true);
+                setTimeout(() => {
+                  isSigned
+                    ? setSignedByLocal([...signedByLocal].filter(personId => personId !== userId))
+                    : setSignedByLocal([...signedByLocal, String(userId)]);
+                  setIsSigned(!isSigned);
+                  setIsSigningLoading(false);
+                }, 1000);
+              }
             }
-          }
-        />
+          />
+        </If>
         <Socials showQr={setIsQrModalOpen} />
         <QrModal isOpen={isQrModalOpen} data={petitionURL} setIsOpen={setIsQrModalOpen} />
       </Wrapper>
