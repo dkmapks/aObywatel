@@ -12,4 +12,11 @@ export const offices = officesRaw.resultset.row.filter(r => {
     ludnosc: ludnoscRaw.find(l => l.miasto.toLocaleLowerCase() === r.place.toLocaleLowerCase())?.ludnosc ?? undefined,
 })).filter(r => r.ludnosc !== undefined)
 
+offices.push({
+    name: "Sejm",
+    url: "https://www.sejm.gov.pl/",
+    place: "Sejm",
+    ludnosc: 37310341,
+})
+
 console.log({ offices })
