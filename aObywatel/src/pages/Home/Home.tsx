@@ -9,6 +9,7 @@ import CreatePetitionButton from "../../components/CreatePetitionButton";
 import { Petition } from "../Petition/Petition.types";
 import { offices as officesJSON } from "../../data/data";
 import SortDrawer from "../../components/SortDrawer";
+import LinkButton from "../../components/LinkButton";
 
 
 export type Office = {
@@ -175,8 +176,10 @@ function HomePage() {
                     </li>
                 })}
             </ul>
-            <div className="h-[98px] flex items-center justify-center mx-auto fixed bottom-[0] left-[50%] -translate-x-[50%] bg-neutral-10 w-full">
+            <div className="h-[160px] flex items-center justify-center mx-auto fixed bottom-[0] left-[50%] -translate-x-[50%] bg-neutral-10 w-full">
                 <div className="w-[80%]">
+                    <LinkButton to="/chat" customBgColor={"white"} customTextColor={customTheme.colors.primary[200]}>Dowiedz się więcej</LinkButton>
+                    <div className="my-[10px]"></div>
                     <CreatePetitionButton />
                 </div>
             </div>
