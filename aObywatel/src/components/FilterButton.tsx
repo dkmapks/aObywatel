@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { PetitionStatus } from "../pages/Petition/Petition.types";
 import { Office } from "../pages/Home/Home";
+import customTheme from "../customTheme";
 
 const StyledFilterButton = styled(Button)`
     padding: 0 !important;
@@ -98,10 +99,10 @@ function FilterButton(props: FilterButtonProps) {
 
     return <div>
         <StyledFilterButton onClick={() => setIsOpen(true)}>
-            <IconFilter />
+            <IconFilter color={"#000"} />
         </StyledFilterButton>
         <Drawer anchor='bottom' open={isOpen} onClose={toggleDrawer(false)} >
-            <div className="h-[80vh] p-4 flex flex-col justify-between pb-5">
+            <div className="max-h-[80vh] p-4 flex flex-col justify-between pb-5">
                 <div>
                     <h4 className="text-xl text-center font-medium mb-5">Filtry</h4>
 

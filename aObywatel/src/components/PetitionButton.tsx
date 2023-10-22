@@ -23,7 +23,7 @@ function PetitionButton(props: { children: ReactNode; to: string }) {
   return (
     <StyledPetitionButton to={props.to} {...props}>
       <span className='line-clamp-1 text-ellipsis'>{props.children}</span>
-      <IconChevron to={props.to} {...props} width="8" />
+      <IconChevron to={props.to} {...props} width={8} />
     </StyledPetitionButton>
   );
 }
