@@ -109,7 +109,7 @@ function HomePage() {
             <div className="fixed top-0 left-0 px-[20px] bg-neutral-10 w-full">
                 <HomeHeader title={"Petycje"} />
                 <div className="flex gap-x-4 mb-10 items-center">
-                    <FilterButton width="28" onFilterChange={(filters) => updateFiltersInDrawer(filters)} offices={offices} />
+                    <FilterButton onFilterChange={(filters) => updateFiltersInDrawer(filters)} offices={offices} />
                     <SortDrawer value={selectedSort} onChange={setSelectedSort} />
                     <BaseInput placeholder="Tytuł poszukiwanej petycji" value={searchTerm} className="w-full bg-white" onInput={(e) => setSearchTerm(e.target.value)} />
                 </div>

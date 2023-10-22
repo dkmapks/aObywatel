@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { useState } from "react";
 import { PetitionStatus } from "../pages/Petition/Petition.types";
 import { Office } from "../pages/Home/Home";
-import customTheme from "../customTheme";
 
 const StyledFilterButton = styled(Button)`
     padding: 0 !important;
@@ -62,7 +61,7 @@ function FilterButton(props: FilterButtonProps) {
     };
 
     const toggleSelectedStatusFilter = (filter, isSelected: boolean) => {
-        
+
         if(!isSelected){
             const newSelectedStatusFilters = selectedStatusFilters.filter(iteratedFilter => iteratedFilter.value !== filter.value);
             setSelectedStatusFilters(newSelectedStatusFilters);
@@ -77,7 +76,7 @@ function FilterButton(props: FilterButtonProps) {
         return selectedStatusFilters.find(iteratedFilter => iteratedFilter.value === filter.value);
     }
 
-    
+
     const getFilterClassName = (filter) => {
         const selectedFilterClassNames = "text-white bg-primary-100 border-primary-100"
         const notSelectedFilterClassNames = "text-primary-100 border-primary-100 bg-transparent"
@@ -124,13 +123,13 @@ function FilterButton(props: FilterButtonProps) {
                         }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="" />} />
                     </div>
                 </div>
-                
+
                 <div className="w-full flex justify-center">
                     <button className="py-2 px-3 rounded-full border-2 text-white bg-primary-100 border-primary-100 font-medium" onClick={() => props.onFilterChange(prepareFilters())}>
                         Zastosuj filtry
                     </button>
                 </div>
-            </div>    
+            </div>
         </Drawer>
     </div>;
 }
