@@ -49,7 +49,7 @@ function SignButton({handleClick, isSigned, isLoading}: Props) {
         <CircularProgress color={isSigned ? "error" : "success"} />
       : (
         <>
-          {isSigned ? 'Zrezygnuj' : 'Podpisz'}
+          {isSigned ? 'Wycofaj podpis' : 'Podpisz'}
         </>
       )}
 
