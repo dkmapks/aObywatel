@@ -18,6 +18,7 @@ import { DEFAULT_PETITION, ICON_SIZE, Wrapper } from "./Petition.utils";
 import Socials from "../../components/Socials";
 import PetitionResponseAlert from "../../components/PetitionResponseAlert";
 import { useUserId } from "../../user/user";
+import ParliamentLink from "../../components/ParliamentLink";
 
 function PetitionPage() {
   const [isSigned, setIsSigned] = useState(null);
@@ -55,12 +56,21 @@ function PetitionPage() {
   } = petition;
 
   // Todo remove later
-  const targetSignatures = 50_000
+  const targetSignatures = null
+
+  const getSignaturesTitle = () => {
+    const signPlural = signedByLocal.length === 1 ? "podpis" : "podpisów";
+
+    if(!formattedTargetSignatures){
+      return `Zebrano ${signedByLocal.length} ${signPlural}`
+    }
+    return `Zebrano ${signedByLocal.length} z ${formattedTargetSignatures}`
+  }
 
   const isBeingConsidered = Boolean(parliament);
   const formattedTargetSignatures = targetSignatures
   ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-  : 25000;
+  : null;
   const signedTargetPercentage = Number(
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
     );
@@ -71,7 +81,12 @@ function PetitionPage() {
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <HomeHeader title={title ?? "Bezpieczne skrzyżowania"} />
-        <Link className="text-primary-100 font-medium underline" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
+        <div className='flex flex-wrap justify-center'>
+          <Link className="text-primary-100 font-medium underline mb-1" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
+          <If condition={parliament?.id && parliament?.symbol}>
+            <ParliamentLink parliament={parliament} />
+          </If>
+        </div>
         <If condition={Boolean(status)}>
           <PetitionResponseAlert text={response} status={status} />
         </If>
@@ -94,10 +109,13 @@ function PetitionPage() {
           }
         />
         <ContentBox
-            title={`${signedByLocal.length} z ${formattedTargetSignatures} podpisów`}
+            title={getSignaturesTitle()}
             icon={<IconPen width={ICON_SIZE} />}
           >
-            <ProgressBar progress={signedTargetPercentage} />
+            <If condition={formattedTargetSignatures > 0}>
+              <ProgressBar progress={signedTargetPercentage} />
+            </If>
+              
           </ContentBox>
         <If condition={isBeingConsidered}>
           <ContentBox
