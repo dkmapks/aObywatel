@@ -25,8 +25,6 @@ export interface MapProps {
 }
 
 const Map = ({ center, markers }: MapProps) => {
-    const [computedMarkers, _] = useState(markers);
-
     return (
         <MapContainer
             {...{
@@ -41,7 +39,7 @@ const Map = ({ center, markers }: MapProps) => {
                     url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 }}
             />
-            {computedMarkers.map((point) => (
+            {markers.map((point) => (
                 <Marker
                     key={point._id}
                     position={[point.location_lat, point.location_lng]}
