@@ -89,7 +89,7 @@ function HomePage() {
                 const ppl = loc?.ludnosc ?? 27338
                 return {
                     ...p,
-                    importance: p.signedBy.length * 10000 / ppl,
+                    importance: p.signedBy.length * 20/ ppl,
                 }
             })
             setPetitions(pets);
