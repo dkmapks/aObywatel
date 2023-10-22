@@ -1,7 +1,6 @@
-import styled from "styled-components";
 
 type IconProps = {
-  width?: string;
+  width?: number;
 };
 
 function IconChevron(props: IconProps) {
@@ -9,6 +8,7 @@ function IconChevron(props: IconProps) {
     <svg
       className="flex"
       width={props.width}
+      style={{ minWidth: props.width ? props.width + 'px' : '8px' }}
       viewBox="0 0 9 15"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

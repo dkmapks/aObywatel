@@ -1,7 +1,24 @@
-function IconFilter() {
-    return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M15.344 17.778C15.344 17.364 15.008 17.028 14.594 17.028H9.434C9.02 17.028 8.684 17.364 8.684 17.778C8.684 18.192 9.02 18.528 9.434 18.528H14.594C15.008 18.528 15.344 18.192 15.344 17.778ZM17.55 13.778C17.55 13.364 17.214 13.028 16.8 13.028H7.204C6.79 13.028 6.454 13.364 6.454 13.778C6.454 14.192 6.79 14.528 7.204 14.528H16.8C17.214 14.528 17.55 14.192 17.55 13.778ZM20 9.77802C20 9.36402 19.664 9.02802 19.25 9.02802H4.75C4.336 9.02802 4 9.36402 4 9.77802C4 10.192 4.336 10.528 4.75 10.528H19.25C19.664 10.528 20 10.192 20 9.77802ZM22 5.77802C22 5.36402 21.664 5.02802 21.25 5.02802H2.75C2.336 5.02802 2 5.36402 2 5.77802C2 6.19202 2.336 6.52802 2.75 6.52802H21.25C21.664 6.52802 22 6.19202 22 5.77802Z" fill="black"/>
+type IconFilterProps = {
+    width?: string;
+    color?: string;
+}
+
+function IconFilter(props: IconFilterProps) {
+
+    const fillColor = props.color || "#52575F";
+    const iconWidth = props.width || "25px";
+
+return <svg width={iconWidth} viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 3C24.2761 3 24.5 2.77614 24.5 2.5C24.5 2.22386 24.2761 2 24 2V3ZM5 3H24V2H5V3Z" fill={fillColor}/>
+    <circle cx="3.5" cy="2.5" r="2" stroke={fillColor}/>
+    <path d="M24 15C24.2761 15 24.5 14.7761 24.5 14.5C24.5 14.2239 24.2761 14 24 14V15ZM5 15H24V14H5V15Z" fill={fillColor}/>
+    <circle cx="3.5" cy="14.5" r="2" stroke={fillColor}/>
+    <path d="M1 8C0.723858 8 0.5 8.22386 0.5 8.5C0.5 8.77614 0.723858 9 1 9V8ZM20 8H1V9H20V8Z" fill={fillColor}/>
+    <circle cx="21.5" cy="8.5" r="2" transform="rotate(180 21.5 8.5)" stroke={fillColor}/>
+    <path d="M1 20C0.723858 20 0.5 20.2239 0.5 20.5C0.5 20.7761 0.723858 21 1 21V20ZM20 20H1V21H20V20Z" fill={fillColor}/>
+    <circle cx="21.5" cy="20.5" r="2" transform="rotate(180 21.5 20.5)" stroke={fillColor}/>
     </svg>
+    
     ;
 }
 
