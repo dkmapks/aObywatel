@@ -1,20 +1,13 @@
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import { Location } from "./Map";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import IconLocation from "../Icons/IconLocation";
 
 const LocationFinderDummy = () => {
-    const map = useMapEvents({
-        click(e) {
-            console.log("event", e)
-            console.log(e.latlng);
-        },
-    });
-    console.log("map", map)
     return null;
 };
 

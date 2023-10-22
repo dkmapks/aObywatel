@@ -3,12 +3,12 @@ import IconArrow from "./Icons/IconArrow";
 
 function HomeHeader({ title }: { title: string }) {
   return (
-    <div className="flex py-[20px] items-center justify-between w-full">
+    <div className="flex py-[20px] items-center justify-between w-full gap-x-2">
       <Link to="/" >
-        <IconArrow width="24" />
+        <IconArrow width={24} />
       </Link>
-      <h3 className="text-2xl font-medium">{title}</h3>
-      <div className="w-[30px]"></div>
+      <h3 className="text-xl font-medium text-center line-clamp-2" aria-label={title}>{title}</h3>
+      <div className="w-[24px]"></div>
     </div>
   );
 }

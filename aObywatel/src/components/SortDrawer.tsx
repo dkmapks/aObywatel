@@ -8,12 +8,6 @@ const StyledSortButton = styled(Button)`
     min-width: 0 !important;
 `
 
-const StyledSortLabel = styled(FormLabel)`
-    &.Mui-focued {
-        color: ${props => props.theme.colors.neutral[100]}
-    }
-`
-
 type SortDrawerProps = {
     value: string;
     onChange: (value: string) => void;
@@ -52,18 +46,18 @@ function SortDrawer(props: SortDrawerProps) {
         </StyledSortButton>
         <Drawer anchor='bottom' open={isOpen} onClose={toggleDrawer(false)}>
             <div className="max-h-[80vh] p-4">
-            <FormControl>
-                <StyledSortLabel id="sort-options">Sortuj za pomocą</StyledSortLabel>
-                <RadioGroup
-                    aria-labelledby="sort-options"
-                    defaultValue="female"
-                    name="radio-buttons-group"
-                    value={props.value}
-                    onChange={(e) => props.onChange(e.target.value)}
-                >
-                    {sortOptions.map((option) => <FormControlLabel key={option.value} value={option.value} control={<Radio />} label={option.label} />)}
-                </RadioGroup>
-            </FormControl>
+                <h4 className="text-xl text-center font-medium mb-5">Sortowanie</h4>
+                <FormControl>
+                    <RadioGroup
+                        aria-labelledby="sort-options"
+                        defaultValue="female"
+                        name="radio-buttons-group"
+                        value={props.value}
+                        onChange={(e) => props.onChange(e.target.value)}
+                    >
+                        {sortOptions.map((option) => <FormControlLabel key={option.value} value={option.value} control={<Radio />} label={option.label} />)}
+                    </RadioGroup>
+                </FormControl>
             </div>
         </Drawer>
     </div>;
