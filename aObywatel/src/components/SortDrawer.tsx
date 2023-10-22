@@ -48,7 +48,7 @@ function SortDrawer(props: SortDrawerProps) {
 
     return <div>
         <StyledSortButton onClick={() => setIsOpen(true)}>
-            <IconSort />
+            <IconSort width="28"/>
         </StyledSortButton>
         <Drawer anchor='bottom' open={isOpen} onClose={toggleDrawer(false)}>
             <div className="max-h-[80vh] p-4">
