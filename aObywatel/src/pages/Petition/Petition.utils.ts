@@ -107,7 +107,7 @@ export const DEFAULT_PETITION: Petition = {
     ],
     creationDate: 1697923803277,
     recipient: null,
-    targetSignatures: 50,
+    targetSignatures: 25000,
     content: 'W imieniu mieszkańców domów położonych przy ul. Obrońców Pokoju w Kolbuszowej, zwracam się z prośbą o montaż oświetlenia (lampy) przy przejściach dla pieszych na głównej drodze w okolicach skrzyżowania ul. Św. Brata Alberta i ul. Obrońców Pokoju, na zlokalizowanych słupach energetycznych linii napowietrznej.\n' +
     '\n' +
     'Brak dodatkowego oświetlenia od strony ul. Nowa Wieś jest szczególnie niebezpieczny wieczorami, a zwłaszcza w sezonie zimowym, podczas deszczu i o zmierzchu, gdy dni są krótkie. Sam osobiście znalazłem się w sytuacji zagrażającej mojemu życiu, kiedy przechodziłem przez te przejście, a kierowcy nie widzieli mnie ze względu na brak odpowiedniego oświetlenia (jest bardzo ciemno). Istnieje wiele innych osób, które były w tej samej sytuacji co ja, zwłaszcza osoby starsze i dzieci.\n' +

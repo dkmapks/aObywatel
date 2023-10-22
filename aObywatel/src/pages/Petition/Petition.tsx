@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import customTheme from "../../customTheme";
 import HomeHeader from "../../components/HomeHeader";
@@ -10,12 +10,13 @@ import ContentBox from "../../components/ContentBox";
 import If from "../../components/If";
 import ProgressBar from "../../components/ProgressBar";
 import { useEffect, useState } from "react";
-import { Petition } from "./Petition.types";
+import { Petition, PetitionStatus } from "./Petition.types";
 import SignButton from "../../components/SignButton";
 import QrModal from "../../components/QrModal";
 import IconCheck from "../../components/Icons/IconCheck";
 import { DEFAULT_PETITION, ICON_SIZE, Wrapper } from "./Petition.utils";
 import Socials from "../../components/Socials";
+import PetitionResponseAlert from "../../components/PetitionResponseAlert";
 
 function PetitionPage() {
   const [isSigned, setIsSigned] = useState(null);
@@ -30,39 +31,51 @@ function PetitionPage() {
   const petitionURL = window.location.href;
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
 
+  
   useEffect(() => {
     (async () => {
       const response = await fetch(
         `http://localhost:9125/api/petitions/${petitionId}`
       );
       const data = await response.json();
-      console.log('data: ', data)
       setPetition(data);
-      setIsSigned(data.signedByLocal.includes(userId));
+      setIsSigned(data.signedBy.includes(userId));
       setSignedByLocal(data.signedBy);
     })();
-  }, [petitionId, signedByLocal]);
-
+  }, []);
+  
   const {
     title,
     location,
     description,
     parliament,
-    targetSignatures,
+    // targetSignatures,
+    response,
+    status
   } = petition;
+
+  // Todo remove later
+  const targetSignatures = 50_000
+
   const isBeingConsidered = Boolean(parliament);
   const formattedTargetSignatures = targetSignatures
-    ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-    : null;
+  ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+  : 25000;
   const signedTargetPercentage = Number(
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
-  );
+    );
+
+  const isPetitionAvailableToSign = status === PetitionStatus.PENDING;
 
   return (
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <HomeHeader title={title ?? "Bezpieczne skrzyżowania"} />
-        <If condition={isSigned}>
+        <Link className="text-primary-100 font-medium underline" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
+        <If condition={Boolean(status)}>
+          <PetitionResponseAlert text={response} status={status} />
+        </If>
+        <If condition={isSigned && isPetitionAvailableToSign}>
           <ContentBox
             title="Podpisano"
             icon={<IconCheck width={ICON_SIZE} />}
@@ -80,40 +93,36 @@ function PetitionPage() {
             "Zniesienie przepisów na skrzyżowaniach w centrum miasta: Ich brak wymusi wzmożoną ostrożność zarówno kierowców jak i pieszych co doprowadzi do zwiększenia bezpieczeństwa i zmniejszenia liczby wypadków. Takie rozwiązanie z powodzeniem wdrożono w niektórych krajach UE."
           }
         />
-        <If
-          condition={Boolean(
-            signedByLocal && formattedTargetSignatures
-          )}
-        >
-          <ContentBox
+        <ContentBox
             title={`${signedByLocal.length} z ${formattedTargetSignatures} podpisów`}
             icon={<IconPen width={ICON_SIZE} />}
           >
             <ProgressBar progress={signedTargetPercentage} />
           </ContentBox>
-        </If>
         <If condition={isBeingConsidered}>
           <ContentBox
             title="Rozpatrywana przez sejm"
             icon={<IconReader width={ICON_SIZE} />}
           />
         </If>
-        <SignButton
-          isSigned={isSigned}
-          isLoading={isSigningLoading}
-          handleClick={
-            () => {
-              setIsSigningLoading(true);
-              setTimeout(() => {
-                isSigned
-                  ? setSignedByLocal([...signedByLocal].filter(personId => personId !== userId))
-                  : setSignedByLocal([...signedByLocal, String(userId)]);
-                setIsSigned(!isSigned);
-                setIsSigningLoading(false);
-              }, 1000);
+        <If condition={isPetitionAvailableToSign}>
+          <SignButton
+            isSigned={isSigned && isPetitionAvailableToSign}
+            isLoading={isSigningLoading}
+            handleClick={
+              () => {
+                setIsSigningLoading(true);
+                setTimeout(() => {
+                  isSigned
+                    ? setSignedByLocal([...signedByLocal].filter(personId => personId !== userId))
+                    : setSignedByLocal([...signedByLocal, String(userId)]);
+                  setIsSigned(!isSigned);
+                  setIsSigningLoading(false);
+                }, 1000);
+              }
             }
-          }
-        />
+          />
+        </If>
         <Socials showQr={setIsQrModalOpen} />
         <QrModal isOpen={isQrModalOpen} data={petitionURL} setIsOpen={setIsQrModalOpen} />
       </Wrapper>

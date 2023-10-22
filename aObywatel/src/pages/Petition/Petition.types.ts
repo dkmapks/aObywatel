@@ -9,6 +9,8 @@ export enum PetitionStatus {
     SENT = 'SENT',
     PENDING = "PENDING",
     DROPPED = "DROPPED",
+    ACCEPTED = "ACCEPTED",
+    DECLINED = "DECLINED"
 }
 
 export interface Petition {
