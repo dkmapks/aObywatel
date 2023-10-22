@@ -89,7 +89,7 @@ function HomePage() {
                 const ppl = loc?.ludnosc ?? 27338
                 return {
                     ...p,
-                    importance: p.signedBy.length * 1000000 / ppl,
+                    importance: p.signedBy.length * 10000 / ppl,
                 }
             })
             setPetitions(pets);
@@ -168,7 +168,7 @@ function HomePage() {
                             <div>
                                 <span className="line-clamp-1">{petition.title}</span>
                                 <div className="text-sm">
-                                    Importance: <strong>{petition.importance.toFixed(2)}%</strong>
+                                    Importance: <strong>{(petition.importance * 100).toFixed(2)}%</strong>
                                 </div>
                             </div>
                         </PetitionButton>
