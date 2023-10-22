@@ -32,7 +32,7 @@ function PetitionPage() {
   const petitionURL = window.location.href;
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
 
-  
+
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -55,13 +55,15 @@ function PetitionPage() {
     status
   } = petition;
 
+  console.log({ parliament })
+
   // Todo remove later
   const targetSignatures = null
 
   const getSignaturesTitle = () => {
     const signPlural = signedByLocal.length === 1 ? "podpis" : "podpisów";
 
-    if(!formattedTargetSignatures){
+    if (!formattedTargetSignatures) {
       return `Zebrano ${signedByLocal.length} ${signPlural}`
     }
     return `Zebrano ${signedByLocal.length} z ${formattedTargetSignatures}`
@@ -69,11 +71,11 @@ function PetitionPage() {
 
   const isBeingConsidered = Boolean(parliament);
   const formattedTargetSignatures = targetSignatures
-  ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-  : null;
+    ? targetSignatures.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    : null;
   const signedTargetPercentage = Number(
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
-    );
+  );
 
   const isPetitionAvailableToSign = status === PetitionStatus.PENDING;
 
@@ -81,12 +83,6 @@ function PetitionPage() {
     <ThemeProvider theme={customTheme}>
       <Wrapper>
         <HomeHeader title={title ?? "Bezpieczne skrzyżowania"} />
-        <div className='flex flex-wrap justify-center'>
-          <Link className="text-primary-100 font-medium underline mb-1" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
-          <If condition={parliament?.id && parliament?.symbol}>
-            <ParliamentLink parliament={parliament} />
-          </If>
-        </div>
         <If condition={Boolean(status)}>
           <PetitionResponseAlert text={response} status={status} />
         </If>
@@ -109,14 +105,14 @@ function PetitionPage() {
           }
         />
         <ContentBox
-            title={getSignaturesTitle()}
-            icon={<IconPen width={ICON_SIZE} />}
-          >
-            <If condition={formattedTargetSignatures > 0}>
-              <ProgressBar progress={signedTargetPercentage} />
-            </If>
-              
-          </ContentBox>
+          title={getSignaturesTitle()}
+          icon={<IconPen width={ICON_SIZE} />}
+        >
+          <If condition={formattedTargetSignatures > 0}>
+            <ProgressBar progress={signedTargetPercentage} />
+          </If>
+
+        </ContentBox>
         <If condition={isBeingConsidered}>
           <ContentBox
             title="Rozpatrywana przez sejm"
@@ -141,6 +137,14 @@ function PetitionPage() {
             }
           />
         </If>
+        <div className='text-center'>
+          <Link className="text-primary-100 font-medium underline mb-1" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
+          <If condition={parliament?.id && parliament?.symbol}>
+            <br />
+            <ParliamentLink parliament={parliament} />
+          </If>
+        </div>
+
         <Socials showQr={setIsQrModalOpen} />
         <QrModal isOpen={isQrModalOpen} data={petitionURL} setIsOpen={setIsQrModalOpen} />
       </Wrapper>
