@@ -1,5 +1,5 @@
 type IconArrowProps = {
-  width?: string;
+  width?: number;
 };
 
 function IconArrow(props: IconArrowProps) {
@@ -7,6 +7,7 @@ function IconArrow(props: IconArrowProps) {
   return (
     <svg
       width={props?.width || DEFAULT_WIDTH}
+      style={{minWidth: props?.width ? props.width : DEFAULT_WIDTH + 'px'}}
       viewBox="0 0 30 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

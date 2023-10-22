@@ -117,11 +117,11 @@ function FilterButton(props: FilterButtonProps) {
                         </ul>
                     </div>
                     <div className="mb-10">
-                        <h5 className="text-lg mb-2">Urząd</h5>
-                        <Autocomplete getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...props.offices, {
+                        <label htmlFor="filter-office-autocomplete" className="text-lg mb-2 block">Urząd</label>
+                        <Autocomplete id="filter-office-autocomplete" getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...props.offices, {
                             name: "Wybierz urząd",
                             url: "https://example.com"
-                        }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="Urząd" />} />
+                        }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="" />} />
                     </div>
                 </div>
                 

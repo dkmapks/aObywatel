@@ -97,15 +97,15 @@ function CreatePetitionPage() {
             <HomeHeader title={"Utwórz petycję"} />
         <form>
             <div className="mb-5">
-                <label htmlFor="create-petition-title" className="block font-medium text-lg text-neutral-200 mb-1">Tytuł</label>
+                <label htmlFor="create-petition-title" className="block font-medium text-neutral-200 mb-1">Tytuł</label>
                 <BaseInput id="create-petition-title" className="w-full" value={title} onInput={(e) => setTitle(e.target.value)} />
             </div>
             <div className="mb-5">
-                <label htmlFor="create-petition-authors" className="block font-medium text-lg text-neutral-200 mb-1">Autorzy (opcjonalne)</label>
+                <label htmlFor="create-petition-authors" className="block font-medium text-neutral-200 mb-1">Autorzy (opcjonalne)</label>
                 <BaseInput id="create-petition-authors" className="w-full" value={authors} onInput={(e) => setAuthors(e.target.value)} />
             </div>
             <div className="mb-5">
-                <label htmlFor="create-petition-text" className="block font-medium text-lg text-neutral-200 mb-1">Tekst petycji</label>
+                <label htmlFor="create-petition-text" className="block font-medium text-neutral-200 mb-1">Tekst petycji</label>
                 <BaseInput value={content} onChange={(e) => setContent(e.target.value)} multiline minRows={4} id="create-petition-text" className="w-full" />
             </div>
             <div className="mb-5">
@@ -115,17 +115,18 @@ function CreatePetitionPage() {
                 <MapPicker height="200px" onLatLng={setGeoLocation} center={WARSAW_GEO_COORDINATES} />
             </div>
             <div className="mb-5">
-                <Autocomplete getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...offices, {
+                <label htmlFor="create-petition-autocomplete" className="block font-medium text-neutral-200 mb-1">Urząd</label>
+                <Autocomplete id="create-petition-autocomplete" getOptionDisabled={option => option === 'Wybierz urząd'} value={officeSearchTerm} onChange={(_, value) => setOfficeSearchTerm(value)} options={[...offices, {
                         name: "Wybierz urząd",
                         url: "https://example.com"
-                    }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="Urząd" />} />
+                    }].map(office => office.name)} renderInput={(params) => <TextField {...params} label="" />} />
             </div>
             <div className="mb-10">
-                <label htmlFor="create-petition-description" className="block font-medium text-lg text-neutral-200 mb-1">Opis petycji</label>
+                <label htmlFor="create-petition-description" className="block font-medium text-neutral-200 mb-1">Opis petycji</label>
                 <BaseInput id="create-petition-description" className="w-full" minRows={4} multiline value={description} onInput={(e) => setDescription(e.target.value)} />
             </div>
 
-            <div className="w-[80%] flex items-center mx-auto">
+            <div className="w-[80%] flex items-center mx-auto mb-5">
                 <BaseButton onClick={submitHandler} isBlueBackground>Utwórz</BaseButton>
             </div>
         </form>
