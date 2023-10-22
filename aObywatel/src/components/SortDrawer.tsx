@@ -31,6 +31,14 @@ function SortDrawer(props: SortDrawerProps) {
         {
             label: "Najmniej lokalnie relewantne",
             value: "importancy-desc",
+        },
+        {
+            label: "Najstarsze",
+            value: "created-at-asc",
+        },
+        {
+            label: "Najnowsze",
+            value: "created-at-desc",
         }
     ]
 

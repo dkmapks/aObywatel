@@ -16,7 +16,7 @@ export type Office = {
     url: string;
 }
 
-export type PetitionSortType = "name-asc" | "name-desc" | "importancy-asc" | "importancy-desc"
+export type PetitionSortType = "name-asc" | "name-desc" | "importancy-asc" | "importancy-desc" | "created-at-asc" | "created-at-desc"
 
 function HomePage() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -44,6 +44,16 @@ function HomePage() {
             case "name-desc":
                 setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
                     return b.title.localeCompare(a.title);
+                }))
+                break;
+            case "created-at-asc":
+                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
+                    return a.creationDate - b.creationDate
+                }))
+                break;
+            case "created-at-desc":
+                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
+                    return -(a.creationDate - b.creationDate)
                 }))
                 break;
             case "importancy-asc":
