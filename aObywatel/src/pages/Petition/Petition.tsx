@@ -40,10 +40,13 @@ function PetitionPage() {
       );
       const data: Petition = await response.json();
       setPetition(data);
-      setIsSigned(data.signedBy.includes(userId ?? ""));
       setSignedByLocal(data.signedBy);
     })();
   }, [petitionId]);
+
+  useEffect(() => {
+    setIsSigned(petition.signedBy.includes(userId ?? ""));
+  }, [petition, userId])
 
   const {
     title,
@@ -54,8 +57,6 @@ function PetitionPage() {
     response,
     status
   } = petition;
-
-  console.log({ parliament })
 
   // Todo remove later
   const targetSignatures = null
@@ -77,7 +78,7 @@ function PetitionPage() {
     Math.floor((Number(signedByLocal.length) / Number(targetSignatures)) * 100)
   );
 
-  const isPetitionAvailableToSign = status === PetitionStatus.PENDING && userId;
+  const isPetitionAvailableToSign = status === PetitionStatus.PENDING && userId
 
   return (
     <ThemeProvider theme={customTheme}>
@@ -133,6 +134,12 @@ function PetitionPage() {
                   setIsSigned(!isSigned);
                   setIsSigningLoading(false);
 
+                  if (petition.signedBy.includes(userId)) {
+                    petition.signedBy = petition.signedBy.filter(id => id !== userId)
+                  } else {
+                    petition.signedBy = [...petition.signedBy, userId]
+                  }
+
                   fetch(`http://localhost:9125/api/petitions/${petition.id}`, {
                     method: 'POST',
                     headers: {
@@ -140,10 +147,10 @@ function PetitionPage() {
                     },
                     body: JSON.stringify({
                       ...petition,
-                      signedBy: [...petition.signedBy, userId],
+                      signedBy: petition.signedBy,
                     }),
                   }).then(() => {
-                    window.location.reload()
+                    setTimeout(() => window.location.reload(), 1000)
                   })
                 }, 1000);
               }

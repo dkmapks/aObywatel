@@ -86,7 +86,7 @@ function HomePage() {
             const data: Petition[] = await response.json();
             const pets = data.map((p): PetitionExt => {
                 const loc = officesJSON.find(o => o.name === p.recipient)
-                const ppl = loc.ludnosc ?? 27338
+                const ppl = loc?.ludnosc ?? 27338
                 return {
                     ...p,
                     importance: p.signedBy.length / ppl,

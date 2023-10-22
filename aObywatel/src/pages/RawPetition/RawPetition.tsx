@@ -11,7 +11,6 @@ function RawPetitionPage() {
             `http://localhost:9125/api/petitions/${petitionId}`
         );
         const data = await response.json();
-        console.log('data: ', data)
 
         setRawContent(data?.content);
     })();

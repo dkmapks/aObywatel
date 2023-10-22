@@ -66,7 +66,6 @@ function CreatePetitionPage() {
                 },
                 body: jsonPayload
             })
-            console.log("Petycja stworzona pomyślnie");
 
             navigate(`/`)
 

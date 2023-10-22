@@ -18,5 +18,3 @@ offices.push({
     place: "Sejm",
     ludnosc: 37310341,
 })
-
-console.log({ offices })
