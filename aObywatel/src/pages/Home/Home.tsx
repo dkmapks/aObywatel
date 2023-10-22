@@ -16,6 +16,8 @@ export type Office = {
     url: string;
 }
 
+export type PetitionSortType = "name-asc" | "name-desc" | "importancy-asc" | "importancy-desc"
+
 function HomePage() {
     const [searchTerm, setSearchTerm] = useState("");
     const [petitions, setPetitions] = useState<Petition[]>([]);
@@ -23,7 +25,7 @@ function HomePage() {
     const [filteredAndSortedPetitions, setFilteredAndSortedPetitions] = useState<Petition[]>([]);
     const [offices, _] = useState<Office[]>(officesJSON)
 
-    const [selectedSort, setSelectedSort] = useState<"name-asc" | "name-desc">("name-asc");
+    const [selectedSort, setSelectedSort] = useState<PetitionSortType>("name-asc");
 
     const activeFilterClassNames = "px-3 py-1 border border-primary-200 text-primary-200 bg-white rounded-full font-medium"
 
@@ -33,7 +35,7 @@ function HomePage() {
     })
 
     const sortPetitions = () => {
-        switch(selectedSort){
+        switch (selectedSort) {
             case "name-asc":
                 setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
                     return a.title.localeCompare(b.title);
@@ -42,6 +44,36 @@ function HomePage() {
             case "name-desc":
                 setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
                     return b.title.localeCompare(a.title);
+                }))
+                break;
+            case "importancy-asc":
+                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
+                    const locA = officesJSON.find(o => o.name === a.recipient)
+                    const locB = officesJSON.find(o => o.name === b.recipient)
+
+                    const pplA = locA.ludnosc ?? 0
+                    const pplB = locB.ludnosc ?? 0
+
+                    if (pplA === pplB && a.signedBy.length === b.signedBy.length) {
+                        return a.title.localeCompare(b.title)
+                    }
+
+                    return a.signedBy.length / pplA - b.signedBy.length / pplB
+                }))
+                break;
+            case "importancy-desc":
+                setFilteredAndSortedPetitions([...filteredPetitions].sort((a, b) => {
+                    const locA = officesJSON.find(o => o.name === a.recipient)
+                    const locB = officesJSON.find(o => o.name === b.recipient)
+
+                    const pplA = locA.ludnosc ?? 0
+                    const pplB = locB.ludnosc ?? 0
+
+                    if (pplA === pplB && a.signedBy.length === b.signedBy.length) {
+                        return b.title.localeCompare(a.title)
+                    }
+
+                    return -(a.signedBy.length / pplA - b.signedBy.length / pplB)
                 }))
                 break;
             default:
@@ -85,7 +117,7 @@ function HomePage() {
 
         let filteredPetitionsByFiltersInDrawer = filteredPetitionsBySearchTerm;
 
-        if(filtersInDrawer['petitionStatus'].length !== 0) {
+        if (filtersInDrawer['petitionStatus'].length !== 0) {
             filteredPetitionsByFiltersInDrawer = filteredPetitionsByFiltersInDrawer.filter(petition => {
                 return filtersInDrawer['petitionStatus'].find(filter => {
                     return filter.value === petition.status;
@@ -93,7 +125,7 @@ function HomePage() {
             })
         }
 
-        if(filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd") {
+        if (filtersInDrawer['searchOfficeTerm'] !== null && filtersInDrawer['searchOfficeTerm'] !== "Wybierz urząd") {
             filteredPetitionsByFiltersInDrawer = filteredPetitionsByFiltersInDrawer.filter(petition => {
                 return petition?.recipient?.toLowerCase().includes(filtersInDrawer['searchOfficeTerm'].toLowerCase())
             })
