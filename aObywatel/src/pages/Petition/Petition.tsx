@@ -114,20 +114,7 @@ function PetitionPage() {
           </If>
 
         </ContentBox>
-        <div className="w-full cursor-pointer" onClick={() => {
-          if (parliament) {
-            window.location.href = `https://www.sejm.gov.pl/Sejm9.nsf/agent.xsp?symbol=${parliament.symbol}&NrPetycji=${parliament.id}`
-          }
-        }}>
-          <If condition={isBeingConsidered}>
 
-            <ContentBox
-              title="Figuruje w systemie sejm.gov.pl"
-              icon={<IconReader width={ICON_SIZE} />}
-            />
-
-          </If>
-        </div>
         <If condition={isPetitionAvailableToSign}>
           <SignButton
             isSigned={isSigned && isPetitionAvailableToSign}
