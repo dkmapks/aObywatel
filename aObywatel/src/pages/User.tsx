@@ -6,7 +6,7 @@ export const UserPage = () => {
     return <ThemeProvider theme={customTheme}>
         <Button onClick={() => {
             loginUser("65ad87ac-3f1d-43fe-87a2-fc8cc86bad2e")
-        }}>Zaloguj jako user 1</Button>
+        }}>Zaloguj jako user 1 (Autor)</Button>
         <Button onClick={() => {
             loginUser("29b14b24-fbcf-4464-ae36-93107a2c6c17")
         }}>
