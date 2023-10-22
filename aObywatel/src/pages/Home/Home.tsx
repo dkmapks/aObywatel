@@ -168,7 +168,7 @@ function HomePage() {
                             <div>
                                 <span className="line-clamp-1">{petition.title}</span>
                                 <div className="text-sm">
-                                    Importance: <strong>{(petition.importance * 100).toFixed(2)}%</strong>
+                                    Współczynnik relewantności: <strong>{(petition.importance * 100).toFixed(2)}%</strong>
                                 </div>
                             </div>
                         </PetitionButton>
