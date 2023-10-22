@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import HomeHeader from "../../components/HomeHeader";
 
 function RawPetitionPage() {
-
   const { petitionId } = useParams();
   const [rawContent, setRawContent] = useState(null);
   const [title, setTitle] = useState(null);
@@ -17,7 +16,7 @@ function RawPetitionPage() {
         setRawContent(data?.content);
         setTitle(data?.title)
     })();
-  }, []);
+  }, [petitionId]);
 
     return (
       <div className="flex justify-center flex-col p-6 text-md">

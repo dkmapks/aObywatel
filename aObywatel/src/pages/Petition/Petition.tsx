@@ -19,6 +19,7 @@ import Socials from "../../components/Socials";
 import PetitionResponseAlert from "../../components/PetitionResponseAlert";
 import { useUserId } from "../../user/user";
 import ParliamentLink from "../../components/ParliamentLink";
+import LinkButton from "../../components/LinkButton";
 
 function PetitionPage() {
   const [isSigned, setIsSigned] = useState(null);
@@ -50,16 +51,12 @@ function PetitionPage() {
 
   const {
     title,
-    location,
     description,
     parliament,
-    // targetSignatures,
+    targetSignatures,
     response,
     status
   } = petition;
-
-  // Todo remove later
-  const targetSignatures = null
 
   const getSignaturesTitle = () => {
     const signPlural = signedByLocal.length === 1 ? "podpis" : "podpisów";
@@ -165,6 +162,7 @@ function PetitionPage() {
             }
           />
         </If>
+        <LinkButton to="/chat" customBgColor={"white"} customTextColor={customTheme.colors.primary[200]}>Dowiedz się więcej</LinkButton>
         <div className='text-center'>
           <Link className="text-primary-100 font-medium underline mb-1" to={`/raw-petition/${petitionId}`}>Zobacz treść petycji</Link>
         </div>
