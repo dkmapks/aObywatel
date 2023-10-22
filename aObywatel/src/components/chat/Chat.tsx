@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 const Frame = styled.iframe`
     max-height: 80vh;
-    min-height: 50vh;
+    min-height: 80vh;
     width: 100vw;
 `
 
